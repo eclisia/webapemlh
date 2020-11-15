@@ -19,12 +19,12 @@ CREATE TABLE `mod58_revisr` (
   `event` varchar(42) NOT NULL,
   `user` varchar(60) DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_revisr` WRITE;
 /*!40000 ALTER TABLE `mod58_revisr` DISABLE KEYS */;
-INSERT INTO `mod58_revisr` VALUES (1,'2020-11-15 22:18:05','Successfully created a new repository.','init','admin4388'),(2,'2020-11-15 22:28:42','Committed <a href=\"http://apemlh.fr/wp-admin/admin.php?page=revisr_view_commit&commit=5014236&success=true\">#5014236</a> to the local repository.','commit','admin4388'),(3,'2020-11-15 22:29:03','Error pushing changes to the remote repository.','error','admin4388'),(4,'2020-11-15 22:37:06','Error pushing changes to the remote repository.','error','admin4388'),(5,'2020-11-15 22:41:58','Successfully pushed 1 commit to origin/master.','push','admin4388'),(6,'2020-11-15 22:43:00','Created new branch: develop','branch','admin4388'),(7,'2020-11-15 22:43:08','Checked out branch: develop.','branch','admin4388');
+INSERT INTO `mod58_revisr` VALUES (1,'2020-11-15 22:18:05','Successfully created a new repository.','init','admin4388'),(2,'2020-11-15 22:28:42','Committed <a href=\"http://apemlh.fr/wp-admin/admin.php?page=revisr_view_commit&commit=5014236&success=true\">#5014236</a> to the local repository.','commit','admin4388'),(3,'2020-11-15 22:29:03','Error pushing changes to the remote repository.','error','admin4388'),(4,'2020-11-15 22:37:06','Error pushing changes to the remote repository.','error','admin4388'),(5,'2020-11-15 22:41:58','Successfully pushed 1 commit to origin/master.','push','admin4388'),(6,'2020-11-15 22:43:00','Created new branch: develop','branch','admin4388'),(7,'2020-11-15 22:43:08','Checked out branch: develop.','branch','admin4388'),(8,'2020-11-15 22:51:21','Successfully backed up the database.','backup','Revisr Bot'),(9,'2020-11-15 22:51:21','The weekly backup was successful.','backup','Revisr Bot'),(10,'2020-11-15 22:52:03','Successfully pushed 1 commit to origin/develop.','push','admin4388');
 /*!40000 ALTER TABLE `mod58_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

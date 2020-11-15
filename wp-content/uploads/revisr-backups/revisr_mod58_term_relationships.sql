@@ -23,7 +23,7 @@ CREATE TABLE `mod58_term_relationships` (
 
 LOCK TABLES `mod58_term_relationships` WRITE;
 /*!40000 ALTER TABLE `mod58_term_relationships` DISABLE KEYS */;
-INSERT INTO `mod58_term_relationships` VALUES (1,1,0),(14,1,0);
+INSERT INTO `mod58_term_relationships` VALUES (1,1,0),(14,1,0),(16,1,0);
 /*!40000 ALTER TABLE `mod58_term_relationships` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
