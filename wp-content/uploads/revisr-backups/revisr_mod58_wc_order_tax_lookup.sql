@@ -27,6 +27,7 @@ CREATE TABLE `mod58_wc_order_tax_lookup` (
 
 LOCK TABLES `mod58_wc_order_tax_lookup` WRITE;
 /*!40000 ALTER TABLE `mod58_wc_order_tax_lookup` DISABLE KEYS */;
+INSERT INTO `mod58_wc_order_tax_lookup` VALUES (62,2,'2020-11-16 23:33:13',0,2.5,2.5),(65,2,'2020-11-16 23:42:36',0,1,1),(90,2,'2020-11-17 21:49:54',0,2.5,2.5);
 /*!40000 ALTER TABLE `mod58_wc_order_tax_lookup` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

@@ -28,11 +28,12 @@ CREATE TABLE `mod58_wc_customer_lookup` (
   PRIMARY KEY (`customer_id`),
   UNIQUE KEY `user_id` (`user_id`),
   KEY `email` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_wc_customer_lookup` WRITE;
 /*!40000 ALTER TABLE `mod58_wc_customer_lookup` DISABLE KEYS */;
+INSERT INTO `mod58_wc_customer_lookup` VALUES (1,1,'admin4388','FlorentTEST','Tainturier','apemlh@hotmail.fr','2020-11-18 23:00:00','2020-11-11 21:14:18','FR','06250','Dijon','');
 /*!40000 ALTER TABLE `mod58_wc_customer_lookup` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

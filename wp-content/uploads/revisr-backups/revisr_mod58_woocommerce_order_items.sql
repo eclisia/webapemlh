@@ -19,11 +19,12 @@ CREATE TABLE `mod58_woocommerce_order_items` (
   `order_id` bigint(20) unsigned NOT NULL,
   PRIMARY KEY (`order_item_id`),
   KEY `order_id` (`order_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_woocommerce_order_items` WRITE;
 /*!40000 ALTER TABLE `mod58_woocommerce_order_items` DISABLE KEYS */;
+INSERT INTO `mod58_woocommerce_order_items` VALUES (1,'Lutin de Noël','line_item',62),(2,'Local pickup','shipping',62),(3,'FR- TAX-1','tax',62),(4,'Lutin de Noël','line_item',65),(5,'Local pickup','shipping',65),(6,'FR- TAX-1','tax',65),(7,'Lutin de Noël','line_item',90),(8,'Local pickup','shipping',90),(9,'FR- TAX-1','tax',90),(10,'Grelots de Noël - Blanc','line_item',148),(11,'Point de vente','shipping',148);
 /*!40000 ALTER TABLE `mod58_woocommerce_order_items` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

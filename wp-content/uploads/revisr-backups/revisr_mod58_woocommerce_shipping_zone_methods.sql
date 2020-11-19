@@ -19,11 +19,12 @@ CREATE TABLE `mod58_woocommerce_shipping_zone_methods` (
   `method_order` bigint(20) unsigned NOT NULL,
   `is_enabled` tinyint(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`instance_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_woocommerce_shipping_zone_methods` WRITE;
 /*!40000 ALTER TABLE `mod58_woocommerce_shipping_zone_methods` DISABLE KEYS */;
+INSERT INTO `mod58_woocommerce_shipping_zone_methods` VALUES (1,2,'local_pickup',2,1);
 /*!40000 ALTER TABLE `mod58_woocommerce_shipping_zone_methods` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-16 10:54:55+0000\n"
+"PO-Revision-Date: 2020-11-18 13:59:24+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -4401,6 +4401,20 @@ msgstr "Date de début du rapport, fuseau horaire du site."
 msgid "Reports data grouped by intervals."
 msgstr "Données des rapports regroupées par intervalles."
 
+#: packages/woocommerce-admin/src/API/Reports/Coupons/Stats/Controller.php:183
+#: packages/woocommerce-admin/src/API/Reports/Coupons/Stats/Controller.php:248
+#: packages/woocommerce-admin/src/API/Reports/Revenue/Stats/Controller.php:264
+#: packages/woocommerce-admin/src/API/Reports/Revenue/Stats/Controller.php:334
+#: packages/woocommerce-admin/src/API/Reports/Taxes/Stats/Controller.php:220
+#: packages/woocommerce-admin/src/API/Reports/Taxes/Stats/Controller.php:285
+#: packages/woocommerce-admin/src/API/Reports/Downloads/Stats/Controller.php:205
+#: packages/woocommerce-admin/src/API/Reports/Orders/Stats/Controller.php:232
+#: packages/woocommerce-admin/src/API/Reports/Orders/Stats/Controller.php:302
+#: packages/woocommerce-admin/src/API/Reports/Products/Stats/Controller.php:202
+#: packages/woocommerce-admin/src/API/Reports/Products/Stats/Controller.php:267
+msgid "Interval subtotals."
+msgstr "Sous-totaux des intervalles."
+
 #: packages/woocommerce-admin/src/API/Reports/Coupons/Stats/Controller.php:177
 #: packages/woocommerce-admin/src/API/Reports/Revenue/Stats/Controller.php:258
 #: packages/woocommerce-admin/src/API/Reports/Taxes/Stats/Controller.php:214
@@ -4416,20 +4430,6 @@ msgstr "Identificateur de segment."
 #: packages/woocommerce-admin/src/API/Reports/Products/Stats/Controller.php:181
 msgid "Reports data grouped by segment condition."
 msgstr "Données des rapports regroupées par état de segment."
-
-#: packages/woocommerce-admin/src/API/Reports/Coupons/Stats/Controller.php:183
-#: packages/woocommerce-admin/src/API/Reports/Coupons/Stats/Controller.php:248
-#: packages/woocommerce-admin/src/API/Reports/Revenue/Stats/Controller.php:264
-#: packages/woocommerce-admin/src/API/Reports/Revenue/Stats/Controller.php:334
-#: packages/woocommerce-admin/src/API/Reports/Taxes/Stats/Controller.php:220
-#: packages/woocommerce-admin/src/API/Reports/Taxes/Stats/Controller.php:285
-#: packages/woocommerce-admin/src/API/Reports/Downloads/Stats/Controller.php:205
-#: packages/woocommerce-admin/src/API/Reports/Orders/Stats/Controller.php:232
-#: packages/woocommerce-admin/src/API/Reports/Orders/Stats/Controller.php:302
-#: packages/woocommerce-admin/src/API/Reports/Products/Stats/Controller.php:202
-#: packages/woocommerce-admin/src/API/Reports/Products/Stats/Controller.php:267
-msgid "Interval subtotals."
-msgstr "Sous-totaux des intervalles."
 
 #: packages/woocommerce-admin/src/API/Reports/Revenue/Stats/Controller.php:189
 #: packages/woocommerce-admin/src/API/Reports/Orders/Stats/Controller.php:197
@@ -4523,21 +4523,6 @@ msgstr "Meilleurs clients - Dépense totale"
 msgid "Net Sales"
 msgstr "Ventes nettes"
 
-#: packages/woocommerce-admin/src/API/Leaderboards.php:191
-#: packages/woocommerce-admin/src/API/Leaderboards.php:321
-#: packages/woocommerce-admin/src/API/Reports/Categories/Controller.php:330
-#: packages/woocommerce-admin/src/API/Reports/Variations/Controller.php:356
-#: packages/woocommerce-admin/src/API/Reports/Orders/Controller.php:499
-#: packages/woocommerce-admin/src/API/Reports/Products/Controller.php:388
-#: packages/woocommerce-admin/src/API/Reports/Products/Stats/Controller.php:157
-#: packages/woocommerce-admin/dist/chunks/30.7e1d8028430fa7148071.js:1
-#: packages/woocommerce-admin/dist/chunks/14.57ecb260ced16ea3d9cd.js:1
-#: packages/woocommerce-admin/dist/chunks/7.98d5571225e8bb353b9c.js:1
-#: packages/woocommerce-admin/dist/chunks/19.2c402410e34b9bac52cb.js:1
-#: packages/woocommerce-admin/dist/chunks/18.9a8ad51cd904fce65ba8.js:1
-msgid "Items Sold"
-msgstr "Articles vendus"
-
 #: packages/woocommerce-admin/src/API/Leaderboards.php:185
 msgid "Top Categories - Items Sold"
 msgstr "Meilleures catégories - Articles vendus"
@@ -4564,6 +4549,21 @@ msgstr "Désolé, aucune ressource ne possède cet ID."
 #: packages/woocommerce-admin/src/API/NoteActions.php:32
 msgid "Unique ID for the Note."
 msgstr "ID unique de la note."
+
+#: packages/woocommerce-admin/src/API/Leaderboards.php:191
+#: packages/woocommerce-admin/src/API/Leaderboards.php:321
+#: packages/woocommerce-admin/src/API/Reports/Categories/Controller.php:330
+#: packages/woocommerce-admin/src/API/Reports/Variations/Controller.php:356
+#: packages/woocommerce-admin/src/API/Reports/Orders/Controller.php:499
+#: packages/woocommerce-admin/src/API/Reports/Products/Controller.php:388
+#: packages/woocommerce-admin/src/API/Reports/Products/Stats/Controller.php:157
+#: packages/woocommerce-admin/dist/chunks/30.7e1d8028430fa7148071.js:1
+#: packages/woocommerce-admin/dist/chunks/14.57ecb260ced16ea3d9cd.js:1
+#: packages/woocommerce-admin/dist/chunks/7.98d5571225e8bb353b9c.js:1
+#: packages/woocommerce-admin/dist/chunks/19.2c402410e34b9bac52cb.js:1
+#: packages/woocommerce-admin/dist/chunks/18.9a8ad51cd904fce65ba8.js:1
+msgid "Items Sold"
+msgstr "Articles vendus"
 
 #: packages/woocommerce-admin/src/API/Leaderboards.php:119
 msgid "Top Coupons - Number of Orders"
@@ -7361,7 +7361,7 @@ msgstr "Merci pour votre commande. Elle est en attente jusqu’à ce que nous co
 #: templates/emails/customer-reset-password.php:32
 #: templates/emails/plain/customer-reset-password.php:30
 msgid "If you didn't make this request, just ignore this email. If you'd like to proceed:"
-msgstr "Si vous n’êtes pas l'auteur de cette demande, ignorez simplement cet e-mail. Pour continuer :"
+msgstr "Si vous n’êtes pas l’auteur de cette demande, ignorez simplement cet e-mail. Pour continuer :"
 
 #: templates/emails/customer-note.php:29
 #: templates/emails/plain/customer-note.php:26
@@ -7911,17 +7911,17 @@ msgstr "Impossible de restaurer le stock de l’élément %s."
 msgid "Unable to reduce stock for item %s."
 msgstr "Impossible de réduire le stock de l’élément %s."
 
+#. translators: 1: action HTML 2: action ID 3: error message
+#: packages/action-scheduler/classes/ActionScheduler_ListTable.php:412
+msgid "Could not process change for action: \"%1$s\" (ID: %2$d). Error: %3$s"
+msgstr "Impossible de traiter les modifications de l’action suivante : « %1$s » (ID : %2$d). Erreur :  %3$s"
+
 #. translators: %s: amount of claims
 #: packages/action-scheduler/classes/ActionScheduler_ListTable.php:357
 msgid "Maximum simultaneous queues already in progress (%s queue). No additional queues will begin processing until the current queues are complete."
 msgid_plural "Maximum simultaneous queues already in progress (%s queues). No additional queues will begin processing until the current queues are complete."
 msgstr[0] "Nombre maximal de files d’attente simultanées déjà en cours de traitement (%s file d’attente). Aucune file d’attente supplémentaire ne sera traitée tant que les files d’attente en cours ne seront pas terminées."
 msgstr[1] "Nombre maximal de files d’attente simultanées déjà en cours de traitement (%s files d’attente). Aucune file d’attente supplémentaire ne sera traitée tant que les files d’attente en cours ne seront pas terminées."
-
-#. translators: 1: action HTML 2: action ID 3: error message
-#: packages/action-scheduler/classes/ActionScheduler_ListTable.php:412
-msgid "Could not process change for action: \"%1$s\" (ID: %2$d). Error: %3$s"
-msgstr "Impossible de traiter les modifications de l’action suivante : « %1$s » (ID : %2$d). Erreur :  %3$s"
 
 #: includes/rest-api/Controllers/Version3/class-wc-rest-reports-controller.php:67
 msgid "Attributes totals."
@@ -11591,13 +11591,6 @@ msgstr "Type de produit invalide."
 msgid "All Products"
 msgstr "Tous les produits"
 
-#: includes/class-wc-post-types.php:318
-#: packages/woocommerce-admin/includes/connect-existing-pages.php:141
-#: packages/woocommerce-admin/includes/connect-existing-pages.php:172
-#: packages/woocommerce-admin/includes/connect-existing-pages.php:202
-msgid "Add New"
-msgstr "Ajouter produit"
-
 #. translators: use local order of street name and house number.
 #: includes/class-wc-countries.php:691
 msgid "House number and street name"
@@ -11673,6 +11666,13 @@ msgstr "ID produit invalide %d."
 #: includes/import/class-wc-product-csv-importer.php:1073
 msgid "A product with this ID already exists."
 msgstr "Un produit avec cet ID existe déjà."
+
+#: includes/class-wc-post-types.php:318
+#: packages/woocommerce-admin/includes/connect-existing-pages.php:141
+#: packages/woocommerce-admin/includes/connect-existing-pages.php:172
+#: packages/woocommerce-admin/includes/connect-existing-pages.php:202
+msgid "Add New"
+msgstr "Ajouter"
 
 #: includes/admin/views/html-admin-page-product-export.php:34
 msgid "Export all columns"
@@ -17420,6 +17420,12 @@ msgstr "Détermine si la commande est payée. Cela va définir l’état à en c
 msgid "Image data."
 msgstr "Données d’image."
 
+#: includes/rest-api/Controllers/Version3/class-wc-rest-product-variations-controller.php:643
+#: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:879
+#: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:2482
+msgid "Variation image data."
+msgstr "Données d’image de variation."
+
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-variations-controller.php:648
 #: includes/rest-api/Controllers/Version3/class-wc-rest-products-controller.php:1131
 #: includes/rest-api/Controllers/Version3/class-wc-rest-product-categories-controller.php:150
@@ -17432,12 +17438,6 @@ msgstr "Données d’image."
 #: packages/woocommerce-blocks/src/StoreApi/Schemas/ImageAttachmentSchema.php:25
 msgid "Image ID."
 msgstr "ID de l’image."
-
-#: includes/rest-api/Controllers/Version3/class-wc-rest-product-variations-controller.php:643
-#: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:879
-#: includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php:2482
-msgid "Variation image data."
-msgstr "Données d’image de variation."
 
 #: includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php:1968
 #: includes/rest-api/Controllers/Version2/class-wc-rest-product-variations-v2-controller.php:929
@@ -17946,10 +17946,6 @@ msgstr "Impossible de créer la ressource existante."
 msgid "Invalid resource id."
 msgstr "Identifiant de ressource non valide."
 
-#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:408
-msgid "Email address is invalid."
-msgstr "L&rsquo;adresse e-mail est non valide."
-
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:466
 msgid "Customers do not support trashing."
 msgstr "Les clients ne supportent pas la suppression."
@@ -18455,6 +18451,10 @@ msgstr "Signature non valide - échec du tri des paramètres."
 #: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:412
 msgid "Username isn't editable."
 msgstr "L’identifiant n’est pas modifiable."
+
+#: includes/rest-api/Controllers/Version1/class-wc-rest-customers-v1-controller.php:408
+msgid "Email address is invalid."
+msgstr "L’adresse e-mail est non valide."
 
 #: includes/admin/views/html-notice-legacy-shipping.php:18
 msgid "a group of regions that can be assigned different shipping methods and rates."
@@ -19753,17 +19753,17 @@ msgstr "Couleur de fond du body"
 msgid "Footer text"
 msgstr "Texte de pied de page"
 
-#: includes/admin/settings/class-wc-settings-emails.php:91
-msgid "How the sender email appears in outgoing WooCommerce emails."
-msgstr "Adresse e-mail de l&rsquo;expéditeur apparaissant dans les e-mails sortants de WooCommerce."
-
-#: includes/admin/settings/class-wc-settings-emails.php:80
-msgid "How the sender name appears in outgoing WooCommerce emails."
-msgstr "Nom de l&rsquo;expéditeur apparaissant dans les e-mails sortants de WooCommerce."
-
 #: includes/admin/settings/class-wc-settings-emails.php:90
 msgid "\"From\" address"
 msgstr "Adresse de l’expéditeur"
+
+#: includes/admin/settings/class-wc-settings-emails.php:80
+msgid "How the sender name appears in outgoing WooCommerce emails."
+msgstr "Nom de l’expéditeur apparaissant dans les e-mails sortants de WooCommerce."
+
+#: includes/admin/settings/class-wc-settings-emails.php:91
+msgid "How the sender email appears in outgoing WooCommerce emails."
+msgstr "Adresse e-mail de l’expéditeur apparaissant dans les e-mails sortants de WooCommerce."
 
 #: includes/admin/settings/class-wc-settings-emails.php:53
 msgid "Email notifications"
@@ -19993,10 +19993,6 @@ msgstr "Recherche"
 msgid "You have not set up this type of address yet."
 msgstr "Vous n&rsquo;avez pas encore défini ce type d&rsquo;adresse."
 
-#: templates/order/form-tracking.php:27
-msgid "Found in your order confirmation email."
-msgstr "Présent dans l&rsquo;e-mail de confirmation."
-
 #. translators: %s is product title
 #: templates/single-product-reviews.php:77
 msgid "Leave a Reply to %s"
@@ -20115,6 +20111,10 @@ msgstr "Il n’y a pas encore d’avis."
 #: templates/single-product-reviews.php:125
 msgid "Rate&hellip;"
 msgstr "Évaluation..."
+
+#: templates/order/form-tracking.php:27
+msgid "Found in your order confirmation email."
+msgstr "Présent dans l’e-mail de confirmation de commande."
 
 #: includes/shortcodes/class-wc-shortcode-checkout.php:92
 #: includes/shortcodes/class-wc-shortcode-checkout.php:215
@@ -21912,10 +21912,6 @@ msgstr "Veuillez saisir un préfixe pour vos numéros de facture. Si vous utilis
 msgid "Please enter your PayPal email address; this is needed in order to take payment."
 msgstr "Veuillez saisir votre adresse e-mail PayPal, cela est nécessaire pour valider le paiement."
 
-#: includes/gateways/paypal/includes/settings-paypal.php:70
-msgid "If your main PayPal email differs from the PayPal email entered above, input your main receiver email for your PayPal account here. This is used to validate IPN requests."
-msgstr "Si votre e-mail Paypal principal diffère de l&rsquo;e-mail Paypal saisi ci-dessus, Saisissez votre e-mail principal de réception de votre compte Paypal ici. Il est utilisé pour valider les requêtes IPN. "
-
 #: includes/gateways/cheque/class-wc-gateway-cheque.php:74
 msgid "Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode."
 msgstr "Veuillez envoyer un chèque à Nom de la boutique, rue, code postal, ville, pays."
@@ -21973,9 +21969,9 @@ msgstr "PayPal Standard ne prend pas en charge la monnaie de votre boutique."
 msgid "Select some countries"
 msgstr "Sélectionner des pays"
 
-#: includes/class-wc-ajax.php:230
-msgid "Sorry there was a problem removing this coupon."
-msgstr "Désolé, il y a eu un problème lors de la suppression du code promo."
+#: includes/gateways/paypal/includes/settings-paypal.php:70
+msgid "If your main PayPal email differs from the PayPal email entered above, input your main receiver email for your PayPal account here. This is used to validate IPN requests."
+msgstr "Si votre e-mail Paypal principal diffère de l&rsquo;e-mail Paypal saisi ci-dessus, Saisissez votre e-mail principal de réception de votre compte Paypal ici. Il est utilisé pour valider les requêtes IPN."
 
 #: includes/class-wc-ajax.php:233
 msgid "Coupon has been removed."
@@ -23118,6 +23114,10 @@ msgstr "Voir les produits"
 #: includes/class-wc-auth.php:396
 msgid "You do not have permission to access this page"
 msgstr "Vous n’avez pas le droit d’accéder à cette page"
+
+#: includes/class-wc-ajax.php:230
+msgid "Sorry there was a problem removing this coupon."
+msgstr "Désolé, un problème est survenu lors de la suppression du code promo."
 
 #: includes/admin/views/html-admin-page-status-report.php:67
 msgid "The version of WooCommerce installed on your site."
@@ -29178,10 +29178,6 @@ msgstr "Charger les informations de facturation du client&nbsp;? Ceci supprimera
 msgid "Load the customer's shipping information? This will remove any currently entered shipping information."
 msgstr "Charger les informations de livraison du client&nbsp;? Ceci supprimera toutes les informations de livraison actuellement saisies."
 
-#: includes/admin/class-wc-admin-assets.php:365
-msgid "Could not grant access - the user may already have permission for this file or billing email is not set. Ensure the billing email is set, and the order has been saved."
-msgstr "Impossible d&rsquo;accorder l&rsquo;accès - l&rsquo;utilisateur peut déjà avoir la permission pour ce fichier ou l&rsquo;e-mail de facturation n&rsquo;est pas défini. Assurez-vous que l&rsquo;e-mail de facturation est défini, et que la commande a été sauvegardée."
-
 #: includes/admin/class-wc-admin-assets.php:366
 msgid "Are you sure you want to revoke access to this download?"
 msgstr "Êtes-vous certain de vouloir supprimer l&rsquo;accès à ce téléchargement&nbsp;?"
@@ -29667,6 +29663,10 @@ msgstr "Saisissez un préfixe personnalisé à utiliser. Un préfixe doit être 
 #: includes/admin/class-wc-admin-assets.php:185
 msgid "Please enter with one monetary decimal point (%s) without thousand separators and currency symbols."
 msgstr "Veuillez saisir avec un séparateur décimal monétaire (%s) sans séparateur de milliers et sans symbole monétaire."
+
+#: includes/admin/class-wc-admin-assets.php:365
+msgid "Could not grant access - the user may already have permission for this file or billing email is not set. Ensure the billing email is set, and the order has been saved."
+msgstr "Impossible d’accorder l’accès - l’utilisateur peut déjà avoir la permission pour ce fichier ou l’e-mail de facturation n’est pas défini. Assurez-vous que l’e-mail de facturation est défini, et que la commande a été sauvegardée."
 
 #: i18n/states.php:1133
 msgid "Albay"

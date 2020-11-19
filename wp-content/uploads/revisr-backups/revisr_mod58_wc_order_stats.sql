@@ -34,6 +34,7 @@ CREATE TABLE `mod58_wc_order_stats` (
 
 LOCK TABLES `mod58_wc_order_stats` WRITE;
 /*!40000 ALTER TABLE `mod58_wc_order_stats` DISABLE KEYS */;
+INSERT INTO `mod58_wc_order_stats` VALUES (62,0,'2020-11-16 23:33:13','2020-11-16 22:33:13',5,15,2.5,0,12.5,0,'wc-processing',1),(65,0,'2020-11-16 23:42:36','2020-11-16 22:42:36',2,6,1,0,5,1,'wc-on-hold',1),(90,0,'2020-11-17 21:49:54','2020-11-17 20:49:54',5,15,2.5,0,12.5,1,'wc-processing',1),(148,0,'2020-11-18 00:36:53','2020-11-17 23:36:53',3,9,0,0,9,1,'wc-on-hold',1);
 /*!40000 ALTER TABLE `mod58_wc_order_stats` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

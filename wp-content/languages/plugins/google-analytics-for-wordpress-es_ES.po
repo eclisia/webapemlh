@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Google Analytics Dashboard Plugin for WordPress by MonsterInsights - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-08-09 21:18:48+0000\n"
+"PO-Revision-Date: 2020-11-19 19:30:27+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,273 @@ msgstr ""
 "X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: es\n"
 "Project-Id-Version: Plugins - Google Analytics Dashboard Plugin for WordPress by MonsterInsights - Stable (latest release)\n"
+
+#: includes/admin/sharedcount.php:310
+msgid "There was an error grabbing data from SharedCount, please check the API Key"
+msgstr "Se ha producido un error al capturar datos de SharedCount, comprueba la clave de API"
+
+#: includes/admin/sharedcount.php:306
+msgid "The SharedCount API key is invalid"
+msgstr "La clave de API de SharedCount no es válida"
+
+#: includes/admin/sharedcount.php:95
+msgid "The SharedCount API key is not set"
+msgstr "No se ha establecido la clave de API de SharedCount"
+
+#: includes/admin/ajax.php:167
+msgid "You are not allowed to deactivate plugins"
+msgstr "No tienes permiso para desactivar plugins"
+
+#: includes/admin/ajax.php:130
+msgid "You are not allowed to activate plugins"
+msgstr "No tienes permisos para activar plugins"
+
+#: includes/admin/routes.php:860
+msgid "Homepage"
+msgstr "Página de inicio"
+
+#. Translators: Bounce rate notification content
+#: includes/admin/notifications/notification-bounce-rate.php:30
+msgid "Your website bounce rate is %s. High bounce rates can hurt your site’s conversions rates. A high bounce rate might mean that people aren’t finding what they’re looking for on your site. %sHere%s are some points to remember and steps to follow to get your bounce rates back to manageable levels."
+msgstr "La tasa de rebote de tu sitio web es %s. Altas tasas de rebote pueden perjudicar las tasas de conversiones de tu sitio. Una alta tasa de rebote puede significar que las personas no están encontrando lo que están buscando en tu sitio. %sAquí%s tienes algunos puntos a recordar y pasos a seguir para recuperar tus tasas de rebote a niveles manejables."
+
+#: includes/admin/notifications/notification-bounce-rate.php:28
+msgid "Your website bounce rate is higher than 70%"
+msgstr "La tasa de rebote de su sitio web es superior al 70%"
+
+#. Translators: Readable time to display
+#: includes/admin/notifications.php:294
+msgid "%1$s ago"
+msgstr "Hace %1$s"
+
+#: includes/admin/admin.php:51
+msgid "Popular Posts:"
+msgstr "Entradas populares:"
+
+#. Translators: notification cron interval
+#: includes/admin/notification-event.php:179
+msgid "%s Days"
+msgstr "%s días"
+
+#: includes/helpers.php:1669
+msgid "United States of America"
+msgstr "Estados Unidos de America"
+
+#: includes/helpers.php:1666
+msgid "St Vincent and the Grenadines"
+msgstr "San Vicente y las Granadinas"
+
+#: includes/helpers.php:1665
+msgid "St Lucia"
+msgstr "Santa Lucía"
+
+#: includes/helpers.php:1664
+msgid "St Kitts and Nevis"
+msgstr "San Cristóbal y Nieves"
+
+#: includes/helpers.php:1654
+msgid "The Bahamas"
+msgstr "Las Bahamas"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:368
+msgctxt "google-analytics-for-wordpress"
+msgid "%dpx"
+msgstr "%dpx"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:289
+msgctxt "Widget"
+msgid "Only Show Posts from These Categories:"
+msgstr "Mostrar solo publicaciones de estas categorías:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:283
+msgctxt "Widget"
+msgid "Comments Count Color:"
+msgstr "Color del contador de comentarios:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:280
+msgctxt "Widget"
+msgid "Background Color:"
+msgstr "Color de fondo:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:277
+msgctxt "Widget"
+msgid "Border Color:"
+msgstr "Color del borde:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:274
+msgctxt "Widget"
+msgid "Label Text:"
+msgstr "Texto de la etiqueta:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:271
+msgctxt "Widget"
+msgid "Label Color:"
+msgstr "Color de la etiqueta"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:268
+msgctxt "Widget"
+msgid "Title Font Size:"
+msgstr "Tamaño de la fuente del título:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:263
+msgctxt "Widget"
+msgid "Title Color:"
+msgstr "Color del título:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:240
+msgctxt "Widget"
+msgid "Theme:"
+msgstr "Tema:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:230
+msgctxt "Widget"
+msgid "Number of posts to display:"
+msgstr "Número de entradas a mostrar:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:225
+msgctxt "Widget"
+msgid "Display Widget Title"
+msgstr "Mostrar el título del widget"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:206
+msgctxt "Widget"
+msgid "Widget Title:"
+msgstr "Título del widget:"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:86
+msgctxt "Widget"
+msgid "Popular Posts - MonsterInsights"
+msgstr "Entradas populares - MonsterInsights"
+
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:75
+msgctxt "Widget"
+msgid "Display popular posts."
+msgstr "Mostrar publicaciones populares."
+
+#: languages/vue.php:2865
+msgid "Unlock with %s"
+msgstr "Desbloquear con %s"
+
+#: languages/vue.php:2850
+msgid "Watch Video - How to Add the Popular Posts widget using Widgets"
+msgstr "Ver vídeo - Cómo agregar el widget de entradas populares usando widgets"
+
+#: languages/vue.php:2775
+msgid "Icon"
+msgstr "Icono"
+
+#: languages/vue.php:2771
+msgid "Austin typewriter heirloom distillery twee migas wayfarers. Fingerstache master cleanse quinoa humblebrag, iPhone taxidermy snackwave seitan typewriter tofu organic affogato kitsch. Artisan"
+msgstr "Austin typewriter heirloom distillery twee migas wayfarers. Fingerstache master cleanse quinoa humblebrag, iPhone taxidermy snackwave seitan typewriter tofu organic affogato kitsch. Artisan"
+
+#: languages/vue.php:2767
+msgid "Sartorial taxidermy venmo you probably haven't heard of them, tofu fingerstache ethical pickled hella ramps vice snackwave seitan typewriter tofu."
+msgstr "Sartorial taxidermy venmo you probably haven't heard of them, tofu fingerstache ethical pickled hella ramps vice snackwave seitan typewriter tofu."
+
+#. Translators: Placeholder adds a link to the Custom Dimensions settings.
+#: languages/vue.php:2763
+msgid "Automatically add the top 5 Posts from the past 30 days to your Curated list of Posts using Custom Dimensions (Pro version required. %1$sUpgrade now%2$s)."
+msgstr "Añade automáticamente las 5 entradas principales de los últimos 30 días a tu lista de publicaciones seleccionadas con dimensiones personalizadas (se requiere la versión Pro. %1$sActualiza ahora%2$s)."
+
+#: languages/vue.php:2759
+msgid "Pro version is required"
+msgstr "Se requiere la versión Pro"
+
+#: languages/vue.php:2746
+msgid "Choose the minimum word count for a Post to have multiple entries."
+msgstr "Elija el recuento mínimo de palabras para que una publicación tenga varias entradas."
+
+#: languages/vue.php:2743
+msgid "Minimum Word Count to Display Multiple Widgets"
+msgstr "Recuento mínimo de palabras para mostrar varios widgets"
+
+#: languages/vue.php:2740
+msgid "Choose the distance between widgets."
+msgstr "Elija la distancia entre widgets."
+
+#: languages/gutenberg.php:89
+msgid "Widget"
+msgstr "Widget"
+
+#: languages/gutenberg.php:86
+msgid "Add popular posts from MonsterInsights"
+msgstr "Añadir las entradas populares de MonsterInsights"
+
+#: languages/gutenberg.php:83 includes/admin/admin.php:51
+msgid "Popular Posts"
+msgstr "Entradas populares"
+
+#: languages/gutenberg.php:74
+msgid "Theme"
+msgstr "Tema"
+
+#: languages/gutenberg.php:70
+msgid "Icon Settings"
+msgstr "Ajustes del icono"
+
+#: languages/gutenberg.php:67
+msgid "Icon Background Color"
+msgstr "Color de fondo del icono"
+
+#: languages/gutenberg.php:64
+msgid "Icon Color"
+msgstr "Color del icono"
+
+#: languages/gutenberg.php:61
+msgid "Background Settings"
+msgstr "Ajustes de fondo"
+
+#: languages/gutenberg.php:57
+msgid "Background Color"
+msgstr "Color de fondo"
+
+#: languages/gutenberg.php:53
+msgid "Border Settings"
+msgstr "Ajustes del borde"
+
+#: languages/gutenberg.php:49
+msgid "Border Color"
+msgstr "Color del borde"
+
+#: languages/gutenberg.php:41
+msgid "Label Settings"
+msgstr "Ajustes de etiquetas"
+
+#: languages/gutenberg.php:37
+msgid "Label Background"
+msgstr "Fondo de la etiqueta"
+
+#: languages/gutenberg.php:33
+msgid "Label Color"
+msgstr "Color de la etiqueta"
+
+#: languages/gutenberg.php:29
+msgid "Label Text"
+msgstr "Texto de la etiqueta"
+
+#: languages/gutenberg.php:25
+msgid "Title Settings"
+msgstr "Ajustes de títulos"
+
+#: languages/gutenberg.php:21
+msgid "Title Color"
+msgstr "Color del título"
+
+#: languages/gutenberg.php:17
+msgid "Title Font Size"
+msgstr "Tamaño de fuente del título"
+
+#: languages/gutenberg.php:13
+msgid "Inline"
+msgstr "Alineado"
+
+#: languages/gutenberg.php:10
+msgid "Posts"
+msgstr "Entradas"
+
+#: languages/gutenberg.php:6
+msgid "Popular"
+msgstr "Popular"
 
 #: includes/admin/licensing/autoupdate.php:64
 msgid "Manage auto-updates"

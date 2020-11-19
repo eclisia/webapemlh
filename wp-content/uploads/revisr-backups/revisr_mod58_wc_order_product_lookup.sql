@@ -36,6 +36,7 @@ CREATE TABLE `mod58_wc_order_product_lookup` (
 
 LOCK TABLES `mod58_wc_order_product_lookup` WRITE;
 /*!40000 ALTER TABLE `mod58_wc_order_product_lookup` DISABLE KEYS */;
+INSERT INTO `mod58_wc_order_product_lookup` VALUES (1,62,60,0,1,'2020-11-16 23:33:13',5,12.5,15,0,2.5,0,0),(4,65,60,0,1,'2020-11-16 23:42:36',2,5,6,0,1,0,0),(7,90,60,0,1,'2020-11-17 21:49:54',5,12.5,15,0,2.5,0,0),(10,148,79,80,1,'2020-11-18 00:36:53',3,9,9,0,0,0,0);
 /*!40000 ALTER TABLE `mod58_wc_order_product_lookup` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

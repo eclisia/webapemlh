@@ -1,11 +1,11 @@
-=== Popup, Forms, Optin & Email Newsletters for Mailchimp, AWeber, HubSpot - MailOptin ===
+﻿=== Popup, Forms, Optin & Email Newsletters for Mailchimp, AWeber, HubSpot - MailOptin ===
 Contributors: properfraction, Collizo4sky
 Donate link: https://mailoptin.io/pricing/
 Tags: popup, form, newsletter, zoho, mailchimp, aweber, constant contact, campaignmonitor, campaign monitor, convertkit, forms, infusionsoft, contact form, wpforms, wpform, cf7, contact form 7, ninja forms, formidable forms, gravity forms, activecampaign, drip, sendy, hubspot, mailerlite, sendinblue, klaviyo, mailjet, ontraport, constantcontact, jilt, vertical response, zoho, sendgrid, zoho crm, zoho campaigns, moosend, godaddy, getgist, sendlane, myemma, fluentcrm, mailster, getresponse, sendfox, wemail, autoresponder, wpml, woocommerce, lightbox, modal, emailoctopus, pop up, email, exit intent, user registration, ninja form
 Requires at least: 4.6
 Requires PHP: 5.6
 Tested up to: 5.5
-Stable tag: 1.2.33.0
+Stable tag: 1.2.33.1
 License: GPL-2.0+
 
 Convert visitors into email subscribers, register new users & keep them engaged with newsletters. Mailchimp, AWeber, Infusionsoft, ActiveCampaign, ConvertKit, Campaign Monitor, Constant Contact, CRM etc.
@@ -166,6 +166,11 @@ Yes, MailOptin has full translation and localization support via the mailoptin t
 10. Elementor form integration with MailOptin
 
 == Changelog ==
+
+= 1.2.33.1 =
+* Fixed bugs with double optin in Sendinblue integration.
+* Fixed bug where users get an error when the double optin option is not enabled.
+* Added filter "mo_optin_form_set_font_families_to_inherit" to make all optin font families a theme font.
 
 = 1.2.33.0 =
 * Added middle of content optin placement.
