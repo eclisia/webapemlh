@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Google Analytics Dashboard Plugin for WordPress by MonsterInsights - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-19 19:30:27+0000\n"
+"PO-Revision-Date: 2020-11-20 09:26:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -193,6 +193,113 @@ msgstr "Recuento mínimo de palabras para mostrar varios widgets"
 #: languages/vue.php:2740
 msgid "Choose the distance between widgets."
 msgstr "Elija la distancia entre widgets."
+
+#: languages/vue.php:2110
+msgid "Background"
+msgstr "Fondo"
+
+#: languages/vue.php:2107
+msgid "Label"
+msgstr "Etiqueta"
+
+#: languages/vue.php:2104
+msgid "Author/Date"
+msgstr "Autor/Fecha"
+
+#: languages/vue.php:2101
+msgid "Border"
+msgstr "Borde"
+
+#: languages/vue.php:2098
+msgid "Size"
+msgstr "Tamaño"
+
+#: languages/vue.php:2095
+msgid "Color"
+msgstr "Color"
+
+#: languages/vue.php:2092
+msgid "Title"
+msgstr "Título"
+
+#: languages/vue.php:2089
+msgid "Narrow"
+msgstr "Estrecho"
+
+#: languages/vue.php:2086
+msgid "Wide"
+msgstr "Ancho"
+
+#: languages/vue.php:2083
+#: lite/includes/popular-posts/class-popular-posts-widget-sidebar.php:258
+msgid "Theme Preview"
+msgstr "Vista previa del tema"
+
+#. Translators: Page number of total pages. 1 & 2 make the first part of the
+#. text bold.
+#: languages/vue.php:2079
+msgid "%1$sPage %3$s%2$s of %4$s"
+msgstr "%1$sPágina %3$s%2$s de %4$s"
+
+#: languages/vue.php:2075
+msgid "Indexing completed, counts will update automatically every day."
+msgstr "La indexación completada, los recuentos se actualizarán automáticamente todos los días."
+
+#: languages/vue.php:2072
+msgid "%1$sIndex Progress: %2$s%%.%3$s You may leave this page during indexing."
+msgstr "%1$sProgreso del índice:%2$s%%. %3$s Puede abandonar de esta página durante la indexación."
+
+#: languages/vue.php:2069
+msgid "Start Indexing"
+msgstr "Iniciar la indexación"
+
+#: languages/vue.php:2066
+msgid "Insert your sharedcount API key found in your %1$sSettings%2$s panel. After, click Start Indexing."
+msgstr "Escribe la clave de API de sharedcount que se encuentra en el panel %1$sAjustes%2$s. Después, haz clic en Iniciar indexación."
+
+#: languages/vue.php:2063
+msgid "SharedCount API Key"
+msgstr "Clave de API de SharedCount"
+
+#: languages/vue.php:2060
+msgid "Can't load posts."
+msgstr "No se pueden cargar las entradas."
+
+#: languages/vue.php:2057
+msgid "Search by post title"
+msgstr "Buscar por título de la entrada"
+
+#: languages/vue.php:2054
+msgid "Oops! No posts found."
+msgstr "¡Vaya! No se han encontrado entradas."
+
+#: languages/vue.php:2051
+msgid "Select posts/search"
+msgstr "Seleccionar entradas/búsqueda"
+
+#: languages/vue.php:2045
+msgid "Choose from which categories posts will be displayed in the widget. All categories will be used if left empty."
+msgstr "Elige qué categorías de entrada se mostrarán en el widget. Se mostrarán todas si se deja vacía."
+
+#: languages/vue.php:2042
+msgid "Only Show Posts from These Categories"
+msgstr "Mostrar solo entradas de estas categorías:"
+
+#: languages/vue.php:1450
+msgid "Title your widget and set it’s display preferences."
+msgstr "Título del widget y establecer la preferencias de visualización."
+
+#: languages/vue.php:1444
+msgid "Display Title"
+msgstr "Mostrar el título"
+
+#: languages/vue.php:1441
+msgid "Error emptying the popular posts cache. Please try again."
+msgstr "Error al vaciar la caché de entradas populares. Por favor, inténtalo de nuevo."
+
+#: languages/vue.php:1438
+msgid "Popular posts cache emptied"
+msgstr "Caché de entradas populares vaciado"
 
 #: languages/gutenberg.php:89
 msgid "Widget"

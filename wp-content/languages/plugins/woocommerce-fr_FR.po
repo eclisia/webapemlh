@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - WooCommerce - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-18 13:59:24+0000\n"
+"PO-Revision-Date: 2020-11-20 09:50:37+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3021,7 +3021,7 @@ msgstr "Si la case est cochée, l’expédition gratuite sera disponible sur la 
 
 #: includes/shipping/free-shipping/class-wc-shipping-free-shipping.php:112
 msgid "Apply minimum order rule before coupon discount"
-msgstr "Appliquer la règle de commande minimale avant la remise avec code promotionnel"
+msgstr "Appliquer la règle de commande minimale avant la remise avec code promo"
 
 #: packages/woocommerce-admin/src/Features/ShippingLabelBanner.php:104
 #: packages/woocommerce-admin/dist/wp-admin-scripts/print-shipping-label-banner.js:2
@@ -22500,10 +22500,6 @@ msgstr "Désolé, ce code promo n&rsquo;est pas applicable aux produits&nbsp;: %
 msgid "Sorry, this coupon is not applicable to the categories: %s."
 msgstr "Désolé, ce code promo n&rsquo;est pas applicable aux catégories&nbsp;: %s. "
 
-#: includes/class-wc-discounts.php:780 includes/class-wc-coupon.php:1032
-msgid "Sorry, this coupon is not valid for sale items."
-msgstr "Désolé, ce code promo ne s&rsquo;applique pas aux articles en promotion."
-
 #: includes/class-wc-download-handler.php:186
 msgid "This is not your download link."
 msgstr "Ceci n&rsquo;est pas votre lien de téléchargement."
@@ -23118,6 +23114,10 @@ msgstr "Vous n’avez pas le droit d’accéder à cette page"
 #: includes/class-wc-ajax.php:230
 msgid "Sorry there was a problem removing this coupon."
 msgstr "Désolé, un problème est survenu lors de la suppression du code promo."
+
+#: includes/class-wc-discounts.php:780 includes/class-wc-coupon.php:1032
+msgid "Sorry, this coupon is not valid for sale items."
+msgstr "Désolé, ce code promo ne s’applique pas aux articles en promotion."
 
 #: includes/admin/views/html-admin-page-status-report.php:67
 msgid "The version of WooCommerce installed on your site."
