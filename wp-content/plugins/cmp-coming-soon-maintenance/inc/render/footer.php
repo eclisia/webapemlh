@@ -45,3 +45,9 @@ if ( get_option('niteoCS_subscribe_type', '2') === '3' && defined('MAILOPTIN_VER
     <script type='text/javascript' src='<?php echo MAILOPTIN_ASSETS_URL;?>js/mailoptin.min.js?ver=<?php echo MAILOPTIN_VERSION_NUMBER;?>'></script>
     <?php
 } 
+
+// scripts for Plugin Name Weglot
+if ( is_plugin_active( 'weglot/weglot.php' ) && defined('WEGLOT_VERSION') ) { ?>
+    <script src='https://cmp.weglot-translate.com/wp-content/plugins/weglot/dist/front-js.js?ver=<?php echo WEGLOT_VERSION;?>' id='wp-weglot-js-js'></script>
+    <?php
+}
