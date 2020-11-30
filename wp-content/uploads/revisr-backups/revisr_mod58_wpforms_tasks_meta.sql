@@ -18,12 +18,12 @@ CREATE TABLE `mod58_wpforms_tasks_meta` (
   `data` longtext COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `date` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_wpforms_tasks_meta` WRITE;
 /*!40000 ALTER TABLE `mod58_wpforms_tasks_meta` DISABLE KEYS */;
-INSERT INTO `mod58_wpforms_tasks_meta` VALUES (1,'wpforms_process_entry_emails_meta_cleanup','Wzg2NDAwXQ==','2020-11-15 22:13:42'),(2,'wpforms_admin_notifications_update','W10=','2020-11-15 22:13:55'),(3,'wpforms_builder_help_cache_update','W10=','2020-11-15 22:14:22'),(4,'wpforms_admin_notifications_update','W10=','2020-11-16 22:15:56'),(5,'wpforms_admin_notifications_update','W10=','2020-11-17 22:21:07'),(6,'wpforms_admin_notifications_update','W10=','2020-11-18 22:24:07'),(7,'wpforms_admin_notifications_update','W10=','2020-11-19 22:25:11'),(8,'wpforms_admin_notifications_update','W10=','2020-11-21 14:07:32'),(9,'wpforms_admin_notifications_update','W10=','2020-11-23 20:47:22'),(10,'wpforms_admin_notifications_update','W10=','2020-11-24 21:21:50'),(11,'wpforms_admin_notifications_update','W10=','2020-11-25 21:22:10'),(12,'wpforms_admin_notifications_update','W10=','2020-11-26 21:25:33'),(13,'wpforms_admin_notifications_update','W10=','2020-11-27 21:26:47'),(14,'wpforms_admin_notifications_update','W10=','2020-11-29 11:15:19');
+INSERT INTO `mod58_wpforms_tasks_meta` VALUES (1,'wpforms_process_entry_emails_meta_cleanup','Wzg2NDAwXQ==','2020-11-15 22:13:42'),(2,'wpforms_admin_notifications_update','W10=','2020-11-15 22:13:55'),(3,'wpforms_builder_help_cache_update','W10=','2020-11-15 22:14:22'),(4,'wpforms_admin_notifications_update','W10=','2020-11-16 22:15:56'),(5,'wpforms_admin_notifications_update','W10=','2020-11-17 22:21:07'),(6,'wpforms_admin_notifications_update','W10=','2020-11-18 22:24:07'),(7,'wpforms_admin_notifications_update','W10=','2020-11-19 22:25:11'),(8,'wpforms_admin_notifications_update','W10=','2020-11-21 14:07:32'),(9,'wpforms_admin_notifications_update','W10=','2020-11-23 20:47:22'),(10,'wpforms_admin_notifications_update','W10=','2020-11-24 21:21:50'),(11,'wpforms_admin_notifications_update','W10=','2020-11-25 21:22:10'),(12,'wpforms_admin_notifications_update','W10=','2020-11-26 21:25:33'),(13,'wpforms_admin_notifications_update','W10=','2020-11-27 21:26:47'),(14,'wpforms_admin_notifications_update','W10=','2020-11-29 11:15:19'),(15,'wpforms_admin_notifications_update','W10=','2020-11-30 11:44:20');
 /*!40000 ALTER TABLE `mod58_wpforms_tasks_meta` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

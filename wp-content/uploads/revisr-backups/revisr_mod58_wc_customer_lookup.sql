@@ -33,7 +33,7 @@ CREATE TABLE `mod58_wc_customer_lookup` (
 
 LOCK TABLES `mod58_wc_customer_lookup` WRITE;
 /*!40000 ALTER TABLE `mod58_wc_customer_lookup` DISABLE KEYS */;
-INSERT INTO `mod58_wc_customer_lookup` VALUES (1,1,'admin4388','FlorentTEST','Tainturier','apemlh@hotmail.fr','2020-11-25 23:00:00','2020-11-11 21:14:18','FR','06250','Dijon',''),(2,3,'tainturierflorent','Florent','Tainturier','florent.tainturier@gmail.com','2020-11-28 23:00:00','2020-11-19 19:31:16','FR','06250','MOUGINS','');
+INSERT INTO `mod58_wc_customer_lookup` VALUES (1,1,'admin4388','FlorentTEST','Tainturier','apemlh@hotmail.fr','2020-11-25 23:00:00','2020-11-11 21:14:18','FR','06250','Dijon',''),(2,3,'tainturierflorent','Florent','Tainturier','florent.tainturier@gmail.com','2020-11-29 23:00:00','2020-11-19 19:31:16','FR','06250','MOUGINS','');
 /*!40000 ALTER TABLE `mod58_wc_customer_lookup` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
