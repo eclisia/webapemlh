@@ -1,0 +1,570 @@
+# Translation of Plugins - Join.chat - Stable (latest release) in Dutch
+# This file is distributed under the same license as the Plugins - Join.chat - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-11-04 14:34:20+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: nl\n"
+"Project-Id-Version: Plugins - Join.chat - Stable (latest release)\n"
+
+#: admin/class-joinchat-admin.php:728
+msgid "Contact us"
+msgstr "Neem contact met ons op"
+
+#: admin/class-joinchat-admin.php:728
+msgid "Example:"
+msgstr "Voorbeeld:"
+
+#: admin/class-joinchat-admin.php:721
+msgid "to open WhatsApp directly on click."
+msgstr "om WhatsApp direct te open door erop te klikken."
+
+#: admin/class-joinchat-admin.php:719
+msgid "to show Chat Window (or open WhatsApp if there is no CTA) on click."
+msgstr "om het chatvenster te tonen (of WhatsApp te openen als er geen CTA is) door erop te klikken."
+
+#: admin/class-joinchat-admin.php:717
+msgid "Your page elements can interact with Join.chat adding some CSS classes in your HTML:"
+msgstr "Je pagina elementen kunnen communiceren met Join.chat door enkele CSS klassen toe te voegen aan je HTML:"
+
+#: admin/class-joinchat-admin.php:634
+msgid "Custom:"
+msgstr "Aangepast:"
+
+#: admin/class-joinchat-admin.php:632
+msgid "WhatsApp Logo"
+msgstr "WhatsApp logo"
+
+#: admin/class-joinchat-admin.php:630
+msgid "Powered by Join.chat"
+msgstr "Aangedreven door Join.chat"
+
+#: admin/class-joinchat-admin.php:260 admin/class-joinchat-admin.php:628
+msgid "Header"
+msgstr "Header"
+
+#: admin/class-joinchat-admin.php:257
+msgid "Button Text"
+msgstr "Knop tekst"
+
+#: admin/class-joinchat-admin.php:1083
+msgid "Do you like %1$s? Please help us with a %2$s rating."
+msgstr "Hou je van %1$s? help ons met een %2$s waardering."
+
+#: admin/class-joinchat-admin.php:591
+msgid "Text to open chat on Chat Window button"
+msgstr "Tekst om chat te openen op Chat Window-knop"
+
+#: admin/class-joinchat-admin.php:561
+msgid "Short text shown next to button"
+msgstr "Korte tekst weergegeven naast knop"
+
+#: admin/class-joinchat-admin.php:554
+msgid "Other icons and more channels (Telegram, Messenger…) with %s"
+msgstr "Andere pictogrammen en meer kanalen (Telegram, Messenger ...) met%s"
+
+#: admin/class-joinchat-admin.php:552
+msgid "The image will alternate with button icon"
+msgstr "De afbeelding wordt afgewisseld met knoppictogram"
+
+#: admin/class-joinchat-admin.php:829
+msgid "Join.chat Settings"
+msgstr "Instellingen Join.chat"
+
+#: admin/class-joinchat-admin.php:732 admin/class-joinchat-admin.php:798
+msgid "Support"
+msgstr "Ondersteuning"
+
+#: admin/class-joinchat-admin.php:797
+msgid "Add-ons"
+msgstr "Add-ons"
+
+#: admin/class-joinchat-admin.php:796
+msgid "Documentation"
+msgstr "Documentatie"
+
+#: admin/class-joinchat-admin.php:725
+msgid "to show always."
+msgstr "om altijd te tonen."
+
+#: admin/class-joinchat-admin.php:724
+msgid "only show if it's an not seen CTA."
+msgstr "alleen weergeven als het een niet-geziene CTA is."
+
+#: admin/class-joinchat-admin.php:722
+msgid "To show Chat Window when an HTML element appears on screen when user scrolls:"
+msgstr "Chatvenster tonen wanneer een HTML-element op het scherm verschijnt wanneer de gebruiker scrolt:"
+
+#: admin/class-joinchat-admin.php:720
+msgid "to hide Chat Window on click."
+msgstr "om het chatvenster te verbergen bij klikken."
+
+#: admin/class-joinchat-admin.php:715
+msgid "Triggers"
+msgstr "Triggers"
+
+#: admin/class-joinchat-admin.php:740
+msgid "If you like Join.chat 😍"
+msgstr "Als je van Join.chat 😍 \"houdt"
+
+#: admin/class-joinchat-admin.php:601
+msgid "Chat Window auto displays from this number of page views"
+msgstr "Chatvenster wordt automatisch weergegeven vanaf dit aantal paginaweergaven"
+
+#: admin/class-joinchat-admin.php:596
+msgid "Chat Window auto displays after delay"
+msgstr "Chatvenster wordt automatisch weergegeven na vertraging"
+
+#: admin/class-joinchat-admin.php:515 admin/class-joinchat-admin.php:698
+#: admin/class-joinchat-admin.php:794 public/class-joinchat-public.php:256
+msgctxt "url lang slug (only available for spanish \"es\")"
+msgid "en"
+msgstr "nl"
+
+#: admin/class-joinchat-admin.php:469
+msgid "Visibility Settings"
+msgstr "Zichtbaarheid instellingen"
+
+#: admin/class-joinchat-admin.php:463
+msgid "If it's defined a \"Call to Action\", the Chat Window can be displayed automatically if conditions are met."
+msgstr "Als er een\"Call to Action\" is gedefinieerd, kan het chatvenster automatisch worden weergegeven als aan de voorwaarden is voldaan."
+
+#: admin/class-joinchat-admin.php:264
+msgid "Page Views"
+msgstr "Paginaweergaven"
+
+#: admin/class-joinchat-admin.php:258
+msgid "Theme Color"
+msgstr "Themakleur"
+
+#: admin/class-joinchat-admin.php:102
+msgid "Visibility"
+msgstr "Zichtbaarheid"
+
+#: public/class-joinchat-public.php:323
+msgid "Close"
+msgstr "Dichtbij"
+
+#. Plugin URI of the plugin
+msgid "https://join.chat"
+msgstr "https://join.chat"
+
+#. Plugin Name of the plugin
+#: admin/class-joinchat-admin.php:870
+msgid "Join.chat"
+msgstr "Join.chat"
+
+#: admin/class-joinchat-admin.php:942
+msgid "to leave it blank use"
+msgstr "om het leeg te laten gebruiken"
+
+#: admin/class-joinchat-admin.php:940
+msgid "Can use vars"
+msgstr "Kan vars gebruiken"
+
+#: admin/class-joinchat-admin.php:751
+msgid "Follow %s on twitter."
+msgstr "Volg %s op twitter."
+
+#: admin/class-joinchat-admin.php:743
+msgid "Please leave us a %s rating. We'll thank you."
+msgstr "Laat een waardering %s achter. We zullen je bedanken."
+
+#: admin/class-joinchat-admin.php:735
+msgid "If you need help, first review our <a href=\"%1$s\" target=\"_blank\">documentation</a> and if you don't find a solution check the <a href=\"%2$s\" target=\"_blank\">free plugin support forum</a> or buy our <a href=\"%3$s\" target=\"_blank\">premium support</a>."
+msgstr "Als je hulp nodig hebt, bekijk dan eerst onze <a href=\"%1$s\" target=\"_blank\"> documentatie </a> en als je geen oplossing vindt, controleer dan <a href=\" %2$s\" target=\"_ blank\"> gratis plugin ondersteuningsforum </a> of koop onze <a href=\"%3$s\" target=\"_blank\"> premium ondersteuning </a>."
+
+#: admin/class-joinchat-admin.php:621
+msgid "Auto (detects device dark mode)"
+msgstr "Auto (detecteert donkere modus van apparaat)"
+
+#: admin/class-joinchat-admin.php:619
+msgid "Yes"
+msgstr "Ja"
+
+#: admin/class-joinchat-admin.php:617
+msgid "No"
+msgstr "Nee"
+
+#: admin/class-joinchat-admin.php:522
+msgid "Add unlimited numbers with %1$s or multiple contacts with %2$s"
+msgstr "Voeg onbeperkt nummers toe met %1$s of meerdere contacten met %2$s"
+
+#: admin/class-joinchat-admin.php:259 admin/class-joinchat-admin.php:615
+msgid "Dark Mode"
+msgstr "Donkere modus"
+
+#: admin/class-joinchat-admin.php:579
+msgid "Add links, images, videos and more with %s"
+msgstr "Voeg links, afbeeldingen, video's en meer toe met%s"
+
+#: admin/class-joinchat-wooadmin.php:278
+msgid "For the <strong>Call to Action for Products on Sale</strong>, you can also use:"
+msgstr "Voor de <strong> call-to-action voor te koop aangeboden producten </strong> kan je ook het volgende gebruiken:"
+
+#: admin/class-joinchat-wooadmin.php:231
+msgid "Define a text for your products on sale to encourage customers to contact"
+msgstr "Definieer een tekst voor je producten in de uitverkoop om klanten aan te moedigen contact op te nemen met"
+
+#: admin/class-joinchat-wooadmin.php:229
+msgid ""
+"Save {DISCOUNT}! This *{PRODUCT}* can be yours for only ~{REGULAR}~ *{PRICE}*.\n"
+"If you have any questions, ask us."
+msgstr ""
+"Bespaar {DISCOUNT}! Dit *{PRODUCT}* kan voor jou zijn voor slechts ~{REGULAR}~ *{PRICE}*.\n"
+"Als je vragen hebt, stel die dan aan ons."
+
+#: admin/class-joinchat-wooadmin.php:224
+msgid "Define a text for your products to encourage customers to contact"
+msgstr "Definieer een tekst voor je producten om klanten aan te moedigen contact op te nemen met"
+
+#: admin/class-joinchat-wooadmin.php:150
+msgid "Message for Products"
+msgstr "Bericht voor producten"
+
+#: admin/class-joinchat-wooadmin.php:149
+msgid "Call to Action for Products on Sale"
+msgstr "Call-to-action voor te koop aangeboden producten"
+
+#: admin/class-joinchat-wooadmin.php:148
+msgid "Call to Action for Products"
+msgstr "Call-to-action voor producten"
+
+#: admin/class-joinchat-admin.php:457
+msgid "You can introduce yourself, offer help or even make promotions to your users."
+msgstr "Je kan jezelf voorstellen, hulp bieden of zelfs promoties doen aan je gebruikers."
+
+#: admin/class-joinchat-admin.php:456
+msgid "If you define a \"Call to Action\" a window will be displayed simulating a chat before launching WhatsApp."
+msgstr "Als je een\"Call to Action\" definieert, wordt er een venster weergegeven dat een chat simuleert voordat WhatsApp wordt gestart."
+
+#: admin/class-joinchat-wooadmin.php:237
+msgid "Predefined text for the first message the client will send you"
+msgstr "Voorgedefinieerde tekst voor het eerste bericht dat de klant je zal sturen"
+
+#: admin/class-joinchat-admin.php:595
+msgid "seconds (0 disabled)"
+msgstr "seconden (0 uitgeschakeld)"
+
+#: admin/class-joinchat-admin.php:120 admin/class-joinchat-admin.php:590
+#: public/class-joinchat-public.php:103
+msgid "Open chat"
+msgstr "Chat openen"
+
+#: admin/class-joinchat-admin.php:586
+msgid "Predefined text for the first message the user will send you"
+msgstr "Voorgedefinieerde tekst voor het eerste bericht dat de gebruiker je zal sturen"
+
+#: admin/class-joinchat-admin.php:577
+msgid "Define a text to encourage users to contact by WhatsApp"
+msgstr "Definieer een tekst om gebruikers aan te moedigen contact op te nemen via WhatsApp"
+
+#: admin/class-joinchat-admin.php:560
+msgid "💬 Need help?"
+msgstr "💬 Hulp nodig?"
+
+#: admin/class-joinchat-admin.php:551
+msgid "Remove"
+msgstr "Verwijderen"
+
+#: admin/class-joinchat-admin.php:550
+msgid "Use image"
+msgstr "Afbeelding gebruiken"
+
+#: admin/class-joinchat-admin.php:550
+msgid "Select button image"
+msgstr "Knopafbeelding selecteren"
+
+#: admin/class-joinchat-admin.php:549
+msgid "Select an image"
+msgstr "Selecteer een afbeelding"
+
+#: admin/class-joinchat-admin.php:265 admin/class-joinchat-admin.php:605
+msgid "Notification Balloon"
+msgstr "Meldingsballon"
+
+#: admin/class-joinchat-admin.php:249
+msgid "Tooltip"
+msgstr "Tooltip"
+
+#: admin/class-joinchat-admin.php:248
+msgid "Image"
+msgstr "Afbeelding"
+
+#: admin/class-joinchat-wooadmin.php:274
+msgid "Product Name"
+msgstr "Productnaam"
+
+#: admin/class-joinchat-wooadmin.php:272
+msgid "<strong>WooCommerce</strong>, in product pages you can also use:"
+msgstr "<strong> WooCommerce </strong>, op productpagina's kan je ook gebruiken:"
+
+#: admin/class-joinchat-wooadmin.php:236
+msgid ""
+"*Hi {SITE}!*\n"
+"I have a question about *{PRODUCT} ({SKU})*"
+msgstr ""
+"*Hallo {SITE}!*\n"
+"Ik heb een vraag over *{PRODUCT} ({SKU})*"
+
+#: admin/class-joinchat-wooadmin.php:222
+msgid ""
+"This *{PRODUCT}* can be yours for only *{PRICE}*!\n"
+"If you have any questions, ask us."
+msgstr ""
+"Dit *{PRODUCT}* kan voor jou zijn voor slechts *{PRICE}*!\n"
+"Heb je vragen, stel die dan aan ons."
+
+#: admin/class-joinchat-wooadmin.php:198
+msgid "You can define other different texts for the Chat Window on the product pages."
+msgstr "Op de productpagina's kan je andere verschillende teksten voor het chatvenster definiëren."
+
+#: admin/class-joinchat-wooadmin.php:196
+msgid "Product Chat Window"
+msgstr "Product-chatvenster"
+
+#: admin/class-joinchat-wooadmin.php:192
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: admin/class-joinchat-admin.php:1019
+msgid "You can use vars"
+msgstr "Je kan vars gebruiken"
+
+#: admin/class-joinchat-admin.php:747
+msgid "Subscribe to our newsletter and visit our blog at %s."
+msgstr "Abonneer je op onze nieuwsbrief en bezoek onze blog op%s."
+
+#: admin/class-joinchat-admin.php:710
+msgid "Page Title"
+msgstr "Pagina titel"
+
+#: admin/class-joinchat-admin.php:706
+msgid "You can use dynamic variables that will be replaced by the values of the page the user visits:"
+msgstr "Je kan dynamische variabelen gebruiken die worden vervangen door de waarden van de pagina die de gebruiker bezoekt:"
+
+#: admin/class-joinchat-admin.php:703
+msgid "Styles and Variables"
+msgstr "Stijlen en variabelen"
+
+#: admin/class-joinchat-admin.php:464 admin/class-joinchat-admin.php:1020
+msgid "Show Help"
+msgstr "Hulp laten zien"
+
+#. Description of the plugin
+msgid "Connects a WordPress chat with WhatsApp. The best solution for marketing and support. Stop losing customers and increase your sales."
+msgstr "Verbindt een WordPress-chat met WhatsApp. De beste oplossing voor marketing en ondersteuning. Stop met het verliezen van klanten en verhoog je verkoop."
+
+#: admin/class-joinchat-admin.php:572
+msgid "Open <em>WhatsApp Web</em> directly on desktop"
+msgstr "Open <em> WhatsApp Web </em> rechtstreeks op desktop"
+
+#: admin/class-joinchat-admin.php:566
+msgid "Time since the page is opened until the button is displayed"
+msgstr "Tijdsduur sinds het openen van de pagina totdat de knop wordt weergegeven"
+
+#: admin/class-joinchat-admin.php:607
+msgid "Display a notification balloon instead of opening the Chat Window for a \"less intrusive\" mode"
+msgstr "Geef een meldingsballon weer in plaats van het chatvenster te openen voor een\"minder opdringerige\" modus"
+
+#: admin/class-joinchat-admin.php:565
+msgid "seconds"
+msgstr "seconden"
+
+#: admin/class-joinchat-admin.php:454
+msgid "Chat Window"
+msgstr "Chatvenster"
+
+#: admin/class-joinchat-admin.php:450
+msgid "Set the contact number and where you want the WhatsApp button to be displayed."
+msgstr "Stel het contactnummer in en waar je de WhatsApp-knop wilt weergeven."
+
+#: admin/class-joinchat-admin.php:449
+msgid "Button"
+msgstr "Knop"
+
+#: admin/class-joinchat-admin.php:263
+msgid "Chat Delay"
+msgstr "Chatvertraging"
+
+#: admin/class-joinchat-admin.php:253 admin/class-joinchat-admin.php:570
+msgid "WhatsApp Web"
+msgstr "WhatsApp Web"
+
+#: admin/class-joinchat-admin.php:251
+msgid "Button Delay"
+msgstr "Knopvertraging"
+
+#: public/class-joinchat-public.php:316
+msgid "Powered by"
+msgstr "Aangedreven door"
+
+#: admin/class-joinchat-admin.php:950
+msgid "Default visibility"
+msgstr "Standaard zichtbaarheid"
+
+#: admin/class-joinchat-admin.php:509
+msgid "Inherit"
+msgstr "Erven"
+
+#: admin/class-joinchat-admin.php:507 admin/class-joinchat-admin.php:672
+#: admin/class-joinchat-admin.php:948
+msgid "Hide"
+msgstr "Verbergen"
+
+#: admin/class-joinchat-admin.php:505 admin/class-joinchat-admin.php:670
+#: admin/class-joinchat-admin.php:946
+msgid "Show"
+msgstr "Tonen"
+
+#: admin/class-joinchat-admin.php:471
+msgid "Restore default visibility"
+msgstr "Standaard zichtbaarheid herstellen"
+
+#: admin/class-joinchat-admin.php:470
+msgid "From here you can configure on which pages the WhatsApp button will be visible."
+msgstr "Vanaf hier kan je configureren op welke pagina's de WhatsApp-knop zichtbaar zal zijn."
+
+#: admin/class-joinchat-admin.php:101
+msgid "General"
+msgstr "Algemeen"
+
+#: admin/class-joinchat-admin.php:479
+msgid "Custom Post Types"
+msgstr "Aangepaste berichttypen"
+
+#: admin/class-joinchat-wooadmin.php:132
+msgid "My Account"
+msgstr "Mijn rekening"
+
+#: admin/class-joinchat-wooadmin.php:131
+msgid "Checkout"
+msgstr "Afrekenen"
+
+#: admin/class-joinchat-wooadmin.php:130
+msgid "Cart"
+msgstr "Winkelwagen"
+
+#: admin/class-joinchat-wooadmin.php:129
+msgid "Product Page"
+msgstr "Productpagina"
+
+#: admin/class-joinchat-wooadmin.php:128
+msgid "Shop"
+msgstr "Winkel"
+
+#: admin/class-joinchat-admin.php:288
+msgid "Post"
+msgstr "Bericht"
+
+#: admin/class-joinchat-admin.php:287
+msgid "Page"
+msgstr "Bladzijde"
+
+#: admin/class-joinchat-admin.php:286
+msgid "Singular"
+msgstr "Enkelvoud"
+
+#: admin/class-joinchat-admin.php:285
+msgid "Author Archives"
+msgstr "Auteur archief"
+
+#: admin/class-joinchat-admin.php:284
+msgid "Date Archives"
+msgstr "Datum archieven"
+
+#: admin/class-joinchat-admin.php:283
+msgid "Archives"
+msgstr "Archieven"
+
+#: admin/class-joinchat-admin.php:282
+msgid "Search Results"
+msgstr "Zoekresultaten"
+
+#: admin/class-joinchat-admin.php:281
+msgid "404 Page"
+msgstr "404 pagina"
+
+#: admin/class-joinchat-admin.php:280
+msgid "Blog Page"
+msgstr "Blogpagina"
+
+#: admin/class-joinchat-admin.php:279
+msgid "Front Page"
+msgstr "Voorpagina"
+
+#: admin/class-joinchat-admin.php:274
+msgid "Global"
+msgstr "Globaal"
+
+#: admin/class-joinchat-admin.php:585
+msgid "Hi *{SITE}*! I need more info about {TITLE} {URL}"
+msgstr "Hallo * {SITE} *! Ik heb meer informatie nodig over {TITLE} {URL}"
+
+#: admin/class-joinchat-admin.php:576
+msgid ""
+"Hello 👋\n"
+"Can we help you?"
+msgstr ""
+"Hallo 👋\n"
+"Kunnen we je helpen?"
+
+#: admin/class-joinchat-admin.php:247 admin/class-joinchat-admin.php:937
+msgid "Message"
+msgstr "Bericht"
+
+#: admin/class-joinchat-admin.php:537
+msgid "Left"
+msgstr "Links"
+
+#: admin/class-joinchat-admin.php:539
+msgid "Right"
+msgstr "Rechts"
+
+#: admin/class-joinchat-admin.php:705
+msgid "You can use formatting styles like in WhatsApp: _<em>italic</em>_ *<strong>bold</strong>* ~<del>strikethrough</del>~."
+msgstr "Je kunt formatting style gebruiken zoals in WhatsApp: _<em>italic</em>_ *<strong>bold</strong>* ~<del>strikethrough</del>~"
+
+#: admin/class-joinchat-admin.php:250 admin/class-joinchat-admin.php:535
+msgid "Position on Screen"
+msgstr "Positie op scherm"
+
+#. Author URI of the plugin
+msgid "https://crea.me"
+msgstr "https://crea.me"
+
+#. Author of the plugin
+msgid "Creame"
+msgstr "Creame"
+
+#: admin/class-joinchat-admin.php:774
+msgid "Settings"
+msgstr "Instellingen"
+
+#: admin/class-joinchat-admin.php:531
+msgid "Only display the button on mobile devices"
+msgstr "Laat dit alleen zien op mobiel"
+
+#: admin/class-joinchat-admin.php:520
+msgid "Contact phone number <strong>(the button will not be shown if it's empty)</strong>"
+msgstr "Contact telefoonummer <strong>Het logo wordt niet getoond als het leeg gelaten wordt. </strong>"
+
+#: admin/class-joinchat-admin.php:402
+msgid "Settings saved"
+msgstr "Instellingen opgeslagen"
+
+#: admin/class-joinchat-admin.php:256 admin/class-joinchat-admin.php:933
+msgid "Call to Action"
+msgstr "Call to action"
+
+#: admin/class-joinchat-admin.php:252 admin/class-joinchat-admin.php:529
+msgid "Mobile Only"
+msgstr "Alleen mobiel"
+
+#: admin/class-joinchat-admin.php:246 admin/class-joinchat-admin.php:929
+msgid "Telephone"
+msgstr "Telefoonnummer"

@@ -159,11 +159,9 @@ class Connect extends AbstractSendinblueConnect implements ConnectionInterface
                 foreach ($response['body']->templates as $template) {
                     $double_optin_templates[$template->id] = $template->name;
                 }
-
-                $double_optin_templates = json_encode($double_optin_templates);
             }
 
-            return json_decode($double_optin_templates, true);
+            return $double_optin_templates;
 
         } catch (\Exception $e) {
             self::save_optin_error_log($e->getMessage(), 'sendinblue');

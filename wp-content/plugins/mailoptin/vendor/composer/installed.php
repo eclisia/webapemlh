@@ -92,8 +92,8 @@
     ),
     'mailoptin/connections' => 
     array (
-      'pretty_version' => '0.2.1604672601',
-      'version' => '0.2.1604672601.0',
+      'pretty_version' => '0.2.1605777779',
+      'version' => '0.2.1605777779.0',
       'aliases' => 
       array (
       ),
@@ -101,12 +101,12 @@
     ),
     'mailoptin/core' => 
     array (
-      'pretty_version' => '0.1.0-alpha.1604740960',
-      'version' => '0.1.0.0-alpha1604740960',
+      'pretty_version' => '0.1.0-alpha.1605777772',
+      'version' => '0.1.0.0-alpha1605777772',
       'aliases' => 
       array (
       ),
-      'reference' => '2be44087cfa48317c0ec95805e2bed74f89dd9ff',
+      'reference' => 'a9e3e1ad815ec18693702389ec9c7711de64e92c',
     ),
     'nesbot/carbon' => 
     array (

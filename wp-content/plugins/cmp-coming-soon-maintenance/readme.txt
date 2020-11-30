@@ -4,8 +4,8 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=KV2JF
 Tags: coming soon, coming soon page, launch page, maintenance mode, under construction
 Requires at least: 3.0
 Requires PHP: 5.6
-Tested up to: 5.5
-Stable tag: 3.8.9
+Tested up to: 5.6
+Stable tag: 3.9.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,6 +57,7 @@ Packed with functions like Whitelist/Blacklist to enable CMP only on specific pa
 	<li><a href="https://wordpress.org/plugins/mailoptin/" target="_blank">MailOptin – WordPress Popup, Optin Form, Email Newsletter Plugin</a> fully integrated.</li>
 	<li><a href="https://wordpress.org/plugins/wps-hide-login/" target="_blank">WPS Hide Login full automatic compatibility.</li>
 	<li><a href="https://wordpress.org/plugins/cookie-notice/" target="_blank">Cookie Notice for GDPR & CCPA full automatic compatibility.</li>
+	<li><a href="https://wordpress.org/plugins/weglot/" target="_blank">Translate WP website – Weglot Translate full automatic compatibility.</li>
 	<li>We are working on more plugins to be compatible with CMP - feel free to send us suggestions what plugin you might need together with CMP.</li>
 </ul>
 
@@ -159,6 +160,20 @@ https://www.youtube.com/watch?v=uxuJfHzwdtE
 <p>Nothing is better than a good feedback! Please go to <a href="https://wordpress.org/support/plugin/cmp-coming-soon-maintenance/reviews/">Plugin reviews</a> and rate it! Alternatively you can click on a Donate button too!:)</p>
 
 == Changelog ==
+<h4>CMP 3.9.2 - 28-Nov-20</h4>
+<ul>
+	<li>Resolved issue with fatal error on website./li>
+</ul>
+<h4>CMP 3.9.1 - 28-Nov-20</h4>
+<ul>
+	<li>Resolved issue with not saving Social Icons settings./li>
+</ul>
+<h4>CMP 3.9.0 - 27-Nov-20</h4>
+<ul>
+	<li>Added compatibility with Weglot plugin./li>
+	<li>Added Goodreads social icon to social settings./li>
+	<li>WordPress 5.6 compatibility./li>
+</ul>
 <h4>CMP 3.8.9 - 02-Nov-20</h4>
 <ul>
 	<li>Resolved issue when translation settings of "You must agree with our Terms and Conditions." and "Oops! Email is empty." messages could not be translated./li>

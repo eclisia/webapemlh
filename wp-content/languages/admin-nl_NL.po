@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-14 14:02:10+0000\n"
+"PO-Revision-Date: 2020-11-22 23:28:10+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -224,7 +224,7 @@ msgstr "Netwerk instellen"
 
 #: wp-admin/menu.php:279
 msgid "Available Tools"
-msgstr "Beschikbare hulpmiddelen"
+msgstr "Beschikbare gereedschappen"
 
 #: wp-admin/menu.php:260 wp-admin/network/menu.php:56
 msgid "All Users"
@@ -11572,7 +11572,7 @@ msgstr "Installeer %s nu"
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:464
 msgctxt "Plugin installer group title"
 msgid "Tools"
-msgstr "Hulpmiddelen"
+msgstr "Gereedschappen"
 
 #: wp-admin/includes/class-wp-plugin-install-list-table.php:463
 msgctxt "Plugin installer group title"
@@ -14027,11 +14027,11 @@ msgstr "Geen links gevonden."
 
 #: wp-admin/includes/privacy-tools.php:908
 msgid "Invalid request ID when processing eraser data."
-msgstr "Ongeldige aanvraag-ID tijdens het wissen van de data."
+msgstr "Ongeldige aanvraag-ID tijdens het wissen van de gegevens."
 
 #: wp-admin/includes/privacy-tools.php:761
 msgid "Invalid request ID when merging exporter data."
-msgstr "Ongeldig request ID tijdens het samenvoegen van export data."
+msgstr "Ongeldig request ID tijdens het samenvoegen van export gegevens."
 
 #: wp-admin/includes/privacy-tools.php:714
 msgid "Unable to send personal data export email."
@@ -14057,7 +14057,7 @@ msgstr ""
 "Hallo,\n"
 "\n"
 "Je verzoek voor een export van persoonlijke data is afgerond. Je kunt\n"
-"je persoonlijke data downloaden door op de link hieronder te klikken. Ivm privacy\n"
+"je persoonlijke gegevens downloaden door op de link hieronder te klikken. Ivm privacy\n"
 "en beveiliging, zullen we het bestand automatisch verwijderen op ###EXPIRATION###,\n"
 "dus download het voor die tijd.\n"
 "\n"

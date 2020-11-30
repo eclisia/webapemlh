@@ -21,7 +21,7 @@ if ( !file_exists( CMP_PLUGIN_DIR . 'img/thumbnails/'. $slug . '_thumbnail.jpg' 
 			<img src="<?php echo plugins_url('/img/paul.jpg', __FILE__);?>" alt="Paul, NiteoThemes">
 		</p>
 
-		<p><?php echo sprintf(__('If you really love our CMP plugin you can also donate few %s by clicking Donate button below.', 'cmp-coming-soon-maintenance'), '<i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i>');?> <i class="far fa-smile-beam"></i></p>
+		<p><?php echo sprintf(__('If you love our CMP plugin please donate few %s by clicking Donate button.', 'cmp-coming-soon-maintenance'), '<i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i>');?> <i class="far fa-smile-beam"></i></p>
 
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
 			<input type="hidden" name="cmd" value="_s-xclick">
@@ -34,7 +34,7 @@ if ( !file_exists( CMP_PLUGIN_DIR . 'img/thumbnails/'. $slug . '_thumbnail.jpg' 
 	<div class="clp-widget widget" style="padding: 0;">
 		<h3 ><?php _e('Check out our other plugins!', 'cmp-coming-soon-maintenance');?></h3>
 		<a href="https://wordpress.org/plugins/clp-custom-login-page/" target="_blank"><img src="<?php echo plugins_url('/img/clp-banner.jpg', __FILE__);?>" alt="CLP - Custom Login Page" style="max-width:100%;vertical-align:top"></a>
-		<p><a href="https://wordpress.org/plugins/clp-custom-login-page/" target="_blank" style="text-decoration:none">CLP - Custom Login Page</a> - <?php _e('Awesome plugin to customize WordPress Login Page!', 'cmp-coming-soon-maintenance');?></p>
+		<p style="padding: 0 2em"><a href="https://wordpress.org/plugins/clp-custom-login-page/" target="_blank" style="text-decoration:none">CLP - Custom Login Page</a> - <?php _e('Awesome plugin to customize WordPress Login Page!', 'cmp-coming-soon-maintenance');?></p>
 	</div>
 
 	<div class="cmp-rate-us widget">
