@@ -28,11 +28,12 @@ CREATE TABLE `mod58_woocommerce_tax_rates` (
   KEY `tax_rate_state` (`tax_rate_state`(2)),
   KEY `tax_rate_class` (`tax_rate_class`(10)),
   KEY `tax_rate_priority` (`tax_rate_priority`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_woocommerce_tax_rates` WRITE;
 /*!40000 ALTER TABLE `mod58_woocommerce_tax_rates` DISABLE KEYS */;
+INSERT INTO `mod58_woocommerce_tax_rates` VALUES (1,'FR','FR','20.0000','TVA 20%',1,0,1,0,''),(2,'FR','','20.0000',' Tax',1,0,1,0,'');
 /*!40000 ALTER TABLE `mod58_woocommerce_tax_rates` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

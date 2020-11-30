@@ -21,11 +21,12 @@ CREATE TABLE `mod58_woocommerce_attribute_taxonomies` (
   `attribute_public` int(1) NOT NULL DEFAULT '1',
   PRIMARY KEY (`attribute_id`),
   KEY `attribute_name` (`attribute_name`(20))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_woocommerce_attribute_taxonomies` WRITE;
 /*!40000 ALTER TABLE `mod58_woocommerce_attribute_taxonomies` DISABLE KEYS */;
+INSERT INTO `mod58_woocommerce_attribute_taxonomies` VALUES (1,'couleurgrelot','Couleur','select','name',0),(2,'modele','Modèle','select','menu_order',0);
 /*!40000 ALTER TABLE `mod58_woocommerce_attribute_taxonomies` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

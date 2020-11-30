@@ -71,16 +71,26 @@ class Subscription extends AbstractSendinblueConnect
 
             if (apply_filters('mo_connections_sendinblue_list_sync', true)) {
 
-                $req               = $this->sendinblue_instance()->make_request(sprintf('contacts/%s', urlencode($this->email)));
-                $is_exist_list_ids = $req['body']->listIds;
+                $req = $this->sendinblue_instance()->make_request(sprintf('contacts/%s', urlencode($this->email)));
+
+                $is_exist_list_ids = isset($req['body']->listIds) ? $req['body']->listIds : false;
 
                 if ( ! empty($is_exist_list_ids)) {
-                    $lead_data['listIds'] = array_map('absint', array_merge($lead_data['includeListIds'], $is_exist_list_ids));
-                    // remove duplicate list Ids
-                    $lead_data['listIds'] = array_unique($lead_data['includeListIds']);
-                    // re-arrange the array index/key so json_encode later on will make it an array instead of object
-                    // see https://stackoverflow.com/a/18977473/2648410
-                    $lead_data['listIds'] = array_values($lead_data['includeListIds']);
+
+                    if (false === $this->is_double_optin()) {
+                        $lead_data['listIds'] = array_map('absint', array_merge($lead_data['listIds'], $is_exist_list_ids));
+                        // remove duplicate list Ids
+                        $lead_data['listIds'] = array_unique($lead_data['listIds']);
+                        // re-arrange the array index/key so json_encode later on will make it an array instead of object
+                        // see https://stackoverflow.com/a/18977473/2648410
+                        $lead_data['listIds'] = array_values($lead_data['listIds']);
+                    }
+
+                    if (true === $this->is_double_optin()) {
+                        $lead_data['includeListIds'] = array_map('absint', array_merge($lead_data['includeListIds'], $is_exist_list_ids));
+                        $lead_data['includeListIds'] = array_unique($lead_data['includeListIds']);
+                        $lead_data['includeListIds'] = array_values($lead_data['includeListIds']);
+                    }
                 }
             }
 
@@ -123,6 +133,10 @@ class Subscription extends AbstractSendinblueConnect
                 }
             }
 
+            if (true === $this->is_double_optin()) {
+                unset($lead_data['listIds']);
+            }
+
             $lead_data = apply_filters('mo_connections_sendinblue_subscription_parameters', $lead_data, $this);
 
             $response = $this->sendinblue_instance()->make_request($default_contact_route, $lead_data, 'post');
@@ -132,6 +146,7 @@ class Subscription extends AbstractSendinblueConnect
             }
 
             if (isset($response['body']->code, $response['body']->message)) {
+
                 if ('duplicate_parameter' == $response['body']->code) {
                     return parent::ajax_success();
                 }

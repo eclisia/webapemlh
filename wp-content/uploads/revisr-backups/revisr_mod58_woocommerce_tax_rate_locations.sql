@@ -20,11 +20,12 @@ CREATE TABLE `mod58_woocommerce_tax_rate_locations` (
   PRIMARY KEY (`location_id`),
   KEY `tax_rate_id` (`tax_rate_id`),
   KEY `location_type_code` (`location_type`(10),`location_code`(20))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_woocommerce_tax_rate_locations` WRITE;
 /*!40000 ALTER TABLE `mod58_woocommerce_tax_rate_locations` DISABLE KEYS */;
+INSERT INTO `mod58_woocommerce_tax_rate_locations` VALUES (1,'06250',2,'postcode'),(2,'MOUGINS',2,'city');
 /*!40000 ALTER TABLE `mod58_woocommerce_tax_rate_locations` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

@@ -1,0 +1,109 @@
+# Translation of Plugins - WP Force SSL &amp; HTTPS Redirect - Stable (latest release) in Spanish (Spain)
+# This file is distributed under the same license as the Plugins - WP Force SSL &amp; HTTPS Redirect - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-06-14 19:00:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: es\n"
+"Project-Id-Version: Plugins - WP Force SSL &amp; HTTPS Redirect - Stable (latest release)\n"
+
+#: wp-force-ssl.php:638
+msgid "Sorry, WP Force SSL is currently not compatible with WPMU."
+msgstr "Lo siento, WP Force SSL actualmente no es compatible con WPMU."
+
+#: wp-force-ssl.php:595
+msgid "Rate the plugin ★★★★★"
+msgstr "Valora el plugin ★★★★★"
+
+#: wp-force-ssl.php:595
+msgid "Rate the plugin"
+msgstr "Valora el plugin"
+
+#: wp-force-ssl.php:594
+msgid "Visit our site to get more great plugins"
+msgstr "Visita nuestro sitio para obtener más plugins geniales"
+
+#: wp-force-ssl.php:518
+msgid "Valid SSL certificate was NOT found."
+msgstr "NO se ha encontrado un certificado SSL válido."
+
+#: wp-force-ssl.php:516
+msgid "Valid SSL certificate found!"
+msgstr "¡Se ha encontrado un certificado SSL válido!"
+
+#: wp-force-ssl.php:512
+msgid "Unable to test SSL certificate. Assume it's NOT valid."
+msgstr "No ha sido posible probar el certificado SSL. Se asume que NO es válido."
+
+#: wp-force-ssl.php:505
+msgid "WP Force SSL plugin <b>requires PHP version 5.6.20</b> or higher to function properly. You are using PHP version %s. Please <a href=\"%s\" target=\"_blank\">update it</a>."
+msgstr "El plugin WP Force SSL <b>necesita PHP versión 5.6.20</b> o superior para funcionar correctamente. Estás utilizando la versión %s de PHP. Por favor, <a href=\"%s\" target=\"_blank\">actualízala</a>."
+
+#: wp-force-ssl.php:373
+msgid "WP Force SSL plugin <b>requires WordPress version 4.6</b> or higher to function properly. You are using WordPress version %s. Please <a href=\"%s\">update it</a>."
+msgstr "El plugin WP Force SSL <b>necesita la versión 4.6 de WordPress </b> o superior para funcionar correctamente. Estás usando la versión %s de WordPress. Por favor, <a href=\"%s\">actualízala</a>."
+
+#: wp-force-ssl.php:305
+msgid "Enable HTTP Strict Transport Security (HSTS)"
+msgstr "Activar HTTP con Seguridad de Transporte Estricta (HSTS)"
+
+#: wp-force-ssl.php:293
+msgid "Force SSL"
+msgstr "Forzar SSL"
+
+#: wp-force-ssl.php:287
+msgid "Settings"
+msgstr "Ajustes"
+
+#: wp-force-ssl.php:186
+msgid "An error has occurred."
+msgstr "Ha ocurrido un error."
+
+#: wp-force-ssl.php:185
+msgid "An undocumented error has occurred. Please refresh the page and try again."
+msgstr "Ha ocurrido un error no documentado. Por favor, recarga la página e inténtalo de nuevo."
+
+#: wp-force-ssl.php:184
+msgid "Settings saved."
+msgstr "Ajustes guardados"
+
+#: wp-force-ssl.php:182
+msgid "Test Failed"
+msgstr "La prueba ha fallado"
+
+#: wp-force-ssl.php:181
+msgid "Test Completed Successfully"
+msgstr "La prueba se ha completado correctamente"
+
+#: wp-force-ssl.php:180
+msgid "Saving. Please wait ..."
+msgstr "Guardando. Por favor, espera..."
+
+#: wp-force-ssl.php:179
+msgid "Testing. Please wait ..."
+msgstr "Probando. Por favor, espera..."
+
+#. Author URI of the plugin
+msgid "https://www.webfactoryltd.com/"
+msgstr "https://www.webfactoryltd.com/"
+
+#. Author of the plugin
+msgid "WebFactory Ltd"
+msgstr "WebFactory Ltd"
+
+#. Description of the plugin
+msgid "Redirect all traffic from HTTP to HTTPS for your entire site."
+msgstr "Redirecciona todo el tráfico de HTTP a HTTPS en todo el sitio."
+
+#. Plugin URI of the plugin
+msgid "https://wpforcessl.com/"
+msgstr "https://wpforcessl.com/"
+
+#. Plugin Name of the plugin
+#: wp-force-ssl.php:218 wp-force-ssl.php:219 wp-force-ssl.php:260
+msgid "WP Force SSL"
+msgstr "WP Force SSL"

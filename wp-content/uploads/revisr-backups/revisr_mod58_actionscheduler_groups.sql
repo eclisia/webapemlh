@@ -17,12 +17,12 @@ CREATE TABLE `mod58_actionscheduler_groups` (
   `slug` varchar(255) COLLATE utf8mb4_unicode_520_ci NOT NULL,
   PRIMARY KEY (`group_id`),
   KEY `slug` (`slug`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_actionscheduler_groups` WRITE;
 /*!40000 ALTER TABLE `mod58_actionscheduler_groups` DISABLE KEYS */;
-INSERT INTO `mod58_actionscheduler_groups` VALUES (1,'action-scheduler-migration');
+INSERT INTO `mod58_actionscheduler_groups` VALUES (1,'action-scheduler-migration'),(2,'wpforms'),(3,'wc-admin-data');
 /*!40000 ALTER TABLE `mod58_actionscheduler_groups` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

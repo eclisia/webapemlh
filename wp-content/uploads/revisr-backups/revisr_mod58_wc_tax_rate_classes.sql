@@ -18,12 +18,12 @@ CREATE TABLE `mod58_wc_tax_rate_classes` (
   `slug` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`tax_rate_class_id`),
   UNIQUE KEY `slug` (`slug`(191))
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_wc_tax_rate_classes` WRITE;
 /*!40000 ALTER TABLE `mod58_wc_tax_rate_classes` DISABLE KEYS */;
-INSERT INTO `mod58_wc_tax_rate_classes` VALUES (1,'Reduced rate','reduced-rate'),(2,'Zero rate','zero-rate');
+INSERT INTO `mod58_wc_tax_rate_classes` VALUES (1,'Reduced rate','reduced-rate'),(2,'Zero rate','zero-rate'),(3,'Taux réduit','taux-reduit'),(4,'Taux zéro','taux-zero');
 /*!40000 ALTER TABLE `mod58_wc_tax_rate_classes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

@@ -17,11 +17,12 @@ CREATE TABLE `mod58_woocommerce_shipping_zones` (
   `zone_name` varchar(200) COLLATE utf8mb4_unicode_520_ci NOT NULL,
   `zone_order` bigint(20) unsigned NOT NULL,
   PRIMARY KEY (`zone_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_woocommerce_shipping_zones` WRITE;
 /*!40000 ALTER TABLE `mod58_woocommerce_shipping_zones` DISABLE KEYS */;
+INSERT INTO `mod58_woocommerce_shipping_zones` VALUES (1,'France',0);
 /*!40000 ALTER TABLE `mod58_woocommerce_shipping_zones` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

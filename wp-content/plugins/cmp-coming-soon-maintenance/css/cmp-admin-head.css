@@ -1,10 +1,10 @@
 #wpadminbar .cmp-logo {
     position: absolute;
     display: inline-block;
-    height: 20px;
-    padding-right: 5px;
-    top: 6px;
-    left: 7px;
+    height: 18px;
+    padding-right: 0px;
+    top: 7px;
+    left: 13px;
 }
 
 #wpadminbar #wp-admin-bar-cmp-admin-notice a {
@@ -100,7 +100,7 @@
     #wpadminbar .cmp-logo {
         height: 28px;
         top: 9px;
-        left: 10px;
+        left: 18px;
     }
 }
 

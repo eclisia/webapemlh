@@ -27,12 +27,12 @@ CREATE TABLE `mod58_users` (
   KEY `user_login_key` (`user_login`),
   KEY `user_nicename` (`user_nicename`),
   KEY `user_email` (`user_email`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_users` WRITE;
 /*!40000 ALTER TABLE `mod58_users` DISABLE KEYS */;
-INSERT INTO `mod58_users` VALUES (1,'admin4388','$P$BKRrID2ryZ8DJ75pzNsPTTgQLiqpn0.','admin4388','apemlh@hotmail.fr','http://apemlh.fr','2020-11-11 22:14:18','',0,'admin4388');
+INSERT INTO `mod58_users` VALUES (1,'admin4388','$P$BKRrID2ryZ8DJ75pzNsPTTgQLiqpn0.','admin4388','apemlh@hotmail.fr','http://apemlh.fr','2020-11-11 22:14:18','',0,'admin4388'),(2,'seassauaurelie','$P$BT3Nb6egiVCvFziAinKyKtC5cttns3.','seassauaurelie','aurelie.seassau@gmail.com','','2020-11-19 20:26:24','',0,'Webmaster'),(3,'tainturierflorent','$P$BZzZZhAv4hi9G2EqDD7exJ/vnkJO5L0','tainturierflorent','florent.tainturier@gmail.com','','2020-11-19 20:31:16','',0,'Florent'),(4,'Marjo06','$P$BCNU0D7YDJbKe84MTWceGF5JNldZfH0','marjo06','marjorie.malterre@free.fr','','2020-11-29 11:29:50','1606649390:$P$BifuC6DGZIUEpUY9k3..MZqWMncsoo1',0,'Marjorie SALVAGNY'),(5,'jeremysabrina','$P$BbzYNCMvc2jpPoiSh38NICbsq.ozb.0','jeremysabrina','sabrina.jeremy@hotmail.fr','','2020-11-29 20:08:30','',0,'Sabsab'),(6,'pottierchristel','$P$BLqvFeGNPzWGZYai.2Lqxg/FMqKU/V0','pottierchristel','christel.pottier@yahoo.fr','','2020-11-29 20:10:13','',0,'Christel Pottier');
 /*!40000 ALTER TABLE `mod58_users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
