@@ -5,7 +5,7 @@ Tags: snow effect, christmas, christmas snow, falling snow, holiday, holiday sno
 Requires at least: 3.6
 Tested up to: 5.5.3
 Requires PHP: 5.6
-Stable tag: 1.1.12
+Stable tag: 1.1.15
 License:GPL2
  
 Add nice looking animation effect of falling snow to your Wordpress site and enjoy winter and Christmas.
@@ -59,6 +59,15 @@ This snow falling WP plugin uses jSnow JQuery plugin (2kb only) and no images.
 3. Settings page
 
 == Changelog ==
+
+= 1.1.15 =
+* fixed jQuery 3.1 incompatibility in admin file
+
+= 1.1.14 =
+* jQuery 3.1 compatibility improvements
+
+= 1.1.13 =
+* Display on mobile is enabled by default 
 
 = 1.1.12 =
 * fixed jQuery 3.1 incompatibility
@@ -115,6 +124,15 @@ This snow falling WP plugin uses jSnow JQuery plugin (2kb only) and no images.
 * initial release 
 
 == Upgrade Notice ==
+
+= 1.1.15 =
+* fixed jQuery 3.1 incompatibility in admin file
+
+= 1.1.14 =
+* jQuery 3.1 compatibility improvements
+
+= 1.1.13 =
+* Display on mobile is enabled by default 
 
 = 1.1.12 =
 * fixed jQuery 3.1 incompatibility

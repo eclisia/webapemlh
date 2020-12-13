@@ -112,7 +112,8 @@ function snoweffect_settings($wpsf_settings)
                     'home',
                     'pages',
                     'posts',
-                    'archives'
+                    'archives',
+                    'mobile',
                 ),
                 'choices' => array(
                     'home' => 'Home Page',

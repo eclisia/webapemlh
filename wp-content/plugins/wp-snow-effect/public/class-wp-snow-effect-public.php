@@ -50,7 +50,7 @@ class Wp_Snow_Effect_Public
      */
     public function __construct($plugin_name, $version)
     {
-        $default_settings = 'a:15:{s:19:"settings_flakes_num";s:2:"30";s:26:"settings_falling_speed_min";s:1:"1";s:26:"settings_falling_speed_max";s:1:"3";s:23:"settings_flake_min_size";s:2:"10";s:23:"settings_flake_max_size";s:2:"20";s:22:"settings_vertical_size";s:3:"800";s:18:"settings_fade_away";s:1:"1";s:21:"settings_show_on_home";s:4:"home";s:22:"settings_show_on_pages";s:5:"pages";s:22:"settings_show_on_posts";s:5:"posts";s:25:"settings_show_on_archives";s:8:"archives";s:23:"settings_show_on_mobile";s:1:"0";s:19:"settings_flake_type";s:6:"#10053";s:21:"settings_flake_zindex";s:6:"100000";s:20:"settings_flake_color";s:7:"#efefef";}';
+        $default_settings = 'a:16:{s:19:"settings_flakes_num";s:2:"30";s:26:"settings_falling_speed_min";s:1:"1";s:26:"settings_falling_speed_max";s:1:"3";s:23:"settings_flake_min_size";s:2:"10";s:23:"settings_flake_max_size";s:2:"20";s:22:"settings_vertical_size";s:3:"800";s:18:"settings_fade_away";s:1:"1";s:21:"settings_show_on_home";s:4:"home";s:22:"settings_show_on_pages";s:5:"pages";s:22:"settings_show_on_posts";s:5:"posts";s:25:"settings_show_on_archives";s:8:"archives";s:23:"settings_show_on_mobile";s:6:"mobile";s:21:"settings_on_spec_page";s:0:"";s:19:"settings_flake_type";s:6:"#10053";s:21:"settings_flake_zindex";s:6:"100000";s:20:"settings_flake_color";s:7:"#efefef";}';
         $this->plugin_name = $plugin_name;
         $this->version = $version;
         $this->settings = wpsf_get_settings('snoweffect');
