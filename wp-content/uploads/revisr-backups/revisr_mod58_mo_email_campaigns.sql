@@ -19,7 +19,7 @@ CREATE TABLE `mod58_mo_email_campaigns` (
   `template_class` varchar(50) COLLATE utf8mb4_unicode_520_ci NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_mo_email_campaigns` WRITE;

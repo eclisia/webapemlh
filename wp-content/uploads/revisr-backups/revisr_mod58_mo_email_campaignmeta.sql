@@ -18,7 +18,7 @@ CREATE TABLE `mod58_mo_email_campaignmeta` (
   `meta_key` varchar(255) COLLATE utf8mb4_unicode_520_ci DEFAULT NULL,
   `meta_value` longtext COLLATE utf8mb4_unicode_520_ci,
   PRIMARY KEY (`meta_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `mod58_mo_email_campaignmeta` WRITE;
