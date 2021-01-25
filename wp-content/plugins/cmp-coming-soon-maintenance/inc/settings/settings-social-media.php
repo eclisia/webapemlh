@@ -57,6 +57,10 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
                         case 'youtube':
                             $title = __('YouTube', 'cmp-coming-soon-maintenance');
                             break;
+                        case 'rss':
+                            $title = __('RSS', 'cmp-coming-soon-maintenance');
+                            $icon = 'fas fa-rss';
+                            break;
                         default:
                             break;
                     } ?>
@@ -108,6 +112,10 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
                             $title 	= ucfirst( $social['name'] );
                             $url 	= 'https://open.spotify.com/user/username';
                             break;
+                        case 'rss':
+                            $title 	= sprintf(__('RSS Feed URL(if using your blog RSS feed, you must include this URL in %s to make it available.)', 'cmp-coming-soon-maintenance'), '<a href="' . admin_url() . 'admin.php?page=cmp-advanced">CMP Blacklist</a>');
+                            $url 	= get_bloginfo('rss2_url');
+                            break;
                         default:
                             $title 	= ucfirst( $social['name'] );
                             $url 	= 'https://'.$social['name'].'.com/profile';
@@ -122,7 +130,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
                     <li class="<?php echo esc_attr( $active . $social['name'] );?>">
                         <p><i class="fas fa-sort"></i></i>
-                            <label for="niteoCS_<?php echo esc_attr( $social['name'] );?>" class="<?php echo esc_attr( $social['name'] );?>"><?php echo esc_html( $title );?></label>
+                            <label for="niteoCS_<?php echo esc_attr( $social['name'] );?>" class="<?php echo esc_attr( $social['name'] );?>"><?php echo wp_kses( $title, array('a' => array('href' => array())) );?></label>
                             <input type="text" id="niteoCS_<?php echo esc_attr( $social['name'] );?>" value="<?php echo esc_attr( $url );?>" class="regular-text code <?php echo esc_attr( $social['name'] );?>" data-name="<?php echo esc_attr( $social['name'] );?>"<?php echo $disabled;?>/>
                             <input type="checkbox" name="niteoCS_<?php echo esc_attr( $social['name'] );?>_checkbox" id="niteoCS_<?php echo esc_attr( $social['name'] );?>_checkbox" class="<?php echo esc_attr( $social['name'] );?>" data-name="<?php echo esc_attr( $social['name'] );?>"<?php checked( '1', $social['active'] ); ?>/>
                         </p>

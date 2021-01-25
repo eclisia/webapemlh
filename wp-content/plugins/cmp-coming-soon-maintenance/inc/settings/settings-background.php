@@ -158,8 +158,8 @@ $mobile_banner_custom_id	= get_option('niteoCS_mobile_banner_id', '');
 
 				        		$i = 0;
 				        		foreach ( $ids as $id ) {
-				        			if ( $i == 0 ) { 
-				        				$img = wp_get_attachment_image_src( $id, 'large' ); ?>
+									$img = wp_get_attachment_image_src( $id, 'large' );
+				        			if ( $i == 0 ) {  ?>
 				        				<div class="big-thumb">
 				        					<div class="thumbnail-overlay"></div>
 				        					<?php 
@@ -169,7 +169,6 @@ $mobile_banner_custom_id	= get_option('niteoCS_mobile_banner_id', '');
 				        				</div>
 				        				<?php
 				        			} else {
-				        				$img = wp_get_attachment_image_src( $id, 'medium' );
 					        			if ( isset ($img[0] ) ) {
 					        				echo '<img src="' . $img[0] . '" alt="" class="no-blur">';
 					        			}

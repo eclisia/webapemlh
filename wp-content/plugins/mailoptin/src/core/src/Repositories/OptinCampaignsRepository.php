@@ -74,7 +74,7 @@ class OptinCampaignsRepository extends AbstractRepository
         // in single request return previous value.
         $cache_key = 'is_split_test_' . $optin_campaign_id;
 
-        $callback        = function () use ($optin_campaign_id) {
+        $callback = function () use ($optin_campaign_id) {
             return OptinCampaignMeta::get_campaign_meta(
                 $optin_campaign_id,
                 'split_test_parent',
@@ -180,7 +180,7 @@ class OptinCampaignsRepository extends AbstractRepository
             $optin_campaign_id = $variant_ids[0];
         }
 
-        if ( ! OptinCampaignsRepository::is_activated($optin_campaign_id)) {
+        if ( ! self::is_activated($optin_campaign_id)) {
             $optin_campaign_id = $parent_optin_campaign_id;
         }
 
@@ -488,11 +488,7 @@ class OptinCampaignsRepository extends AbstractRepository
      */
     public static function get_optin_saved_customizer_data()
     {
-        $callback = function () {
-            return get_option(MO_OPTIN_CAMPAIGN_WP_OPTION_NAME, []);
-        };
-
-        return cache_transform('get_optin_saved_customizer_data', $callback);
+        return get_option(MO_OPTIN_CAMPAIGN_WP_OPTION_NAME, []);
     }
 
     /**
@@ -715,7 +711,7 @@ class OptinCampaignsRepository extends AbstractRepository
         // update the "activate_optin" setting to true
         $all_settings = self::get_settings();
 
-        if ($all_settings[$optin_campaign_id]['activate_optin'] === true) return true;
+        if (isset($all_settings[$optin_campaign_id]['activate_optin']) && ($all_settings[$optin_campaign_id]['activate_optin'] === true)) return true;
 
         $all_settings[$optin_campaign_id]['activate_optin'] = true;
 

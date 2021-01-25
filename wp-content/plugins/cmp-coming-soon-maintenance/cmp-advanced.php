@@ -210,6 +210,18 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	} else {
 		update_option('niteoCS_mode_change_notification', '0');
 	}
+
+	if ( isset($_POST['niteoCS-rss-status']) ) {
+		update_option('niteoCS_rss_status', $this->sanitize_checkbox($_POST['niteoCS-rss-status']) );
+	} else {
+		update_option('niteoCS_rss_status', '0');
+	}
+
+	if ( isset($_POST['niteoCS-restapi-status']) ) {
+		update_option('niteoCS_rest_api_status', $this->sanitize_checkbox($_POST['niteoCS-restapi-status']) );
+	} else {
+		update_option('niteoCS_rest_api_status', '0');
+	}
 }
 
 if ( isset( $_POST['niteoCS_custom_login_url'] ) ) {
@@ -248,6 +260,8 @@ $cmp_mode_change_notif 			= get_option('niteoCS_mode_change_notification', '0');
 $countdown_email 				= get_option('niteoCS_countdown_email_address', get_option( 'admin_email' ));
 $mode_change_email 				= get_option('niteoCS_mode_change_email_address', get_option( 'admin_email' ));
 $cmp_cookie_notice_comp			= get_option('cmp_cookie_notice_comp', '1');
+$cmp_rss 						= get_option('niteoCS_rss_status', '1');
+$cmp_rest_api 					= get_option('niteoCS_rest_api_status', '1');
 ?>
 
 <div class="wrap cmp-coming-soon-maintenance cmp-advanced">
@@ -497,6 +511,37 @@ $cmp_cookie_notice_comp			= get_option('cmp_cookie_notice_comp', '1');
 						</tr>
 
 						<?php echo $this->render_settings->submit(); ?>
+
+						</tbody>
+					</table>
+
+				</div>
+				<div class="table-wrapper general cmp-bypass">
+					<h3 class="no-icon"><?php _e('RSS & REST API', 'cmp-coming-soon-maintenance');?></h3>
+					<table class="general">
+						<tbody>
+							<tr>
+								<th><?php _e('RSS', 'cmp-coming-soon-maintenance');?></th>
+								<td>
+									<fieldset>
+										<label for="cmp-rss-status">
+											<input type="checkbox" name="niteoCS-rss-status" id="cmp-rss-status" value="1" <?php checked('1', $cmp_rss);?>><?php _e('Allow RSS', 'cmp-coming-soon-maintenance');?>
+										</label>
+									</fieldset>
+								</td>
+							</tr>
+							<tr>
+								<th><?php _e('REST API', 'cmp-coming-soon-maintenance');?></th>
+								<td>
+									<fieldset>
+										<label for="cmp-restapi-status">
+											<input type="checkbox" name="niteoCS-restapi-status" id="cmp-restapi-status" value="1" <?php checked('1', $cmp_rest_api);?>><?php _e('Allow REST API', 'cmp-coming-soon-maintenance');?>
+										</label>
+									</fieldset>
+								</td>
+							</tr>
+
+							<?php echo $this->render_settings->submit(); ?>
 
 						</tbody>
 					</table>

@@ -67,6 +67,11 @@ if ( !class_exists( 'PT_CV_Functions' ) ) {
 				$language = $q_config[ 'language' ];
 			}
 
+			// Polylang
+			if ( empty( $language ) && function_exists( 'pll_current_language' ) ) {
+				$language = pll_current_language();
+			}
+
 			return $language;
 		}
 
@@ -94,6 +99,8 @@ if ( !class_exists( 'PT_CV_Functions' ) ) {
 			if ( $q_config ) {
 				$q_config[ 'language' ] = $language;
 			}
+
+			// If 'lang' variable in POST/GET is set, Polylang automatically load it
 		}
 
 		/**

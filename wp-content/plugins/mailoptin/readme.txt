@@ -1,24 +1,24 @@
-﻿=== Popup, Forms, Optin & Email Newsletters for Mailchimp, AWeber, HubSpot - MailOptin ===
-Contributors: properfraction, Collizo4sky
+﻿=== Popup, Optin Form & Email Newsletter Form Builder for Mailchimp, HubSpot etc. - MailOptin ===
+Contributors: properfraction, collizo4sky
 Donate link: https://mailoptin.io/pricing/
-Tags: popup, form, newsletter, zoho, mailchimp, aweber, constant contact, campaignmonitor, campaign monitor, convertkit, forms, infusionsoft, contact form, wpforms, wpform, cf7, contact form 7, ninja forms, formidable forms, gravity forms, activecampaign, drip, sendy, hubspot, mailerlite, sendinblue, klaviyo, mailjet, ontraport, constantcontact, jilt, vertical response, zoho, sendgrid, zoho crm, zoho campaigns, moosend, godaddy, getgist, sendlane, myemma, fluentcrm, mailster, getresponse, sendfox, wemail, autoresponder, wpml, woocommerce, lightbox, modal, emailoctopus, pop up, email, exit intent, user registration, ninja form
+Tags: popup, forms, popup maker, newsletter, mailchimp, contact form, aweber, popups, constant contact, campaignmonitor, campaign monitor, convertkit, forms, infusionsoft, contact form, wpforms, wpform, cf7, contact form 7, ninja forms, formidable forms, gravity forms, activecampaign, drip, sendy, hubspot, mailerlite, sendinblue, klaviyo, mailjet, ontraport, constantcontact, jilt, vertical response, zoho, sendgrid, zoho crm, zoho campaigns, moosend, godaddy, getgist, sendlane, myemma, fluentcrm, mailster, getresponse, sendfox, wemail, autoresponder, wpml, woocommerce, lightbox, modal, emailoctopus, pop up, email, exit intent, user registration, ninja form
 Requires at least: 4.6
 Requires PHP: 5.6
-Tested up to: 5.5
-Stable tag: 1.2.33.1
+Tested up to: 5.6
+Stable tag: 1.2.34.3
 License: GPL-2.0+
 
-Convert visitors into email subscribers, register new users & keep them engaged with newsletters. Mailchimp, AWeber, Infusionsoft, ActiveCampaign, ConvertKit, Campaign Monitor, Constant Contact, CRM etc.
+Create popups, optin forms to get email newsletter subscribers via an easy form builder and popup maker. Mailchimp, ConvertKit, Infusionsoft, ActiveCampaign, AWeber, Campaign Monitor, Constant Contact, CRM etc.
 
 == Description ==
 
-= Popups, Forms, User Registration, Email Automation & Newsletter =
+= Email Newsletter, Popups, Subscribe Form and User Registration Form Builder =
 
-MailOptin is a form builder for building email signup forms, user registration forms as well as sending email newsletters.
+MailOptin is a form builder for building popups, email subscription form, user registration form and sending email newsletters.
 
-Displays signup forms, targeted messages and call-to-actions across your website with popups (lightbox or modal), in-post subscription forms, notification bars, slide in (or scroll box), sidebar widget.
+Displays signup forms, targeted messages and call-to-actions across your website with popups (lightbox or modal), in-post subscription form, notification bars, slide in (or scroll box), sidebar widget.
 
-Automatically inform your subscribers and WordPress users every time you publish new content on your blog. MailOptin sends blog posts as email newsletters. [Learn more](https://mailoptin.io/email-automation/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion)
+Automatically notify your subscribers and WordPress users every time you publish new content on your blog. MailOptin sends blog posts as email newsletters. [Learn more](https://mailoptin.io/email-automation/?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion)
 
 [youtube https://www.youtube.com/watch?v=kBKDaPEHoeE]
 
@@ -41,7 +41,7 @@ Our forms are GDPR compliant.
 * **Calls to Action** – Display targeted messages to your website visitors with a call-to-action button included urging them to perform an action.
 * **Spam Protection** – MailOptin utilizes smart Honeypot method to stop spam contact form submissions. Additionally, there is reCAPTCHA protection available in the [premium version](https://mailoptin.io/pricing?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion).
 * **After Conversion Actions** – such as immediately close opt-in form after converstion, close form and reload page or redirect to a custom URL. Additionally, [premium version](https://mailoptin.io/pricing?utm_source=wprepo&utm_medium=link&utm_campaign=liteversion) allows you to trigger a JavaScript code as well as pass lead data to redirect URL.
-* **Page-level Targeting** – lets you to display optin or email signup forms in specific posts and pages of your WordPress site.
+* **Page-level Targeting** – lets you to display optin or email signup form in specific posts and pages of your WordPress site.
 
 = Email Newsletters =
 
@@ -167,20 +167,26 @@ Yes, MailOptin has full translation and localization support via the mailoptin t
 
 == Changelog ==
 
-= 1.2.33.1 =
-* Fixed bugs with double optin in Sendinblue integration.
-* Fixed bug where users get an error when the double optin option is not enabled.
-* Added filter "mo_optin_form_set_font_families_to_inherit" to make all optin font families a theme font.
+= 1.2.34.3 =
+* Change oauth integrations nonce key to prevent error in connecting integrations.
+* Fixed bug where images wasn't included in automation emails.
 
-= 1.2.33.0 =
-* Added middle of content optin placement.
-* Added double-optin support to Sendinblue.
+= 1.2.34.2 =
+* Added featured image size filter to posts.
+* Change default optin success message to exclude "Please check your email for further instructions."
+* Use enqueue_block_editor_assets instead for block registration instead of init.
+* Implement filter to remove new and returning visitors cookies.
 
-= 1.2.32.0 =
-* Added Constant Contact API v3 which include support for custom fields.
-* Fixed issue where custom html forms caused customizer saving to fail.
-* Fixed issue where Sendinblue view in browser and unsubscribe links weren't working.
-* Added email notification when there is an email campaign error.
-* Flag GA events as nonInteractive.
+= 1.2.34.1 =
+* Fix layout breakage caused by unclosed p tag.
+* Fixed issue where elementorjs would result to undefined function error.
+
+= 1.2.34.0 =
+* Added more first/last name sendinblue contact attributes.
+* Added Selected Users to WordPress Registered Users Integration.
+* Switched to using wp_after_insert_post hook for new post notification automation.
+* Lazy-load chosenjs customizer options.
+* PHP 8 compatibility improvements.
+* Resolve CSS conflicts with other plugins eg shortpixel.
 
 See the [changelog file](https://plugins.svn.wordpress.org/mailoptin/trunk/changelog.txt) for full change log information.

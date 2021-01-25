@@ -3,8 +3,8 @@ Contributors: pt-guy
 Donate link: https://www.contentviewspro.com/?utm_source=wordpress&utm_medium=plugin&utm_campaign=donate
 Tags: post grid, grid plugin, grid, latest post, display post, post list, post, page, category, responsive, list, thumbnail
 Requires at least: 3.3
-Tested up to: 5.5.1
-Stable tag: 2.3.3.1
+Tested up to: 5.6
+Stable tag: 2.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -158,6 +158,11 @@ If you are using "Your latest posts" as home page, you should paste this code `<
 
 
 == Changelog ==
+
+= 2.3.4 - 2020/12/07 =
+* Compatible with the upcoming WordPress 5.6
+* Update: remove non-authors in the backend author filter
+* Other fixes
 
 = 2.3.3.1 - 2020/10/14 =
 * Prevent text of another plugin from showing in generated excerpt

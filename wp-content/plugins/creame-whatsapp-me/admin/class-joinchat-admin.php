@@ -71,7 +71,7 @@ class JoinChatAdmin {
 		$this->version     = $version;
 
 		// Updated in get_settings() at 'admin_init' hook
-		$this->enhanced_phone = '17.0.3'; // intl-tel-input version
+		$this->enhanced_phone = '17.0.8'; // intl-tel-input version
 		$this->tabs           = array();
 		$this->settings       = array();
 
@@ -167,6 +167,7 @@ class JoinChatAdmin {
 	 * Register the JavaScript for the admin area.
 	 *
 	 * @since    3.0.0
+	 * @since    4.1.4     Added intlTelInput localize.
 	 * @param    string $hook       The id of the page.
 	 * @return   void
 	 */
@@ -175,9 +176,14 @@ class JoinChatAdmin {
 		$script = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? 'joinchat.js' : 'joinchat.min.js';
 
 		if ( $this->enhanced_phone ) {
+			$localize = array(
+				'placeholder' => __( 'e.g.', 'creame-whatsapp-me' ),
+				'version'     => $this->enhanced_phone,
+			);
+
 			wp_register_script( 'intl-tel-input', 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/' . $this->enhanced_phone . '/js/intlTelInput.min.js', array(), null, true );
+			wp_localize_script( 'intl-tel-input', 'intlTelConf', $localize );
 			wp_register_script( 'joinchat-admin', plugin_dir_url( __FILE__ ) . 'js/' . $script, array( 'jquery', 'wp-color-picker', 'intl-tel-input' ), $this->version, true );
-			wp_localize_script( 'intl-tel-input', 'intl_tel_input_version', $this->enhanced_phone );
 		} else {
 			wp_register_script( 'joinchat-admin', plugin_dir_url( __FILE__ ) . 'js/' . $script, array( 'jquery', 'wp-color-picker' ), $this->version, true );
 		}
@@ -714,7 +720,14 @@ class JoinChatAdmin {
 				'id'      => 'triggers',
 				'title'   => __( 'Triggers', 'creame-whatsapp-me' ),
 				'content' =>
-					'<p>' . __( 'Your page elements can interact with Join.chat adding some CSS classes in your HTML:', 'creame-whatsapp-me' ) . '</p>' .
+					'<p>' . __( 'You can interact on your page with Join.chat in two ways:', 'creame-whatsapp-me' ) . '</p>' .
+					'<p>' . __( 'With anchor links:', 'creame-whatsapp-me' ) . '</p>' .
+					'<ul>' .
+						'<li><code>#joinchat</code> ' . __( 'to show Chat Window (or open WhatsApp if there is no CTA) on click.', 'creame-whatsapp-me' ) . '</li>' .
+						'<li><code>#whatsapp</code> ' . __( 'to open WhatsApp directly on click.', 'creame-whatsapp-me' ) . '</li>' .
+					'</ul>' .
+					'<p>' . __( 'Example:', 'creame-whatsapp-me' ) . '<code>&lt;a href="#whatsapp"&gt;' . __( 'Contact us', 'creame-whatsapp-me' ) . '&lt;/a&gt;</code></p>' .
+					'<p>' . __( 'Adding some CSS classes in your HTML:', 'creame-whatsapp-me' ) . '</p>' .
 					'<ul>' .
 						'<li><code>joinchat_open</code> ' . __( 'to show Chat Window (or open WhatsApp if there is no CTA) on click.', 'creame-whatsapp-me' ) . '</li>' .
 						'<li><code>joinchat_close</code> ' . __( 'to hide Chat Window on click.', 'creame-whatsapp-me' ) . '</li>' .
@@ -725,7 +738,7 @@ class JoinChatAdmin {
 							'<li><code>joinchat_force_show</code> ' . __( 'to show always.', 'creame-whatsapp-me' ) . '</li>' .
 						'</ul></li>' .
 					'</ul>' .
-					'<p>' . __( 'Example:', 'creame-whatsapp-me' ) . '<code>&lt;a href="#" class="joinchat_open"&gt;' . __( 'Contact us', 'creame-whatsapp-me' ) . '&lt;/a&gt;</code></p>',
+					'<p>' . __( 'Example:', 'creame-whatsapp-me' ) . '<code>&lt;img src="contact.jpg" class="joinchat_open" alt="' . __( 'Contact us', 'creame-whatsapp-me' ) . '"&gt;</code></p>',
 			),
 			array(
 				'id'      => 'support',

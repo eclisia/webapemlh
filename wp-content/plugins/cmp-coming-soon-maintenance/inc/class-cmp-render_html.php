@@ -238,7 +238,7 @@ class CMP_Coming_Soon_and_Maintenance_Render_HTML extends CMP_Coming_Soon_and_Ma
      **/
     public function cmp_render_lang_switcher() {
         $html = false;
-        if ( get_option('niteoCS_lang_switcher', '1') == '1' && function_exists('icl_register_string') ||  defined( 'ICL_SITEPRESS_VERSION' )) {
+        if ( get_option('niteoCS_lang_switcher', '1') == '1' && (function_exists('icl_register_string') || defined( 'ICL_SITEPRESS_VERSION' ))) {
             include dirname( __FILE__) . '/render/language-switcher.php';
         }
         return $html;
@@ -329,6 +329,13 @@ class CMP_Coming_Soon_and_Maintenance_Render_HTML extends CMP_Coming_Soon_and_Ma
      * @return html 
      **/
     public function cmp_wp_head() {
+
+        
+        
+        // Plugin Name: LiteSpeed Cache
+        if ( class_exists('LiteSpeed\Core') ) {
+            define( 'LITESPEED_IS_HTML', true );
+        }
         
         // Plugin Name: Insert Headers and Footers
         if ( class_exists('InsertHeadersAndFooters') ) {

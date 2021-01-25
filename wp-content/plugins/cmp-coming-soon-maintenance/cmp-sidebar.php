@@ -15,7 +15,7 @@ if ( !file_exists( CMP_PLUGIN_DIR . 'img/thumbnails/'. $slug . '_thumbnail.jpg' 
 
 	<div class="donate widget">
 
-		<a href="https://niteothemes.com" target="_blank"><img src="<?php echo plugins_url('/img/niteo.png', __FILE__);?>" alt="Niteo Logo" class="niteo-logo"></a>
+		<a href="https://niteothemes.com" target="_blank"><img src="<?php echo plugins_url('/img/niteothemes.svg', __FILE__);?>" alt="Niteo Logo" class="niteo-logo"></a>
 		<p style="margin-top:0">
 			<img src="<?php echo plugins_url('/img/alex.jpg', __FILE__);?>" alt="Alex, NiteoThemes">
 			<img src="<?php echo plugins_url('/img/paul.jpg', __FILE__);?>" alt="Paul, NiteoThemes">
@@ -29,11 +29,13 @@ if ( !file_exists( CMP_PLUGIN_DIR . 'img/thumbnails/'. $slug . '_thumbnail.jpg' 
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 			<!-- <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"> -->
 		</form>
+
+		<p><?php echo sprintf(__('Follow us on %s.', 'cmp-coming-soon-maintenance'), '<a href="https://twitter.com/niteothemes" target="_blank">Twitter</a>');?></p>
 	</div>
 
 	<div class="clp-widget widget" style="padding: 0;">
 		<h3 ><?php _e('Check out our other plugins!', 'cmp-coming-soon-maintenance');?></h3>
-		<a href="https://wordpress.org/plugins/clp-custom-login-page/" target="_blank"><img src="<?php echo plugins_url('/img/clp-banner.jpg', __FILE__);?>" alt="CLP - Custom Login Page" style="max-width:100%;vertical-align:top"></a>
+		<a href="https://wordpress.org/plugins/clp-custom-login-page/" target="_blank"><img src="<?php echo plugins_url('/img/clp-banner.png', __FILE__);?>" alt="CLP - Custom Login Page" style="max-width:100%;vertical-align:top"></a>
 		<p style="padding: 0 2em"><a href="https://wordpress.org/plugins/clp-custom-login-page/" target="_blank" style="text-decoration:none">CLP - Custom Login Page</a> - <?php _e('Awesome plugin to customize WordPress Login Page!', 'cmp-coming-soon-maintenance');?></p>
 	</div>
 

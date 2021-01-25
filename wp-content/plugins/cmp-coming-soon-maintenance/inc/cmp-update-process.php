@@ -264,6 +264,18 @@ if ( version_compare($pre_update_version, CMP_VERSION ) < 0 ) {
 			array_push( $socialmedia, $discord );
 			$update = true;
 		}
+		// add rss social media in 3.9.4 update
+		if ( !$this->niteo_in_array_r( 'rss', $socialmedia, true ) ) {
+			$discord  = array(
+				'name' 		=> 'rss',
+				'url' 		=> '',
+				'active' 	=> '1',
+				'hidden' 	=> '1',
+				'order' 	=> 26,
+			);
+			array_push( $socialmedia, $discord );
+			$update = true;
+		}
 
 		if ( $update == true ) {
 			update_option('niteoCS_socialmedia', json_encode( $socialmedia) );

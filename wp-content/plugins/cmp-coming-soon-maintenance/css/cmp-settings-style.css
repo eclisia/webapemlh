@@ -339,6 +339,7 @@
 }
 
 .cmp-coming-soon-maintenance .social-inputs label {
+    display: inline-block;
     padding-left: 100px
 }
 
@@ -1054,7 +1055,8 @@
 }
 
 .cmp-coming-soon-maintenance .widget.donate img.niteo-logo {
-    max-width: 120px
+    max-width: 100%;
+    margin-bottom: 1em;
 }
 
 .cmp-coming-soon-maintenance .cmp-rate-us .button {

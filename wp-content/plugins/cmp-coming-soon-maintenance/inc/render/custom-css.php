@@ -1,5 +1,10 @@
 
 <?php
+/**
+ * Detect plugin. For use on Front End only.
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
 $css = '';
 $themeslug          = $this->cmp_selectedTheme();
 $countdown_action	= get_option('niteoCS_countdown_action', 'no-action');
@@ -176,6 +181,17 @@ if ( class_exists('Cookie_Notice') && get_option('cmp_cookie_notice_comp', '1') 
     <?php
 }
 
+// Styles for Plugin Name Weglot
+if ( is_plugin_active( 'weglot/weglot.php' ) && defined('WEGLOT_VERSION') ) { ?>
+
+    <link rel='stylesheet' id='weglot-css-css'  href='https://cmp.weglot-translate.com/wp-content/plugins/weglot/dist/css/front-css.css?ver=<?php echo WEGLOT_VERSION;?>' media='' />
+    <style>
+        aside.country-selector.weglot-dropdown.weglot-default.weglot-invert span {
+            color: black!important;
+        }
+    </style>
+    <?php
+}
 
 $css = ob_get_clean();
 

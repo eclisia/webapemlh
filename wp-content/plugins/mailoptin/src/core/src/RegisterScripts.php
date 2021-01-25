@@ -12,12 +12,13 @@ class RegisterScripts
     public function __construct()
     {
         add_action('admin_enqueue_scripts', array($this, 'admin_css'));
+        add_action('admin_enqueue_scripts', array($this, 'mailoptin_only_css'));
         add_action('admin_enqueue_scripts', [$this, 'admin_js']);
         add_action('admin_enqueue_scripts', [$this, 'fancybox_assets']);
         add_action('wp_enqueue_scripts', array($this, 'public_css'));
         add_action('wp_enqueue_scripts', array($this, 'public_js'));
 
-        add_action('init', [$this, 'gutenberg_js']);
+        add_action('enqueue_block_editor_assets', [$this, 'gutenberg_js']);
     }
 
     public function fancybox_assets()
@@ -45,7 +46,7 @@ class RegisterScripts
         wp_enqueue_script('mailoptin-add-optin-campaign', MAILOPTIN_ASSETS_URL . 'js/admin/new-optin-campaign.js', array('jquery'), MAILOPTIN_VERSION_NUMBER, true);
         wp_enqueue_script('mailoptin-optin-type-selection', MAILOPTIN_ASSETS_URL . 'js/admin/optin-type-selection.js', array('jquery'), MAILOPTIN_VERSION_NUMBER, true);
         wp_enqueue_script('mailoptin-add-email-campaign', MAILOPTIN_ASSETS_URL . 'js/admin/new-email-campaign.js', array('jquery'), MAILOPTIN_VERSION_NUMBER, true);
-        $this->global_js_variables('mailoptin-add-optin-campaign');
+        $this->global_js_variables();
         do_action('mo_admin_js_enqueue');
     }
 
@@ -131,7 +132,6 @@ class RegisterScripts
         register_block_type('mailoptin/email-optin', array(
             'editor_script' => 'mailoptin-gutenberg',
         ));
-
     }
 
     /**
@@ -213,7 +213,7 @@ class RegisterScripts
 
         Recaptcha::get_instance()->enqueue_script();
 
-        $this->global_js_variables('mailoptin');
+        $this->global_js_variables();
     }
 
     /**
@@ -233,10 +233,8 @@ class RegisterScripts
 
     /**
      * Global JS variables by required by mailoptin.
-     *
-     * @param string $handle handle to cling to.
      */
-    public function global_js_variables($handle)
+    public function global_js_variables()
     {
         global $post;
 
@@ -247,21 +245,22 @@ class RegisterScripts
         }
 
         $localize_strings = array(
-            'admin_url'                   => admin_url(),
-            'public_js'                   => MAILOPTIN_ASSETS_URL . 'js/src',
-            'nonce'                       => wp_create_nonce('mailoptin-admin-nonce'),
-            'mailoptin_ajaxurl'           => AjaxHandler::get_endpoint(),
-            'is_customize_preview'        => is_customize_preview() ? 'true' : 'false',
+            'admin_url'                         => admin_url(),
+            'public_js'                         => MAILOPTIN_ASSETS_URL . 'js/src',
+            'nonce'                             => wp_create_nonce('mailoptin-admin-nonce'),
+            'mailoptin_ajaxurl'                 => AjaxHandler::get_endpoint(),
+            'is_customize_preview'              => is_customize_preview() ? 'true' : 'false',
             // for some weird reason, boolean false is converted to empty and true to "1" hence the use of 'false' in string form.
-            'disable_impression_tracking' => $disable_impression_status === true ? 'true' : 'false',
-            'split_test_start_label'      => __('Start Test', 'mailoptin'),
-            'split_test_pause_label'      => __('Pause Test', 'mailoptin'),
-            'chosen_search_placeholder'   => __('Type to search', 'mailoptin'),
-            'js_confirm_text'             => __('Are you sure you?', 'mailoptin'),
-            'js_clear_stat_text'          => __('Are you sure you want to do this? Clicking OK will delete all your optin analytics records.', 'mailoptin'),
-            'custom_field_label'          => sprintf(__('Field %s', 'mailoptin'), '#{ID}'),
-            'sidebar'                     => 0,
-            'js_required_title'           => __('Title is required.', 'mailoptin'),
+            'disable_impression_tracking'       => $disable_impression_status === true ? 'true' : 'false',
+            'split_test_start_label'            => __('Start Test', 'mailoptin'),
+            'split_test_pause_label'            => __('Pause Test', 'mailoptin'),
+            'chosen_search_placeholder'         => __('Type to search', 'mailoptin'),
+            'js_confirm_text'                   => __('Are you sure you?', 'mailoptin'),
+            'js_clear_stat_text'                => __('Are you sure you want to do this? Clicking OK will delete all your optin analytics records.', 'mailoptin'),
+            'custom_field_label'                => sprintf(__('Field %s', 'mailoptin'), '#{ID}'),
+            'sidebar'                           => 0,
+            'js_required_title'                 => __('Title is required.', 'mailoptin'),
+            'is_new_returning_visitors_cookies' => defined('MAILOPTIN_DETACH_LIBSODIUM') && apply_filters('mailoptin_is_new_returning_visitors_cookies', true) === true ? 'true' : 'false'
         );
 
         if ( ! is_admin()) {
@@ -288,7 +287,7 @@ class RegisterScripts
         }
 
         wp_localize_script(
-            $handle, 'mailoptin_globals',
+            'jquery', 'mailoptin_globals',
             apply_filters('mo_mailoptin_js_globals', $localize_strings)
         );
     }
@@ -302,36 +301,48 @@ class RegisterScripts
         wp_enqueue_style('mailoptin-admin-tooltipster-borderless', MAILOPTIN_ASSETS_URL . 'tooltipster/borderless.min.css', [], MAILOPTIN_VERSION_NUMBER);
         wp_enqueue_style('mailoptin-admin-tooltipster-light', MAILOPTIN_ASSETS_URL . 'tooltipster/light.min.css', [], MAILOPTIN_VERSION_NUMBER);
         wp_enqueue_style('mailoptin-admin', MAILOPTIN_ASSETS_URL . 'css/admin/admin.css', [], filemtime(MAILOPTIN_ASSETS_DIR . 'css/admin/admin.css'));
+    }
 
-        wp_enqueue_style('mo-pure-css-toggle-buttons', MAILOPTIN_ASSETS_URL . 'js/customizer-controls/toggle-control/pure-css-togle-buttons.css', array(), false);
+    /**
+     * Mailoptin only css to fix conflicts
+     */
+    public function mailoptin_only_css()
+    {
+        $screen = get_current_screen();
 
-        $css = '
-			.disabled-control-title {
-				color: #a0a5aa;
-			}
-			input[type=checkbox].tgl-light:checked + .tgl-btn {
-				background: #0085ba;
-			}
-			input[type=checkbox].tgl-light + .tgl-btn {
-			  background: #a0a5aa;
-			}
-			input[type=checkbox].tgl-light + .tgl-btn:after {
-			  background: #f7f7f7;
-			}
+        $base_text = $screen->base;
 
-			input[type=checkbox].tgl-ios:checked + .tgl-btn {
-			  background: #0085ba;
-			}
+        if (strpos($base_text, 'mailoptin') !== false || is_customize_preview()) {
+            wp_enqueue_style('mo-pure-css-toggle-buttons', MAILOPTIN_ASSETS_URL . 'js/customizer-controls/toggle-control/pure-css-togle-buttons.css', array(), false);
 
-			input[type=checkbox].tgl-flat:checked + .tgl-btn {
-			  border: 4px solid #0085ba;
-			}
-			input[type=checkbox].tgl-flat:checked + .tgl-btn:after {
-			  background: #0085ba;
-			}
-
-		';
-        wp_add_inline_style('mo-pure-css-toggle-buttons', $css);
+            $css = '
+                .disabled-control-title {
+                    color: #a0a5aa;
+                }
+                input[type=checkbox].tgl-light:checked + .tgl-btn {
+                    background: #0085ba;
+                }
+                input[type=checkbox].tgl-light + .tgl-btn {
+                  background: #a0a5aa;
+                }
+                input[type=checkbox].tgl-light + .tgl-btn:after {
+                  background: #f7f7f7;
+                }
+    
+                input[type=checkbox].tgl-ios:checked + .tgl-btn {
+                  background: #0085ba;
+                }
+    
+                input[type=checkbox].tgl-flat:checked + .tgl-btn {
+                  border: 4px solid #0085ba;
+                }
+                input[type=checkbox].tgl-flat:checked + .tgl-btn:after {
+                  background: #0085ba;
+                }
+    
+            ';
+            wp_add_inline_style('mo-pure-css-toggle-buttons', $css);
+        }
     }
 
     /**

@@ -21,7 +21,7 @@ CREATE TABLE `mod58_wc_category_lookup` (
 
 LOCK TABLES `mod58_wc_category_lookup` WRITE;
 /*!40000 ALTER TABLE `mod58_wc_category_lookup` DISABLE KEYS */;
-INSERT INTO `mod58_wc_category_lookup` VALUES (15,15);
+INSERT INTO `mod58_wc_category_lookup` VALUES (15,15),(23,23),(24,24),(25,25),(41,41);
 /*!40000 ALTER TABLE `mod58_wc_category_lookup` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

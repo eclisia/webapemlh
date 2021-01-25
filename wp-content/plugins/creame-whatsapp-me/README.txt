@@ -2,10 +2,10 @@
 Contributors: creapuntome, pacotole, davidlillo, monillo
 Donate link: https://www.paypal.me/creapuntome/
 Tags: whatsapp business, whatsapp, click to chat, button, whatsapp support chat, support, contact, directly message whatsapp, floating whatsapp, whatsapp chat
-Requires at least: 3.0.1
-Tested up to: 5.5
+Requires at least: 3.5.0
+Tested up to: 5.6
 Requires PHP: 5.3
-Stable tag: 4.1.3
+Stable tag: 4.1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -52,16 +52,16 @@ Use variables in your CTAs and messages that change dynamically for each page:
 **{DISCOUNT}** ➡ Product percent discount when is on sale (WooCommerce)
 
 #### 📈 Integration with Google Analytics, Google Tag Manager and Facebook Pixel.
-Join.chat sends the event automatically when the user opens WhatsApp. You can also create your custom events capturing `$(document).on('joinchat:open')`. [Read more](https://join.chat/en/joinchat-measures-whatsapp-events-in-google-analytics/)
+Join.chat sends the event automatically when the user opens WhatsApp. You can also create your custom events capturing `$(document).on('joinchat:open')`. [View FAQs](https://wordpress.org/plugins/creame-whatsapp-me/faq/) / [Read more](https://join.chat/en/joinchat-measures-whatsapp-events-in-google-analytics/)
 
-#### 💱 Multi-Language Support.
-To be able to support all your users, wherever they are. Our plugin is **compatible with WPML and Polylang** and also **RTL languages** are supported.
+#### 💱 Multi-Language & RTL Support.
+To be able to support all your users, wherever they are. Our plugin is **compatible with WPML and Polylang** and also **RTL languages** are supported. [View FAQs](https://wordpress.org/plugins/creame-whatsapp-me/faq/)
 
 #### 🌈 Theme Colors & 🌚 Dark Mode.
 You choose a color and we customize the entire visual theme of the widget. With Dark Mode display the chat window with dark colors and white text. From settings you can activate it or leave it automatic and detects devices' configuration.
 
 #### 🍾 CSS Triggers.
-Your pages can interact with Join.chat and show the chat window or launch WhatsApp **when user clicks or an item appears on scrolling**. You just need to add a few CSS classes.
+Your pages can interact with Join.chat and show the chat window or launch WhatsApp **when user clicks or an item appears on scrolling**. You just need to add a few CSS classes. [View FAQs](https://wordpress.org/plugins/creame-whatsapp-me/faq/)
 
 #### ⚡ Fast & Light.
 Only load what need when needed. Join.chat is lightweight and follow best coding practices. [See tests report](https://wphive.com/plugins/creame-whatsapp-me/)
@@ -131,6 +131,19 @@ If you need to move up:
   .joinchat { --bottom: 60px; }
 }`
 
+= Shortcodes / Triggers =
+
+Join.chat does not provide any shortcodes, but you can easily link to WhatsApp in two ways:
+
+1. Add an anchor link to `#whatsapp` (open WhastApp directly) or `#joinchat` (show chat window).
+e.g.: add in your menu a custom link with the URL `#whatsapp`
+2. Add a css class to any element, `joinchat_app` (open WhastApp directly) or `joinchat_open` (show chat window).
+e.g.: `<img src="contact.jpg" class="joinchat_open" alt="Contact">`
+
+This works with your phone settings and message with dynamic variables, **even on pages without Join.chat visible**.
+
+For custom WhatsApp links, you can create the url with our **[WhatsApp link generator](https://join.chat/en/whatsapp-link/) free tool** and copy it to your links.
+
 = What about GDPR? =
 
 Join.chat don't use cookies.
@@ -139,6 +152,10 @@ Join.chat save two localStorage variables for proper operation:
 
 * `joinchat_views` is a visits counter to control when to show chat window.
 * `joinchat_hashes` if you set a Call To Action (CTA), when user launch WhatsApp or close Chat Window the CTA hashed is saved to prevent show automatically that CTA again.
+
+= WPML/Polylang translations =
+
+Join.chat settings are saved in your site's main language. For other languages translation go to *WPML/Polylang Settings > String translations*, filter strings group by "Join.chat" and update the strings for each language.
 
 = Google Analytics integration =
 
@@ -196,6 +213,29 @@ There is a Javascript event that Join.chat triggers automatically before launch 
 6. Page settings
 
 == Changelog ==
+
+= 4.1.8 =
+* Front script better settings validation
+* FIX error with some prices on variable replacement
+* Bump required minimun WordPress version to 3.5
+
+= 4.1.7 =
+* FIX jQuery 3 deprecation warnings for event shorthands
+* FIX JSON error with "&quot;" on variable replacement
+* FIX Don't load public hooks on wp-login.php page
+
+= 4.1.6 =
+* FIX minor css error introduced in v4.1.5
+
+= 4.1.5 =
+* **NEW:** Add links to WhastApp with `#joinchat` or `#whatsapp` in your href. CSS triggers and links work on all pages, **even without Join.chat visible**.
+* **NEW:** Analytics event compatible with Google Analytics Dashboard Plugin for WordPress by MonsterInsights custom tracker name
+* Load images when show button for better Page speed.
+
+= 4.1.4 =
+* **NEW:** PHP 8 & WordPress 5.6 tested & updated
+* Cleaner placeholder on telephone field
+* Added lazy loading attribute for image
 
 = 4.1.3 =
 * **NEW:** Ensure chatbox header is allways visible on mobile with better height control

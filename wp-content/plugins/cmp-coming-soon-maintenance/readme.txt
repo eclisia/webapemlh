@@ -5,7 +5,7 @@ Tags: coming soon, coming soon page, launch page, maintenance mode, under constr
 Requires at least: 3.0
 Requires PHP: 5.6
 Tested up to: 5.6
-Stable tag: 3.9.2
+Stable tag: 3.9.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -158,6 +158,33 @@ https://www.youtube.com/watch?v=uxuJfHzwdtE
 
 <h4>I really love your plugin and I want to support it!</h4>
 <p>Nothing is better than a good feedback! Please go to <a href="https://wordpress.org/support/plugin/cmp-coming-soon-maintenance/reviews/">Plugin reviews</a> and rate it! Alternatively you can click on a Donate button too!:)</p>
+
+== Changelog ==
+<h4>CMP 3.9.7 - 07-Jan-21</h4>
+<ul>
+	<li>Resolved PHP Warning when "HTTP_HOST" array key was not present. - @seath thanks for reporting it.</li>
+	<li>Added support for Litespeed Cache optimization plugin. - requested by @artgoddess</li>
+	<li>New option to allow or block RSS feed and REST API - requested by @artgoddess</li>
+</ul>
+
+<h4>CMP 3.9.6 - 07-Jan-21</h4>
+<ul>
+	<li>Resolved issue with displaying Language Switcher even with settings set to off if WPML plugin was enabled.</li>
+</ul>
+<h4>CMP 3.9.5 - 30-Dec-20</h4>
+<ul>
+	<li>Resolved issue with not displaying RSS feed icon</li>
+</ul>
+<h4>CMP 3.9.4 - 30-Dec-20</h4>
+<ul>
+	<li>New Social Icon: RSS Feed</li>
+	<li>Updated NiteoThemes Logo</li>
+</ul>
+
+<h4>CMP 3.9.3 - 17-Dec-20</h4>
+<ul>
+	<li>New CMP Theme: Saturn</li>
+</ul>
 
 == Changelog ==
 <h4>CMP 3.9.2 - 28-Nov-20</h4>

@@ -22,21 +22,21 @@
     ),
     'collizo4sky/persist-admin-notices-dismissal' => 
     array (
-      'pretty_version' => '1.4.3',
-      'version' => '1.4.3.0',
+      'pretty_version' => '1.4.4',
+      'version' => '1.4.4.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2d7d8bb3cba631ad227c92296a4b675d7cbc71d7',
+      'reference' => '900739eb6b0ec0210465f5983a6d4e0e420289e4',
     ),
     'composer/installers' => 
     array (
-      'pretty_version' => 'v1.9.0',
-      'version' => '1.9.0.0',
+      'pretty_version' => 'v1.10.0',
+      'version' => '1.10.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'b93bcf0fa1fccb0b7d176b0967d969691cd74cca',
+      'reference' => '1a0357fccad9d1cc1ea0c9a05b8847fbccccb78d',
     ),
     'deliciousbrains/wp-background-processing' => 
     array (
@@ -83,8 +83,8 @@
     ),
     'mailoptin/authifly' => 
     array (
-      'pretty_version' => '0.2.1604672539',
-      'version' => '0.2.1604672539.0',
+      'pretty_version' => '0.2.1611573634',
+      'version' => '0.2.1611573634.0',
       'aliases' => 
       array (
       ),
@@ -92,8 +92,8 @@
     ),
     'mailoptin/connections' => 
     array (
-      'pretty_version' => '0.2.1605777779',
-      'version' => '0.2.1605777779.0',
+      'pretty_version' => '0.2.1611573651',
+      'version' => '0.2.1611573651.0',
       'aliases' => 
       array (
       ),
@@ -101,12 +101,12 @@
     ),
     'mailoptin/core' => 
     array (
-      'pretty_version' => '0.1.0-alpha.1605777772',
-      'version' => '0.1.0.0-alpha1605777772',
+      'pretty_version' => '0.1.0-alpha.1611570658',
+      'version' => '0.1.0.0-alpha1611570658',
       'aliases' => 
       array (
       ),
-      'reference' => 'a9e3e1ad815ec18693702389ec9c7711de64e92c',
+      'reference' => 'd5a3275c9be19c1b9300922b0ce16e663be10142',
     ),
     'nesbot/carbon' => 
     array (
@@ -160,8 +160,8 @@
     ),
     'symfony/translation' => 
     array (
-      'pretty_version' => 'v3.4.46',
-      'version' => '3.4.46.0',
+      'pretty_version' => 'v3.4.47',
+      'version' => '3.4.47.0',
       'aliases' => 
       array (
       ),

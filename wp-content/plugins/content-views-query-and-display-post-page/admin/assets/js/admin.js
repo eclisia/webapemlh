@@ -85,7 +85,7 @@
 			};
 
 			// Handle Pagination actions
-			$( 'body' ).bind( _prefix + 'admin-preview', function () {
+			$( 'body' ).on( _prefix + 'admin-preview', function () {
 				new $.PT_CV_Public();
 			} );
 		},
@@ -169,7 +169,7 @@
 		 */
 		dependence_do_all: function () {
 			var $self = this;
-			var $toggle_data_js = $.parseJSON( $self.options._toggle_data );
+			var $toggle_data_js = JSON.parse( $self.options._toggle_data );
 
 			$.each( $toggle_data_js, function ( idx, obj ) {
 				// Obj_sub: an object contains (dependence_id, operator, expect_val)
@@ -617,7 +617,7 @@
 				_fn( is_trigger );
 			} );
 
-			$( 'body' ).bind( _prefix + 'preview-btn-toggle', function () {
+			$( 'body' ).on( _prefix + 'preview-btn-toggle', function () {
 				_fn();
 			} );
 		},

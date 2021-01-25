@@ -1,8 +1,29 @@
 ﻿== Changelog ==
 
+= 1.2.34.3 =
+* Change oauth integrations nonce key to prevent error in connecting integrations.
+* Fixed bug where images wasn’t included in automation emails.
+
+= 1.2.34.2 =
+* Added featured image size filter to posts.
+* Change default optin success message to exclude "Please check your email for further instructions."
+* Use enqueue_block_editor_assets instead for block registration instead of init.
+* Implement filter to remove new and returning visitors cookies.
+
+= 1.2.34.1 =
+* Fix layout breakage caused by unclosed p tag.
+* Fixed issue where elementorjs would result to undefined function error.
+
+= 1.2.34.0 =
+* Added more first/last name sendinblue contact attributes.
+* Added Selected Users to WordPress Registered Users Integration.
+* Switched to using wp_after_insert_post hook for new post notification automation.
+* Lazy-load chosenjs customizer options.
+* PHP 8 compatibility improvements.
+* Resolve CSS conflicts with other plugins eg shortpixel.
+
 = 1.2.33.1 =
 * Fixed bugs with double optin in Sendinblue integration.
-* Fixed bug where users get an error when the double optin option is not enabled.
 * Added filter "mo_optin_form_set_font_families_to_inherit" to make all optin font families a theme font.
 
 = 1.2.33.0 =

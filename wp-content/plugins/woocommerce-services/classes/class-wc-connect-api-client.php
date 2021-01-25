@@ -59,8 +59,8 @@ if ( ! class_exists( 'WC_Connect_API_Client' ) ) {
 		 * @return bool|WP_Error
 		 */
 		public function validate_service_settings( $service_slug, $service_settings ) {
-			// Make sure the service slug only contains underscores or letters
-			if ( 1 === preg_match( '/[^a-z_]/i', $service_slug ) ) {
+			// Make sure the service slug only contains dashes, underscores or letters
+			if ( 1 === preg_match( '/[^a-z_\-]/i', $service_slug ) ) {
 				return new WP_Error( 'invalid_service_slug', __( 'Invalid WooCommerce Shipping & Tax service slug provided', 'woocommerce-services' ) );
 			}
 
@@ -316,10 +316,10 @@ if ( ! class_exists( 'WC_Connect_API_Client' ) ) {
 		 * @param $body
 		 * @param object|WP_Error
 		 */
-		public function get_wccom_subscriptions( $body ) {
-			return $this->request( 'POST', '/subscriptions', $body );
+		public function get_wccom_subscriptions() {
+			return $this->request( 'POST', '/subscriptions' );
 		}
-		
+
 		/**
 		 * Get all carriers we support for registration. This end point
 		 * returns a list of "fields" that we use to register the carrier
@@ -366,42 +366,26 @@ if ( ! class_exists( 'WC_Connect_API_Client' ) ) {
 			return $new_is_alive;
 		}
 
-		public function get_stripe_account_details() {
-			return $this->request( 'GET', '/stripe/account' );
-		}
-
-		public function get_stripe_oauth_init( $return_url ) {
-			$address = $this->wc_connect_loader->get_service_settings_store()->get_origin_address();
-			$current_user = wp_get_current_user();
-
-			$request = array(
-				'returnUrl' => $return_url,
-				'businessData' => array(
-					'url' => get_site_url(),
-					'country' => $address['country'],
-					'phone' => $address['phone'],
-					'business_name' => $address['company'],
-					'first_name' => $current_user->user_firstname,
-					'last_name' => $current_user->user_lastname,
-					'street_address' => $address['address'],
-					'city' => $address['city'],
-					'state' => $address['state'],
-					'zip' => $address['postcode'],
-					'currency' => get_woocommerce_currency(),
-				),
+		/**
+		 * Activate a subscrption with WCCOM API.
+		 *
+		 * @param  string $subscription_key Product Key on WCCOM.
+		 * @return WP_Error|Array  API Response.
+		 */
+		public function activate_subscription( $subscription_key ) {
+			$activation_response = WC_Helper_API::post(
+				'activate',
+				array(
+					'authenticated' => true,
+					'body'          => wp_json_encode(
+						array(
+							'product_key' => $subscription_key,
+						)
+					),
+				)
 			);
-			return $this->request( 'POST', '/stripe/oauth-init', $request );
-		}
 
-		public function get_stripe_oauth_keys( $code ) {
-			$request = array(
-				'code' => $code,
-			);
-			return $this->request( 'POST', '/stripe/oauth-keys', $request );
-		}
-
-		public function deauthorize_stripe_account() {
-			return $this->request( 'POST', '/stripe/account/deauthorize' );
+			return $activation_response;
 		}
 
 		/**
@@ -482,17 +466,6 @@ if ( ! class_exists( 'WC_Connect_API_Client' ) ) {
 				)
 			);
 
-			// Add WC Helper auth info if connected to WC.com.
-			$helper_auth_data = WC_Connect_Functions::get_wc_helper_auth_info();
-
-			if ( ! is_wp_error( $helper_auth_data ) ) {
-				$body[ 'settings' ] = wp_parse_args( $body[ 'settings' ], array(
-					'access_token' => $helper_auth_data['access_token'],
-					'site_id'      => $helper_auth_data['site_id'],
-					)
-				);
-			}
-
 			return $body;
 		}
 
@@ -518,7 +491,9 @@ if ( ! class_exists( 'WC_Connect_API_Client' ) ) {
 
 			$wc_helper_auth_info = WC_Connect_Functions::get_wc_helper_auth_info();
 			if ( ! is_wp_error( $wc_helper_auth_info ) ) {
-				$headers[ 'X-Woo-Signature' ] = $this->request_signature_wccom( $wc_helper_auth_info['access_token_secret'], 'subscriptions', 'GET', array() );
+				$headers[ 'X-Woo-Signature' ]    = $this->request_signature_wccom( $wc_helper_auth_info['access_token_secret'], 'subscriptions', 'GET', array() );
+				$headers[ 'X-Woo-Access-Token' ] = $wc_helper_auth_info['access_token'];
+				$headers[ 'X-Woo-Site-Id' ]      = $wc_helper_auth_info['site_id'];
 			}
 			return $headers;
 		}

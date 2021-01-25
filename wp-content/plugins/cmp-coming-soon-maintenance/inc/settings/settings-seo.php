@@ -60,7 +60,7 @@ defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
                         echo '<img src="'.esc_url( $niteoCS_seo_img_url ).'" alt="">';
                     } ?>
                 </div>
-                <span class="cmp-hint">* <?php _e('By default seleceted Background image is displayed on Social Networks if your Website is shared. You can overwrite the image by selecting your custom image here.', 'cmp-coming-soon-maintenance');?></span>
+                <span class="cmp-hint">* <?php _e('By default selected Background image is displayed on Social Networks if your Website is shared. You can overwrite the image by selecting your custom image here.', 'cmp-coming-soon-maintenance');?></span>
                 <br><br>
                 <input id="delete-seo_img" type="button" class="button" value="Remove Image" />
             </fieldset>

@@ -33,7 +33,8 @@
       "Hubspot.php",
       "Zoho.php",
       "Infusionsoft.php",
-      "Jilt.php"
+      "Jilt.php",
+      "CleverReach.php"
     ]
   }
 }

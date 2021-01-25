@@ -54,6 +54,9 @@ class JoinChat {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
+
+		global $pagenow;
+
 		$this->version     = defined( 'JOINCHAT_VERSION' ) ? JOINCHAT_VERSION : '1.0.0';
 		$this->plugin_name = 'joinchat';
 
@@ -61,7 +64,11 @@ class JoinChat {
 		$this->set_locale();
 		$this->load_integrations();
 
-		is_admin() ? $this->define_admin_hooks() : $this->define_public_hooks();
+		if ( is_admin() ) {
+			$this->define_admin_hooks();
+		} elseif ( 'wp-login.php' !== $pagenow ) {
+			$this->define_public_hooks();
+		}
 
 		add_action( 'joinchat_run_pre', array( $this, 'disable_remove_brand' ), 11 );
 
@@ -177,6 +184,7 @@ class JoinChat {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_styles' );
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 		$this->loader->add_action( 'wp_footer', $plugin_public, 'footer_html' );
+		$this->loader->add_action( 'wp_print_footer_scripts', $plugin_public, 'links_script', 20 );
 		$this->loader->add_action( 'elementor/preview/init', $plugin_public, 'elementor_preview_disable' );
 
 	}

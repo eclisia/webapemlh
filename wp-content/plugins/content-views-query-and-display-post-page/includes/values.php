@@ -263,6 +263,7 @@ if ( !class_exists( 'PT_CV_Values' ) ) {
 				$show	 = 'display_name';
 
 				$args = array(
+					'who'		 => 'authors',
 					'fields'	 => array( 'ID', $show, 'user_login' ),
 					'orderby'	 => 'display_name',
 					'order'		 => 'ASC',

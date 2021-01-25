@@ -327,7 +327,6 @@ class AjaxHandler
      */
     public function pause_optin_split_test()
     {
-
         if ( ! current_user_has_privilege()) {
             return;
         }
@@ -964,6 +963,10 @@ class AjaxHandler
             $extras['form_tags'] = $conversion_data->form_tags;
         }
 
+        // $extras['referrer'] is already set
+        $extras['mo_ip_address']    = get_ip_address();
+        $extras['mo_campaign_name'] = OptinCampaignsRepository::get_optin_campaign_name($conversion_data->optin_campaign_id);
+
         do_action_ref_array('mailoptin_before_optin_subscription', $extras);
 
         $instance = ConnectionFactory::make($connection_service);
@@ -1128,15 +1131,20 @@ class AjaxHandler
 
         $connection            = sanitize_text_field($_POST['connect_service']);
         $list_id               = sanitize_text_field($_POST['list_id']);
-        $custom_fields         = stripslashes(sanitize_text_field($_POST['custom_fields']));
         $custom_field_mappings = stripslashes(sanitize_text_field($_POST['custom_field_mappings']));
         $integration_index     = sanitize_text_field($_POST['integration_index']);
 
         $close_btn = '<div class="mo-optin-map-custom-field-close"></div>';
 
-        if (empty($custom_fields)) wp_send_json_error($close_btn . __('Error: You have no custom field added to your optin. Consider adding one.', 'mailoptin'));
+        //if (empty($custom_fields)) wp_send_json_error($close_btn . __('Error: You have no custom field added to your optin. Consider adding one.', 'mailoptin'));
 
-        $custom_fields = json_decode($custom_fields, true);
+        $custom_fields = [];
+
+        $custom_fields['form_fields'] = json_decode(
+            stripslashes(sanitize_text_field($_POST['custom_fields'])), true
+        );
+
+        $custom_fields['system_fields'] = \MailOptin\Core\system_form_fields();
 
         $merge_fields = ConnectionFactory::make($connection)->get_optin_fields($list_id);
 
@@ -1157,14 +1165,33 @@ class AjaxHandler
             $response .= "<label for='' class='customize-control-title'>$label</label>";
             $response .= "<select id=\"$key\" class=\"mo-optin-custom-field-select\" name=\"$key\">";
             $response .= '<option value="">' . __('Select...', 'mailoptin') . '</option>';
-            foreach ($custom_fields as $custom_field) {
-                $db_val   = isset($custom_field_mappings[$integration_index][$key]) ? $custom_field_mappings[$integration_index][$key] : '';
-                $response .= sprintf(
-                    '<option value="%s" %s>%s</option>',
-                    $custom_field['cid'],
-                    selected($db_val, $custom_field['cid'], false),
-                    $custom_field['placeholder']
-                );
+
+            if ( ! empty($custom_fields['form_fields'])) {
+                $response .= sprintf('<optgroup label="%s">', esc_html__('Form Fields', 'mailoptin'));
+                foreach ($custom_fields['form_fields'] as $custom_field) {
+                    $db_val   = isset($custom_field_mappings[$integration_index][$key]) ? $custom_field_mappings[$integration_index][$key] : '';
+                    $response .= sprintf(
+                        '<option value="%s" %s>%s</option>',
+                        $custom_field['cid'],
+                        selected($db_val, $custom_field['cid'], false),
+                        $custom_field['placeholder']
+                    );
+                }
+                $response .= '</optgroup>';
+            }
+
+            if ( ! empty($custom_fields['system_fields'])) {
+                $response .= sprintf('<optgroup label="%s">', esc_html__('System Fields', 'mailoptin'));
+                foreach ($custom_fields['system_fields'] as $index => $value) {
+                    $db_val   = isset($custom_field_mappings[$integration_index][$key]) ? $custom_field_mappings[$integration_index][$key] : '';
+                    $response .= sprintf(
+                        '<option value="%s" %s>%s</option>',
+                        $index,
+                        selected($db_val, $index, false),
+                        $value
+                    );
+                }
+                $response .= '</optgroup>';
             }
             $response .= '</select>';
             $response .= '</div>';
@@ -1188,20 +1215,40 @@ class AjaxHandler
 
         switch ($search_type) {
             case 'posts_never_load' :
-                $response = ControlsHelpers::get_post_type_posts('post', 1000, 'publish', $q);
-                break;
-            case 'woocommerce_products' :
-                $response = ControlsHelpers::get_post_type_posts('product', 1000, 'publish', $q);
+                $response = ControlsHelpers::get_post_type_posts('post', 500, 'publish', $q);
                 break;
             case 'pages_never_load' :
-                $response = ControlsHelpers::get_post_type_posts('page', 1000, 'publish', $q);
+                $response = ControlsHelpers::get_post_type_posts('page', 500, 'publish', $q);
                 break;
             case 'cpt_never_load' :
-                $response = ControlsHelpers::get_all_post_types_posts(array('post', 'page'), 1000, $q);
+                $response = ControlsHelpers::get_all_post_types_posts(array('post', 'page'), 500, $q);
                 break;
             case 'exclusive_post_types_posts_load' :
-                $response = ControlsHelpers::get_all_post_types_posts([], 1000, $q);
+                $response = ControlsHelpers::get_all_post_types_posts([], 500, $q);
                 break;
+            case 'post_categories' :
+                $response = ControlsHelpers::get_categories($q);
+                break;
+            case 'post_tags' :
+                $response = ControlsHelpers::get_tags($q);
+                break;
+            case 'woocommerce_products' :
+                $response = ControlsHelpers::get_post_type_posts('product', 500, 'publish', $q);
+                break;
+            case 'woocommerce_product_cat' :
+                $response = ControlsHelpers::get_terms('product_cat', $q);
+                break;
+            case 'woocommerce_product_tags' :
+                $response = ControlsHelpers::get_terms('product_tag', $q);
+                break;
+            case 'RegisteredUsersConnect_users' :
+                $response = ControlsHelpers::get_users($q);
+                break;
+        }
+
+        if (strpos($search_type, 'ch_get_terms') !== false) {
+            $param    = explode('|', $search_type);
+            $response = ControlsHelpers::get_terms($param[1], $q);
         }
 
         wp_send_json($response);

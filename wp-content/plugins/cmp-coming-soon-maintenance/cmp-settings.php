@@ -497,6 +497,7 @@ if ( !get_option('niteoCS_socialmedia') ) {
 		'spotify',
 		'discord',
 		'goodreads',
+		'rss'
 	);
 	$i = 0;
 	$socialmedia  = array();
