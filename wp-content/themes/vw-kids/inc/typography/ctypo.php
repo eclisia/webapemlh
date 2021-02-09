@@ -373,7 +373,7 @@ if(function_exists('vw_kids_customize_preview_enqueue_scripts')){
 	 * @return void
 	 */
 	function vw_kids_customize_preview_enqueue_scripts() {
-		wp_enqueue_script( 'vw-kids-ctypo-customize-preview', trailingslashit( get_template_directory_uri() ) . 'inc/typography/js/customize-preview.js',array( 'jquery' )  );
+		wp_enqueue_script( 'vw-kids-ctypo-customize-preview', trailingslashit( esc_url(get_template_directory_uri()) ) . 'inc/typography/js/customize-preview.js',array( 'jquery' )  );
 	}
 
 }

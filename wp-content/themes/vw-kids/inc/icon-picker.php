@@ -42,8 +42,8 @@ class VW_Kids_Fontawesome_Icon_Chooser extends WP_Customize_Control{
 
 function vw_kids_customizer_script() {
      
-    wp_enqueue_style( 'font-awesome-1', get_template_directory_uri().'/assets/css/fontawesome-all.css');
-    wp_enqueue_script( 'vw-kids-customizer-script', get_template_directory_uri().'/assets/js/customizer-scripts.js', array("jquery"),'', true  );
+    wp_enqueue_style( 'font-awesome-1', esc_url(get_template_directory_uri()).'/assets/css/fontawesome-all.css');
+    wp_enqueue_script( 'vw-kids-customizer-script', esc_url(get_template_directory_uri()).'/assets/js/customizer-scripts.js', array("jquery"),'', true  );
 }
 add_action( 'customize_controls_enqueue_scripts', 'vw_kids_customizer_script' );
 

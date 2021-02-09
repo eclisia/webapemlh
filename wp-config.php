@@ -28,7 +28,7 @@ define('DB_NAME', 'apemlhp190');
 define('DB_USER', 'apemlhp190');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'RpHx5HtMrdPF');
+define('DB_PASSWORD', '0OIGYzT2mJF3EqX4CJ');
 
 /** MySQL hostname */
 define('DB_HOST', 'apemlhp190.mysql.db:3306');

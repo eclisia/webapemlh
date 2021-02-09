@@ -18,6 +18,8 @@ function kids_education_get_default_theme_options() {
 		'main_slider_type'				=> 'page',
 		'main_slider_no_of_posts'		=> 2,
 		'main_slider_learn_more_text'   => esc_html__( 'Learn more', 'kids-education' ),
+		'main_slider_excerpt'			=> 20,
+
 
 
 		// Features section
@@ -25,6 +27,7 @@ function kids_education_get_default_theme_options() {
 		'features_section_title' 		=> esc_html__( 'School Activities', 'kids-education' ),
 		'features_section_type'			=> 'category',
 		'features_dropdown_categories'  => null,
+		'feature_excerpt'			=> 20,
 
 		// gallery section
 		'gallery_enable'				=> 'disabled',
@@ -39,6 +42,7 @@ function kids_education_get_default_theme_options() {
 		'category_blog_content_type'	=> 'category',
 		'category_blog_title'			=> esc_html__( 'Kindergarten Blog & News', 'kids-education' ),
 		'category_blog_count' 			=> 3,
+		'category_blog_excerpt'			=> 20,
 
 		// Recent
 		'recent_enable' 				=> 'disabled',
@@ -46,6 +50,7 @@ function kids_education_get_default_theme_options() {
 		'recent_count'	 				=> 6,
 		'recent_visible_no_of_slides' 	=> 3,
 		'recent_content_type'	 		=> 'post',
+		'recent_excerpt'				=> 20,
 
 		// Search Course
 		'search_course_enable'			=> 'disabled',

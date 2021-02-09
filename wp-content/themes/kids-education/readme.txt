@@ -4,8 +4,8 @@ Contributors: themepalace
 Tags: custom-header, translation-ready, theme-options, custom-menu, post-formats, threaded-comments, right-sidebar, one-column
 Requires PHP: 5.6
 Requires at least: 4.7
-Tested up to: 5.5
-Stable tag: 1.2.2
+Tested up to: 5.6
+Stable tag: 1.2.3
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -130,6 +130,8 @@ Font awesome classes can also be used as.
     - fa-user etc.
 
 == Changelog ==
+= 1.2.3 - August 21, 2021 =
+*Added excerpt option in all homepage sections
 
 = 1.2.2 - August 21, 2020 =
 * Updated blocks and patterns design

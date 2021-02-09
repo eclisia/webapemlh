@@ -5,10 +5,10 @@
   Description: Redirect all traffic from HTTP to HTTPS for your entire site.
   Author: WebFactory Ltd
   Author URI: https://www.webfactoryltd.com/
-  Version: 1.56
+  Version: 1.57
   Text Domain: wp-force-ssl
 
-  Copyright 2019 - 2020  WebFactory Ltd  (email: support@webfactoryltd.com)
+  Copyright 2019 - 2021  WebFactory Ltd  (email: support@webfactoryltd.com)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License, version 2, as
@@ -30,9 +30,8 @@ if (!defined('ABSPATH')) {
   exit('You are not allowed to access this file directly.');
 }
 
-require_once 'wp301/wp301.php';
-new wf_wp301(__FILE__, 'settings_page_wpfs-settings');
-
+require_once dirname(__FILE__) . '/wf-flyout/wf-flyout.php';
+new wf_flyout(__FILE__);
 
 define('WPFSSL_OPTIONS_KEY', 'wpfssl_options');
 define('WPFSSL_META_KEY', 'wpfssl_meta');
@@ -86,7 +85,6 @@ class wpForceSSL
     add_action('admin_menu', array($this, 'add_settings_page'));
     add_filter('admin_footer_text', array($this, 'admin_footer_text'));
     add_action('admin_enqueue_scripts', array($this, 'admin_scripts'));
-    add_filter('install_plugins_table_api_args_featured', array($this, 'featured_plugins_tab'));
     add_action('admin_action_wpfs_dismiss_review_notice', array($this, 'action_dismiss_review_notice'));
 
     // ajax hooks for the settings, and SSL certificate test
@@ -372,85 +370,6 @@ class wpForceSSL
   {
     echo '<div class="error"><p>' . sprintf(__('WP Force SSL plugin <b>requires WordPress version 4.6</b> or higher to function properly. You are using WordPress version %s. Please <a href="%s">update it</a>.', 'wp-force-ssl'), get_bloginfo('version'), admin_url('update-core.php')) . '</p></div>';
   } // notice_min_wp_version_error
-
-
-  /**
-   * Add hook to filter plugin API result to add recommended addon plugins
-   *
-   * @since 1.5
-   *
-   * @return object args
-   */
-  public function featured_plugins_tab($args)
-  {
-    add_filter('plugins_api_result', array($this, 'plugins_api_result'), 10);
-
-    return $args;
-  } // featured_plugins_tab
-
-
-  /**
-   * Append plugin favorites list with recommended addon plugins
-   *
-   * @since 1.5
-   *
-   * @return object API response
-   */
-  public function plugins_api_result($res)
-  {
-    remove_filter('plugins_api_result', array($this, 'plugins_api_result'), 10);
-    $res = $this->add_plugin_favs('wp-reset', $res);
-    $res = $this->add_plugin_favs('eps-301-redirects', $res);
-    $res = $this->add_plugin_favs('simple-author-box', $res);
-    return $res;
-  } // plugins_api_result
-
-
-  /**
-   * Create plugin favorites list plugin object
-   *
-   * @since 1.5
-   *
-   * @return object favorite plugins
-   */
-  public function add_plugin_favs($plugin_slug, $res)
-  {
-    if (!isset($res->plugins) || !is_array($res->plugins)) {
-      return $res;
-    }
-
-    if (!empty($res->plugins) && is_array($res->plugins)) {
-      foreach ($res->plugins as $plugin) {
-        if (is_object($plugin) && !empty($plugin->slug) && $plugin->slug == $plugin_slug) {
-          return $res;
-        }
-      } // foreach
-    }
-
-    $plugin_info = get_transient('wf-plugin-info-' . $plugin_slug);
-    if ($plugin_info && is_object($plugin_info)) {
-      array_unshift($res->plugins, $plugin_info);
-    } else {
-      $plugin_info = plugins_api('plugin_information', array(
-        'slug'   => $plugin_slug,
-        'is_ssl' => is_ssl(),
-        'fields' => array(
-          'banners'           => true,
-          'reviews'           => true,
-          'downloaded'        => true,
-          'active_installs'   => true,
-          'icons'             => true,
-          'short_description' => true,
-        )
-      ));
-      if (!is_wp_error($plugin_info) && is_object($plugin_info) && $plugin_info) {
-        array_unshift($res->plugins, $plugin_info);
-        set_transient('wf-plugin-info-' . $plugin_slug, $plugin_info, DAY_IN_SECONDS * 7);
-      }
-    }
-
-    return $res;
-  } // add_plugin_favs
 
 
   /**

@@ -18,8 +18,6 @@ add_action( 'customize_register', 'vw_kids_custom_controls' );
 
 function vw_kids_customize_register( $wp_customize ) {
 
-	load_template( trailingslashit( get_template_directory() ) . 'inc/customize-homepage/class-customize-homepage.php' );
-
 	load_template( trailingslashit( get_template_directory() ) . '/inc/icon-picker.php' );
 
 	$wp_customize->get_setting( 'blogname' )->transport = 'postMessage'; 
@@ -60,9 +58,9 @@ function vw_kids_customize_register( $wp_customize ) {
         'description' => __('Here you can change the width layout of Website.','vw-kids'),
         'section' => 'vw_kids_left_right',
         'choices' => array(
-            'Full Width' => get_template_directory_uri().'/assets/images/full-width.png',
-            'Wide Width' => get_template_directory_uri().'/assets/images/wide-width.png',
-            'Boxed' => get_template_directory_uri().'/assets/images/boxed-width.png',
+            'Full Width' => esc_url(get_template_directory_uri()).'/assets/images/full-width.png',
+            'Wide Width' => esc_url(get_template_directory_uri()).'/assets/images/wide-width.png',
+            'Boxed' => esc_url(get_template_directory_uri()).'/assets/images/boxed-width.png',
     ))));
 
 	// Add Settings and Controls for Layout
@@ -386,9 +384,9 @@ function vw_kids_customize_register( $wp_customize ) {
         'label' => __('Slider Content Layouts','vw-kids'),
         'section' => 'vw_kids_slidersettings',
         'choices' => array(
-            'Left' => get_template_directory_uri().'/assets/images/slider-content1.png',
-            'Center' => get_template_directory_uri().'/assets/images/slider-content2.png',
-            'Right' => get_template_directory_uri().'/assets/images/slider-content3.png',
+            'Left' => esc_url(get_template_directory_uri()).'/assets/images/slider-content1.png',
+            'Center' => esc_url(get_template_directory_uri()).'/assets/images/slider-content2.png',
+            'Right' => esc_url(get_template_directory_uri()).'/assets/images/slider-content3.png',
     ))));
 
     //Slider excerpt
@@ -571,9 +569,9 @@ function vw_kids_customize_register( $wp_customize ) {
         'label' => __('Blog Layouts','vw-kids'),
         'section' => 'vw_kids_post_settings',
         'choices' => array(
-            'Default' => get_template_directory_uri().'/assets/images/blog-layout1.png',
-            'Center' => get_template_directory_uri().'/assets/images/blog-layout2.png',
-            'Left' => get_template_directory_uri().'/assets/images/blog-layout3.png',
+            'Default' => esc_url(get_template_directory_uri()).'/assets/images/blog-layout1.png',
+            'Center' => esc_url(get_template_directory_uri()).'/assets/images/blog-layout2.png',
+            'Left' => esc_url(get_template_directory_uri()).'/assets/images/blog-layout3.png',
     ))));
 
     $wp_customize->add_setting('vw_kids_excerpt_settings',array(
@@ -1031,28 +1029,6 @@ function vw_kids_customize_register( $wp_customize ) {
 		'type'		=> 'icon'
 	)));
 
-	//Content creation
-	$wp_customize->add_section( 'vw_kids_content_section' , array(
-    	'title' => __( 'Customize Home Page', 'vw-kids' ),
-		'priority' => null,
-		'panel' => 'vw_kids_panel_id'
-	) );
-
-	$wp_customize->add_setting('vw_kids_content_creation_main_control', array(
-		'sanitize_callback' => 'esc_html',
-	) );
-
-	$homepage= get_option( 'page_on_front' );
-
-	$wp_customize->add_control(	new VW_Kids_Content_Creation( $wp_customize, 'vw_kids_content_creation_main_control', array(
-		'options' => array(
-			esc_html__( 'First select static page in homepage setting for front page.Below given edit button is to customize Home Page. Just click on the edit option, add whatever elements you want to include in the homepage, save the changes and you are good to go.','vw-kids' ),
-		),
-		'section' => 'vw_kids_content_section',
-		'button_url'  => admin_url( 'post.php?post='.$homepage.'&action=edit'),
-		'button_text' => esc_html__( 'Edit', 'vw-kids' ),
-	) ) );
-
 	//Footer Text
 	$wp_customize->add_section('vw_kids_footer',array(
 		'title'	=> __('Footer','vw-kids'),
@@ -1088,9 +1064,9 @@ function vw_kids_customize_register( $wp_customize ) {
         'section' => 'vw_kids_footer',
         'settings' => 'vw_kids_copyright_alingment',
         'choices' => array(
-            'left' => get_template_directory_uri().'/assets/images/copyright1.png',
-            'center' => get_template_directory_uri().'/assets/images/copyright2.png',
-            'right' => get_template_directory_uri().'/assets/images/copyright3.png'
+            'left' => esc_url(get_template_directory_uri()).'/assets/images/copyright1.png',
+            'center' => esc_url(get_template_directory_uri()).'/assets/images/copyright2.png',
+            'right' => esc_url(get_template_directory_uri()).'/assets/images/copyright3.png'
     ))));
 
     $wp_customize->add_setting('vw_kids_copyright_padding_top_bottom',array(
@@ -1218,9 +1194,9 @@ function vw_kids_customize_register( $wp_customize ) {
         'section' => 'vw_kids_footer',
         'settings' => 'vw_kids_scroll_top_alignment',
         'choices' => array(
-            'Left' => get_template_directory_uri().'/assets/images/layout1.png',
-            'Center' => get_template_directory_uri().'/assets/images/layout2.png',
-            'Right' => get_template_directory_uri().'/assets/images/layout3.png'
+            'Left' => esc_url(get_template_directory_uri()).'/assets/images/layout1.png',
+            'Center' => esc_url(get_template_directory_uri()).'/assets/images/layout2.png',
+            'Right' => esc_url(get_template_directory_uri()).'/assets/images/layout3.png'
     ))));
 
     //Woocommerce settings
@@ -1471,7 +1447,7 @@ final class VW_Kids_Customize {
 		$manager->register_section_type( 'VW_Kids_Customize_Section_Pro' );
 
 		// Register sections.
-		$manager->add_section(new VW_Kids_Customize_Section_Pro($manager,'example_1',array(
+		$manager->add_section(new VW_Kids_Customize_Section_Pro($manager,'vw_kids_upgrade_pro_link',array(
 			'priority'   => 1,
 			'title'    => esc_html__( 'VW KIDS PRO', 'vw-kids' ),
 			'pro_text' => esc_html__( 'UPGRADE PRO', 'vw-kids' ),
@@ -1479,7 +1455,7 @@ final class VW_Kids_Customize {
 		)));
 
 		// Register sections.
-		$manager->add_section(new VW_Kids_Customize_Section_Pro($manager,'example_2',array(
+		$manager->add_section(new VW_Kids_Customize_Section_Pro($manager,'vw_kids_get_started_link',array(
 			'priority'   => 1,
 			'title'    => esc_html__( 'DOCMENTATION', 'vw-kids' ),
 			'pro_text' => esc_html__( 'DOCS', 'vw-kids' ),
@@ -1496,9 +1472,9 @@ final class VW_Kids_Customize {
 	 */
 	public function enqueue_control_scripts() {
 
-		wp_enqueue_script( 'vw-kids-customize-controls', trailingslashit( get_template_directory_uri() ) . '/assets/js/customize-controls.js', array( 'customize-controls' ) );
+		wp_enqueue_script( 'vw-kids-customize-controls', trailingslashit( esc_url(get_template_directory_uri()) ) . '/assets/js/customize-controls.js', array( 'customize-controls' ) );
 
-		wp_enqueue_style( 'vw-kids-customize-controls', trailingslashit( get_template_directory_uri() ) . '/assets/css/customize-controls.css' );
+		wp_enqueue_style( 'vw-kids-customize-controls', trailingslashit( esc_url(get_template_directory_uri()) ) . '/assets/css/customize-controls.css' );
 	}
 }
 

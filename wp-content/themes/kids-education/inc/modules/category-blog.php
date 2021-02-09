@@ -103,7 +103,7 @@ if ( ! function_exists( 'kids_education_get_category_blog_section_details' ) ) :
 
             $content[$i]['url']       = get_permalink( $page_id );
             $content[$i]['title']     = get_the_title( $page_id );
-            $content[$i]['excerpt']   = kids_education_trim_content( 15, $post  );
+            $content[$i]['excerpt']   = kids_education_trim_content( $options['category_blog_excerpt'], $post  );
             $content[$i]['alt']       = get_the_title( $page_id );
             $content[$i]['date']      = get_the_date( '', $page_id );
             $content[$i]['date_link'] = get_day_link( $year, $month, $day );

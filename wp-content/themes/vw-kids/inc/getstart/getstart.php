@@ -8,8 +8,8 @@ function vw_kids_gettingstarted() {
 // Add a Custom CSS file to WP Admin Area
 function vw_kids_admin_theme_style() {
    wp_enqueue_style( 'vw-kids-font', vw_kids_admin_font_url(), array() );
-   wp_enqueue_style('vw-kids-custom-admin-style', get_template_directory_uri() . '/inc/getstart/getstart.css');
-   wp_enqueue_script('vw-kids-tabs', get_template_directory_uri() . '/inc/getstart/js/tab.js');
+   wp_enqueue_style('vw-kids-custom-admin-style', esc_url(get_template_directory_uri()) . '/inc/getstart/getstart.css');
+   wp_enqueue_script('vw-kids-tabs', esc_url(get_template_directory_uri()) . '/inc/getstart/js/tab.js');
 }
 add_action('admin_enqueue_scripts', 'vw_kids_admin_theme_style');
 

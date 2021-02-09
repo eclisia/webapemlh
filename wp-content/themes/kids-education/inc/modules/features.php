@@ -88,7 +88,7 @@ if ( ! function_exists( 'kids_education_get_features_section_details' ) ) :
 
             $content[$i]['url']     = get_permalink( $page_id );
             $content[$i]['title']   = get_the_title( $page_id );
-            $content[$i]['excerpt'] = kids_education_trim_content( 15, $post  );
+            $content[$i]['excerpt'] = kids_education_trim_content( $options['feature_excerpt'], $post  );
             $content[$i]['icon']    = !empty( $options['features_icon_'.$i ] ) ? $options['features_icon_'.$i ] : '';
 
             $i++;

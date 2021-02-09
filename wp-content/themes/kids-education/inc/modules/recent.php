@@ -124,7 +124,7 @@ if ( ! function_exists( 'kids_education_get_recent_section_details' ) ) :
                     $content[$i]['url']      = get_permalink( $page_id );
                     $content[$i]['title']    = get_the_title( $page_id );
                     $content[$i]['alt']      = get_the_title( $page_id );
-                    $content[$i]['excerpt']  = kids_education_trim_content( 15, $post );
+                    $content[$i]['excerpt']  = kids_education_trim_content( $options['recent_excerpt'], $post );
 
                     $i++;
                 }

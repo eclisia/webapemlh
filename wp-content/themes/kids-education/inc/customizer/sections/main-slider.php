@@ -94,3 +94,15 @@ $wp_customize->add_control( 'kids_education_theme_options[main_slider_learn_more
 	'section'         	=> 'kids_education_main_slider_section',
 	'active_callback' 	=> 'kids_education_is_main_slider_active',
 ));
+
+$wp_customize->add_setting( 'kids_education_theme_options[main_slider_excerpt]', array(
+	'default'           => $options['main_slider_excerpt'],
+	'sanitize_callback' => 'absint',
+) );
+
+$wp_customize->add_control( 'kids_education_theme_options[main_slider_excerpt]', array(
+	'label'             => esc_html__( 'Excerpt Length', 'kids-education' ),
+	'section'           => 'kids_education_main_slider_section',
+	'type'              => 'number',
+	'active_callback'	=> 'kids_education_is_main_slider_active',
+) );

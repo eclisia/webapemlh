@@ -101,3 +101,16 @@ $wp_customize->add_control( 'kids_education_theme_options[recent_count]', array(
 		),
 	'active_callback'	=> 'kids_education_is_recent_section_active',
 ) );
+
+
+$wp_customize->add_setting( 'kids_education_theme_options[recent_excerpt]', array(
+	'default'           => $options['recent_excerpt'],
+	'sanitize_callback' => 'absint',
+) );
+
+$wp_customize->add_control( 'kids_education_theme_options[recent_excerpt]', array(
+	'label'             => esc_html__( 'Excerpt Length', 'kids-education' ),
+	'section'           => 'kids_education_recent',
+	'type'              => 'number',
+	'active_callback'	=> 'kids_education_is_recent_section_active',
+) );

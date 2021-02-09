@@ -10,7 +10,7 @@ use function MailOptin\Core\moVar;
 
 class CtctConnect extends \NF_Abstracts_ActionNewsletter
 {
-    public $connection_name = 'Constant Contact';
+    public $connection_name = 'Constant Contact (Legacy)';
 
     public $connection = 'CtctConnect';
 

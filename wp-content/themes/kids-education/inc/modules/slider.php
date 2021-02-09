@@ -97,7 +97,7 @@ if ( ! function_exists( 'kids_education_get_main_slider_section_details' ) ) :
 
                     $content[$i]['url']      = get_permalink( $custom_post->ID );
                     $content[$i]['title']    = get_the_title( $custom_post->ID );
-                    $content[$i]['content']  = kids_education_trim_content( 20, $custom_post );
+                    $content[$i]['content']  = kids_education_trim_content( $options['main_slider_excerpt'], $custom_post );
                 $i++;
                 }
             endif;

@@ -10,7 +10,7 @@ function coming_soon_lite_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting('coming_soon_lite_show_site_title',array(
        'default' => true,
-       'sanitize_callback'	=> 'sanitize_text_field'
+       'sanitize_callback'	=> 'coming_soon_lite_sanitize_checkbox'
     ));
     $wp_customize->add_control('coming_soon_lite_show_site_title',array(
        'type' => 'checkbox',
@@ -20,7 +20,7 @@ function coming_soon_lite_customize_register( $wp_customize ) {
 
     $wp_customize->add_setting('coming_soon_lite_show_tagline',array(
        'default' => true,
-       'sanitize_callback'	=> 'sanitize_text_field'
+       'sanitize_callback'	=> 'coming_soon_lite_sanitize_checkbox'
     ));
     $wp_customize->add_control('coming_soon_lite_show_tagline',array(
        'type' => 'checkbox',
@@ -44,10 +44,9 @@ function coming_soon_lite_customize_register( $wp_customize ) {
 
 	// Add Settings and Controls for Layout
 	$wp_customize->add_setting('coming_soon_lite_theme_options',array(
-        'default' => __('Right Sidebar','coming-soon-lite'),
+        'default' => 'Right Sidebar',
         'sanitize_callback' => 'coming_soon_lite_sanitize_choices'	        
 	));
-
 	$wp_customize->add_control('coming_soon_lite_theme_options',array(
         'type' => 'radio',
         'label' => __('Do you want this section','coming-soon-lite'),
@@ -71,7 +70,7 @@ function coming_soon_lite_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting('coming_soon_lite_phone_number',array(
 		'default'=> '',
-		'sanitize_callback'	=> 'sanitize_text_field'
+		'sanitize_callback'	=> 'coming_soon_lite_sanitize_phone_number'
 	));	
 	$wp_customize->add_control('coming_soon_lite_phone_number',array(
 		'label'	=> __('Add Phone Number','coming-soon-lite'),
@@ -82,7 +81,7 @@ function coming_soon_lite_customize_register( $wp_customize ) {
 
 	$wp_customize->add_setting('coming_soon_lite_email_address',array(
 		'default'=> '',
-		'sanitize_callback'	=> 'sanitize_text_field'
+		'sanitize_callback'	=> 'coming_soon_lite_sanitize_email'
 	));	
 	$wp_customize->add_control('coming_soon_lite_email_address',array(
 		'label'	=> __('Add Email Address','coming-soon-lite'),
@@ -161,14 +160,12 @@ function coming_soon_lite_customize_register( $wp_customize ) {
 	) );
 
 	for ( $count = 1; $count <= 1; $count++ ) {
-
 		$wp_customize->add_setting( 'coming_soon_lite_banner' . $count, array(
 			'default'           => '',
 			'sanitize_callback' => 'coming_soon_lite_sanitize_dropdown_pages'
 		) );
-
 		$wp_customize->add_control( 'coming_soon_lite_banner' . $count, array(
-			'label'    => __( 'Select Banner Image Page', 'coming-soon-lite' ),
+			'label'  => __( 'Select Banner Image Page', 'coming-soon-lite' ),
 			'description' => __('Image Size 1500 x 800','coming-soon-lite'),
 			'section'  => 'coming_soon_lite_banner_section',
 			'type'     => 'dropdown-pages'
@@ -369,7 +366,7 @@ final class Coming_Soon_Lite_Customize {
 		$manager->add_section(
 			new Coming_Soon_Lite_Customize_Section_Pro(
 				$manager,
-				'example_1',
+				'coming_soon_lite_example_1',
 				array(
 					'priority' => 9,
 					'title'    => esc_html__( 'Coming Soon Pro ', 'coming-soon-lite' ),

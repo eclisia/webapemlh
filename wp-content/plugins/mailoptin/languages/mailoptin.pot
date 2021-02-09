@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the MailOptin - Lite package.
 msgid ""
 msgstr ""
-"Project-Id-Version: MailOptin - Lite 1.2.34.3\n"
+"Project-Id-Version: MailOptin - Lite 1.2.34.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/mailoptin\n"
-"POT-Creation-Date: 2021-01-25 12:33:54+00:00\n"
+"POT-Creation-Date: 2021-02-09 08:30:10+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -448,6 +448,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/EmailOctopusConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/EmmaConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/FacebookCustomAudienceConnect.php:99
+#: src/connections/NinjaFormsConnect/Integrations/GEMConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/GetResponseConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/HubspotConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/InfusionsoftConnect.php:99
@@ -457,6 +458,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/MailPoetConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/MailerliteConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/MailjetConnect.php:99
+#: src/connections/NinjaFormsConnect/Integrations/MailsterConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/MoosendConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/OntraportConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/SendFoxConnect.php:99
@@ -465,6 +467,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/SendlaneConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/SendyConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/VerticalResponseConnect.php:99
+#: src/connections/NinjaFormsConnect/Integrations/WeMailConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/WordPressUserRegistrationConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCRMConnect.php:99
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCampaignsConnect.php:99
@@ -528,6 +531,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/EmailOctopusConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/EmmaConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/FacebookCustomAudienceConnect.php:189
+#: src/connections/NinjaFormsConnect/Integrations/GEMConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/GetResponseConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/HubspotConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/InfusionsoftConnect.php:189
@@ -537,6 +541,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/MailPoetConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/MailerliteConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/MailjetConnect.php:189
+#: src/connections/NinjaFormsConnect/Integrations/MailsterConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/MoosendConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/OntraportConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/SendFoxConnect.php:189
@@ -545,6 +550,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/SendlaneConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/SendyConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/VerticalResponseConnect.php:189
+#: src/connections/NinjaFormsConnect/Integrations/WeMailConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/WordPressUserRegistrationConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCRMConnect.php:189
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCampaignsConnect.php:189
@@ -596,6 +602,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/EmailOctopusConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/EmmaConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/FacebookCustomAudienceConnect.php:150
+#: src/connections/NinjaFormsConnect/Integrations/GEMConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/GetResponseConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/HubspotConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/InfusionsoftConnect.php:150
@@ -605,6 +612,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/MailPoetConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/MailerliteConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/MailjetConnect.php:150
+#: src/connections/NinjaFormsConnect/Integrations/MailsterConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/MoosendConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/OntraportConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/SendFoxConnect.php:150
@@ -613,6 +621,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/SendlaneConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/SendyConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/VerticalResponseConnect.php:150
+#: src/connections/NinjaFormsConnect/Integrations/WeMailConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/WordPressUserRegistrationConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCRMConnect.php:150
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCampaignsConnect.php:150
@@ -637,6 +646,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/EmailOctopusConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/EmmaConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/FacebookCustomAudienceConnect.php:151
+#: src/connections/NinjaFormsConnect/Integrations/GEMConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/GetResponseConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/HubspotConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/InfusionsoftConnect.php:151
@@ -646,6 +656,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/MailPoetConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/MailerliteConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/MailjetConnect.php:151
+#: src/connections/NinjaFormsConnect/Integrations/MailsterConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/MoosendConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/OntraportConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/SendFoxConnect.php:151
@@ -654,6 +665,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/SendlaneConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/SendyConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/VerticalResponseConnect.php:151
+#: src/connections/NinjaFormsConnect/Integrations/WeMailConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/WordPressUserRegistrationConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCRMConnect.php:151
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCampaignsConnect.php:151
@@ -676,6 +688,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/EmailOctopusConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/EmmaConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/FacebookCustomAudienceConnect.php:152
+#: src/connections/NinjaFormsConnect/Integrations/GEMConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/GetResponseConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/HubspotConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/InfusionsoftConnect.php:152
@@ -685,6 +698,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/MailPoetConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/MailerliteConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/MailjetConnect.php:152
+#: src/connections/NinjaFormsConnect/Integrations/MailsterConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/MoosendConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/OntraportConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/SendFoxConnect.php:152
@@ -693,6 +707,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/SendlaneConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/SendyConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/VerticalResponseConnect.php:152
+#: src/connections/NinjaFormsConnect/Integrations/WeMailConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/WordPressUserRegistrationConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCRMConnect.php:152
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCampaignsConnect.php:152
@@ -1543,7 +1558,7 @@ msgstr ""
 msgid "Unable to add subscriber via MailOptin: "
 msgstr ""
 
-#: src/connections/HubspotConnect/AbstractHubspotConnect.php:54
+#: src/connections/HubspotConnect/AbstractHubspotConnect.php:39
 msgid "Hubspot access token not found."
 msgstr ""
 
@@ -1566,7 +1581,7 @@ msgstr ""
 msgid "HubSpot Connection"
 msgstr ""
 
-#: src/connections/InfusionsoftConnect/AbstractInfusionsoftConnect.php:54
+#: src/connections/InfusionsoftConnect/AbstractInfusionsoftConnect.php:39
 msgid "Infusionsoft access token not found."
 msgstr ""
 
@@ -2274,6 +2289,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/EmailOctopusConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/EmmaConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/FacebookCustomAudienceConnect.php:45
+#: src/connections/NinjaFormsConnect/Integrations/GEMConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/GetResponseConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/HubspotConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/InfusionsoftConnect.php:45
@@ -2283,6 +2299,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/MailPoetConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/MailerliteConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/MailjetConnect.php:45
+#: src/connections/NinjaFormsConnect/Integrations/MailsterConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/MoosendConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/OntraportConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/SendFoxConnect.php:45
@@ -2291,6 +2308,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/SendlaneConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/SendyConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/VerticalResponseConnect.php:45
+#: src/connections/NinjaFormsConnect/Integrations/WeMailConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/WordPressUserRegistrationConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCRMConnect.php:45
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCampaignsConnect.php:45
@@ -2309,6 +2327,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/EmailOctopusConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/EmmaConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/FacebookCustomAudienceConnect.php:94
+#: src/connections/NinjaFormsConnect/Integrations/GEMConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/GetResponseConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/HubspotConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/InfusionsoftConnect.php:94
@@ -2318,6 +2337,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/MailPoetConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/MailerliteConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/MailjetConnect.php:94
+#: src/connections/NinjaFormsConnect/Integrations/MailsterConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/MoosendConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/OntraportConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/SendFoxConnect.php:94
@@ -2326,6 +2346,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/SendlaneConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/SendyConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/VerticalResponseConnect.php:94
+#: src/connections/NinjaFormsConnect/Integrations/WeMailConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/WordPressUserRegistrationConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCRMConnect.php:94
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCampaignsConnect.php:94
@@ -2344,6 +2365,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/EmailOctopusConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/EmmaConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/FacebookCustomAudienceConnect.php:192
+#: src/connections/NinjaFormsConnect/Integrations/GEMConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/GetResponseConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/HubspotConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/InfusionsoftConnect.php:192
@@ -2353,6 +2375,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/MailPoetConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/MailerliteConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/MailjetConnect.php:192
+#: src/connections/NinjaFormsConnect/Integrations/MailsterConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/MoosendConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/OntraportConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/SendFoxConnect.php:192
@@ -2361,6 +2384,7 @@ msgstr ""
 #: src/connections/NinjaFormsConnect/Integrations/SendlaneConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/SendyConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/VerticalResponseConnect.php:192
+#: src/connections/NinjaFormsConnect/Integrations/WeMailConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/WordPressUserRegistrationConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCRMConnect.php:192
 #: src/connections/NinjaFormsConnect/Integrations/ZohoCampaignsConnect.php:192
@@ -2874,7 +2898,7 @@ msgstr ""
 msgid "Biographical Description"
 msgstr ""
 
-#: src/connections/ZohoCRMConnect/AbstractZohoCRMConnect.php:64
+#: src/connections/ZohoCRMConnect/AbstractZohoCRMConnect.php:42
 msgid "Zoho CRM access token not found."
 msgstr ""
 
@@ -2939,7 +2963,7 @@ msgid ""
 "with your Zoho CRM account."
 msgstr ""
 
-#: src/connections/ZohoCampaignsConnect/AbstractZohoCampaignsConnect.php:85
+#: src/connections/ZohoCampaignsConnect/AbstractZohoCampaignsConnect.php:62
 msgid "Zoho Campaigns access token not found."
 msgstr ""
 
@@ -5717,12 +5741,32 @@ msgid "User Agent"
 msgstr ""
 
 #: src/core/src/Admin/SettingsPage/ConversionExport.php:48
-#: src/core/src/Functions/functions.php:442
+#: src/core/src/Functions/functions.php:447
 msgid "Conversion Page"
 msgstr ""
 
 #: src/core/src/Admin/SettingsPage/ConversionExport.php:49
 msgid "Referrer"
+msgstr ""
+
+#: src/core/src/Admin/SettingsPage/ConversionImport.php:40
+msgid "There was an error. Could not save the csv file path"
+msgstr ""
+
+#: src/core/src/Admin/SettingsPage/ConversionImport.php:43
+msgid "CSV file could not be moved."
+msgstr ""
+
+#: src/core/src/Admin/SettingsPage/ConversionImport.php:47
+msgid "The uploaded file is not a csv file. Please try again."
+msgstr ""
+
+#: src/core/src/Admin/SettingsPage/ConversionImport.php:83
+msgid "CSV"
+msgstr ""
+
+#: src/core/src/Admin/SettingsPage/ConversionImport.php:98
+msgid "There was an error importing leads into the leadbank"
 msgstr ""
 
 #: src/core/src/Admin/SettingsPage/EmailCampaigns.php:49
@@ -7545,15 +7589,15 @@ msgstr ""
 msgid "Activate"
 msgstr ""
 
-#: src/core/src/Functions/functions.php:439
+#: src/core/src/Functions/functions.php:444
 msgid "IP Address"
 msgstr ""
 
-#: src/core/src/Functions/functions.php:440
+#: src/core/src/Functions/functions.php:445
 msgid "Optin Campaign Name"
 msgstr ""
 
-#: src/core/src/Functions/functions.php:441
+#: src/core/src/Functions/functions.php:446
 msgid "Referrer URL"
 msgstr ""
 
@@ -7796,9 +7840,9 @@ msgstr ""
 msgid "MailOptin - Lite"
 msgstr ""
 
-#. #-#-#-#-#  mailoptin.pot (MailOptin - Lite 1.2.34.3)  #-#-#-#-#
+#. #-#-#-#-#  mailoptin.pot (MailOptin - Lite 1.2.34.4)  #-#-#-#-#
 #. Plugin URI of the plugin/theme
-#. #-#-#-#-#  mailoptin.pot (MailOptin - Lite 1.2.34.3)  #-#-#-#-#
+#. #-#-#-#-#  mailoptin.pot (MailOptin - Lite 1.2.34.4)  #-#-#-#-#
 #. Author URI of the plugin/theme
 msgid "https://mailoptin.io"
 msgstr ""

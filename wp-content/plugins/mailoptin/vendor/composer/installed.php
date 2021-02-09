@@ -83,8 +83,8 @@
     ),
     'mailoptin/authifly' => 
     array (
-      'pretty_version' => '0.2.1611573634',
-      'version' => '0.2.1611573634.0',
+      'pretty_version' => '0.2.1612810294',
+      'version' => '0.2.1612810294.0',
       'aliases' => 
       array (
       ),
@@ -92,8 +92,8 @@
     ),
     'mailoptin/connections' => 
     array (
-      'pretty_version' => '0.2.1611573651',
-      'version' => '0.2.1611573651.0',
+      'pretty_version' => '0.2.1612810341',
+      'version' => '0.2.1612810341.0',
       'aliases' => 
       array (
       ),
@@ -101,12 +101,12 @@
     ),
     'mailoptin/core' => 
     array (
-      'pretty_version' => '0.1.0-alpha.1611570658',
-      'version' => '0.1.0.0-alpha1611570658',
+      'pretty_version' => '0.1.0-alpha.1612810335',
+      'version' => '0.1.0.0-alpha1612810335',
       'aliases' => 
       array (
       ),
-      'reference' => 'd5a3275c9be19c1b9300922b0ce16e663be10142',
+      'reference' => 'da93c8dd7b27f59550f2425d4acb749ae557ccc9',
     ),
     'nesbot/carbon' => 
     array (
@@ -119,12 +119,12 @@
     ),
     'pelago/emogrifier' => 
     array (
-      'pretty_version' => 'v1.2.2',
-      'version' => '1.2.2.0',
+      'pretty_version' => 'v3.1.0',
+      'version' => '3.1.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'fef6a4d3a6cefb2fdc8e749a3f3a100ab43f883a',
+      'reference' => 'f6a5c7d44612d86c3901c93f1592f5440e6b2cd8',
     ),
     'roundcube/plugin-installer' => 
     array (
@@ -148,6 +148,15 @@
       array (
       ),
       'reference' => 'cdb89f6ffa2c4cc78f8ed9ea6ee0594a9133ccad',
+    ),
+    'symfony/css-selector' => 
+    array (
+      'pretty_version' => 'v3.4.47',
+      'version' => '3.4.47.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'da3d9da2ce0026771f5fe64cb332158f1bd2bc33',
     ),
     'symfony/polyfill-mbstring' => 
     array (

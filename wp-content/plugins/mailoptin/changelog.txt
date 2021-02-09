@@ -1,5 +1,13 @@
 ﻿== Changelog ==
 
+= 1.2.34.4 =
+* Added missing integrations to Ninja Forms.
+* Fixed fatal error when integration not found in Ninja Forms.
+* Fixed issue causing post formatting in email campaign to be skewed.
+* Fixed fatal error caused by emogrify incompatibility with other plugins.
+* Fixed issue with oauth refresh failing.
+* Added timestamp to error logging.
+
 = 1.2.34.3 =
 * Change oauth integrations nonce key to prevent error in connecting integrations.
 * Fixed bug where images wasn’t included in automation emails.

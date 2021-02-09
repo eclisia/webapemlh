@@ -1,14 +1,14 @@
-=== WP Force SSL & HTTPS SSL Redirect ===
+=== WP Force SSL & HTTPS Redirect ===
 Contributors: WebFactory
 Tags: ssl, force ssl, add ssl, enable ssl, https, ssl certificate, ssl redirect, redirect, mixed content, hsts, lets encrypt
 Requires at least: 4.6
-Tested up to: 5.5
+Tested up to: 5.6
 Requires PHP: 5.2
-Stable Tag: 1.56
+Stable Tag: 1.57
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Enable SSL & HTTPS SSL redirect with 1 click! Add an SSL certificate & WP Force SSL to redirect site from HTTP to HTTPS.
+Enable SSL & HTTPS redirect with 1 click! Add an SSL certificate & WP Force SSL to redirect site from HTTP to HTTPS.
 
 == Description ==
 
@@ -67,6 +67,10 @@ No, nothing. After activating WP Force SSL, the main option "redirect SSL" will 
 
 
 == Changelog ==
+
+= v1.57 =
+- 2021/01/30
+- added flyout menu
 
 = v1.56 =
 - 2020/09/30

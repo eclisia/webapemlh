@@ -105,3 +105,15 @@ $wp_customize->add_control( new kids_education_Dropdown_Category_Control( $wp_cu
 	'section'         	=> 'kids_education_features_section',
 	'type'            	=> 'dropdown-category',
  ) ) );
+
+$wp_customize->add_setting( 'kids_education_theme_options[feature_excerpt]', array(
+	'default'           => $options['feature_excerpt'],
+	'sanitize_callback' => 'absint',
+) );
+
+$wp_customize->add_control( 'kids_education_theme_options[feature_excerpt]', array(
+	'label'             => esc_html__( 'Excerpt Length', 'kids-education' ),
+	'section'           => 'kids_education_features_section',
+	'type'              => 'number',
+	'active_callback'	=> 'kids_education_is_features_active',
+) );

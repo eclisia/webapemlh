@@ -63,7 +63,7 @@ final class Kids_Education_Customize {
 	public function sections( $manager ) {
 
 		// Load custom sections.
-		require_once( trailingslashit( get_template_directory() ) . 'inc/customizer/upgrade-to-pro/section-pro.php' );
+		require trailingslashit( get_template_directory() . 'inc/customizer/upgrade-to-pro/section-pro.php' );
 
 		// Register custom section types.
 		$manager->register_section_type( 'Kids_Education_Customize_Section_Pro' );

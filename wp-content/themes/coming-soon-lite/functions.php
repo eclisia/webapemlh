@@ -160,6 +160,24 @@ function coming_soon_lite_sanitize_choices( $input, $setting ) {
     }
 }
 
+function coming_soon_lite_sanitize_checkbox( $input ) {
+	
+	// Boolean check 
+	return ( ( isset( $input ) && true == $input ) ? true : false );
+}
+
+function coming_soon_lite_sanitize_phone_number( $phone ) {
+	return preg_replace( '/[^\d+]/', '', $phone );
+}
+
+function coming_soon_lite_sanitize_email( $email, $setting ) {
+	// Strips out all characters that are not allowable in an email address.
+	$email = sanitize_email( $email );
+
+	// If $email is a valid email, return it; otherwise, return the default.
+	return ( ! is_null( $email ) ? $email : $setting->default );
+}
+
 //footer Link
 define('COMING_SOON_LITE_CREDIT',__('https://www.luzuk.com/themes/free-coming-soon-wordpress-theme/','coming-soon-lite'));
 

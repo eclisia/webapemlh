@@ -68,7 +68,6 @@ add_action( 'after_setup_theme', 'vw_kids_setup' );
 // Notice after Theme Activation
 function vw_kids_activation_notice() {
 	echo '<div class="notice notice-success is-dismissible welcome-notice">';
-	echo '<h3>'. esc_html__( 'Warm Greetings to you!!', 'vw-kids' ) .'</h3>';
 	echo '<p>'. esc_html__( 'Thank you for choosing VW Kids Theme. Would like to have you on our Welcome page so that you can reap all the benefits of our VW Kids Theme.', 'vw-kids' ) .'</p>';
 	echo '<p><a href="'. esc_url( admin_url( 'themes.php?page=vw_kids_guide' ) ) .'" class="button button-primary">'. esc_html__( 'GET STARTED', 'vw-kids' ) .'</a></p>';
 	echo '</div>';
@@ -281,14 +280,15 @@ function vw_kids_font_url() {
 function vw_kids_scripts() {
 	wp_enqueue_style( 'vw-kids-font', vw_kids_font_url(), array() );
 	wp_enqueue_style( 'vw-kids-block-style', get_theme_file_uri('/assets/css/blocks.css') );
-	wp_enqueue_style( 'bootstrap', get_template_directory_uri().'/assets/css/bootstrap.css' );
+	wp_enqueue_style( 'vw-kids-block-patterns-style-frontend', get_theme_file_uri('/inc/block-patterns/css/block-frontend.css') );
+	wp_enqueue_style( 'bootstrap-style', esc_url(get_template_directory_uri()).'/assets/css/bootstrap.css' );
 	wp_enqueue_style( 'vw-kids-basic-style', get_stylesheet_uri() );
 	require get_parent_theme_file_path( '/inline-style.php' );
 	wp_add_inline_style( 'vw-kids-basic-style',$vw_kids_custom_css );
-	wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/assets/css/fontawesome-all.css' );
-	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.js', array('jquery') ,'',true);
-	wp_enqueue_script( 'jquery-superfish', get_template_directory_uri() . '/assets/js/jquery.superfish.js', array('jquery') ,'',true);
-	wp_enqueue_script( 'vw-kids-custom-scripts-jquery', get_template_directory_uri() . '/assets/js/custom.js', array('jquery') );
+	wp_enqueue_style( 'font-awesome', esc_url(get_template_directory_uri()).'/assets/css/fontawesome-all.css' );
+	wp_enqueue_script( 'bootstrap-js', esc_url(get_template_directory_uri()) . '/assets/js/bootstrap.js', array('jquery') ,'',true);
+	wp_enqueue_script( 'jquery-superfish', esc_url(get_template_directory_uri()) . '/assets/js/jquery.superfish.js', array('jquery') ,'',true);
+	wp_enqueue_script( 'vw-kids-custom-scripts-jquery', esc_url(get_template_directory_uri()) . '/assets/js/custom.js', array('jquery') );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -298,6 +298,17 @@ function vw_kids_scripts() {
 	wp_enqueue_style( 'dashicons' );
 }
 add_action( 'wp_enqueue_scripts', 'vw_kids_scripts' );
+
+/**
+ * Enqueue block editor style
+ */
+function vw_kids_block_editor_styles() {
+	wp_enqueue_style( 'vw-kids-font', vw_kids_font_url(), array() );
+    wp_enqueue_style( 'vw-kids-block-patterns-style-editor', get_theme_file_uri( '/inc/block-patterns/css/block-editor.css' ), false, '1.0', 'all' );
+    wp_enqueue_style( 'bootstrap-style', esc_url(get_template_directory_uri()).'/assets/css/bootstrap.css' );
+    wp_enqueue_style( 'font-awesome', esc_url(get_template_directory_uri()).'/assets/css/fontawesome-all.css' );
+}
+add_action( 'enqueue_block_editor_assets', 'vw_kids_block_editor_styles' );
 
 function vw_kids_sanitize_dropdown_pages( $page_id, $setting ) {
   	// Ensure $input is an absolute integer.
@@ -405,3 +416,6 @@ require get_template_directory() . '/inc/typography/ctypo.php';
 
 /* Implement the About theme page */
 require get_template_directory() . '/inc/getstart/getstart.php';
+
+/* Block Pattern */
+require get_template_directory() . '/inc/block-patterns/block-patterns.php';

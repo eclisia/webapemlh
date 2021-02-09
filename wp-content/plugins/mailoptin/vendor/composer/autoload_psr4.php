@@ -8,7 +8,8 @@ $baseDir = dirname($vendorDir);
 return array(
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Component\\Translation\\' => array($vendorDir . '/symfony/translation'),
-    'Pelago\\' => array($vendorDir . '/pelago/emogrifier/Classes'),
+    'Symfony\\Component\\CssSelector\\' => array($vendorDir . '/symfony/css-selector'),
+    'Pelago\\' => array($vendorDir . '/pelago/emogrifier/src'),
     'Mailchimp\\http\\' => array($vendorDir . '/thinkshout/mailchimp-api-php/src/http'),
     'Mailchimp\\' => array($vendorDir . '/thinkshout/mailchimp-api-php/src'),
     'MailOptin\\ZohoCampaignsConnect\\' => array($baseDir . '/src/connections/ZohoCampaignsConnect'),

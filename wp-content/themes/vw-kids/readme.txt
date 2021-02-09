@@ -1,10 +1,10 @@
 === VW Kids ===
 Contributors: VWthemes
-Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-columns, grid-layout, wide-blocks, block-styles, flexible-header, custom-colors, custom-background, custom-logo, custom-menu, custom-header, editor-style, featured-images, footer-widgets, sticky-post, full-width-template, theme-options, translation-ready, threaded-comments, rtl-language-support, blog, portfolio, e-commerce
+Tags: left-sidebar, right-sidebar, one-column, two-columns, three-columns, four-columns, grid-layout, wide-blocks, block-styles, flexible-header, block-patterns, custom-colors, custom-background, custom-logo, custom-menu, custom-header, editor-style, featured-images, footer-widgets, sticky-post, full-width-template, theme-options, translation-ready, threaded-comments, rtl-language-support, blog, portfolio, e-commerce
 Requires at least: 5.0
-Tested up to: 5.5.3
+Tested up to: 5.6
 Requires PHP: 7.2.14
-Stable tag: 0.5.5
+Stable tag: 0.5.7
 License: GPLv3.0 or later
 License URI: http://www.gnu.org/licenses/gpl-v3.0.html
 
@@ -12,7 +12,7 @@ VW Kids is a colourful, youthful, fresh and versatile kids WordPress theme for k
 
 == Description ==
 
-VW Kids is a colourful, youthful, fresh and versatile kids WordPress theme for kindergartens, crèches, play schools, preschools, day care centres, babysitters, primary and secondary schools, education and training centres, daycare, art classes and nurseries. It is a multipurpose theme which can be used for kids toys and games store, kids skin care products, clothing and shoes mall, kids book store, baby food store, baby care range supplier, amusement center, birthday gifts, kids skin care products, afterschool activities clubs, kindergarten, daycare, preschool, arts & crafts classes and similar educational organizations, children books, kids school bags and stationery store, toy gifts shop, toy stores and kids fashion store. It can be used by kids health care blogger and portfolio designers. It is a totally responsive, SEO enabled, extensive typography options, grid layout multilingual, cross-browser compatible and retina ready theme with multiple header and footer styles and various blog layouts. VW Kids performs all the advanced functions without ever bloating the website. It has a range of social media icons to promote your services. It has smart placement of call to action (CTA) button and other components throughout the theme to make a user-friendly website. Its design is made attractive with eye-catching colours and beautiful fonts to impress visitors at the first sight. This kids theme is fully customizable and compatible with the new WordPress version. It has clean and bug-free codes making it a high quality theme. Demo: https://www.vwthemes.net/vw-kids-pro/
+VW Kids is a colourful, youthful, fresh and versatile kids WordPress theme for kindergartens, crèches, play schools, preschools, day care centres, babysitters, primary and secondary schools, education and training centres, art classes and nurseries. It is a multipurpose theme which can be used for kids toys and games store, kids skin care products, clothing and shoes mall, toystore, kids accesories store, kids zone, kids world, kids book store, baby food store, kids entertainment, kids party, kids play, children art & craft school baby care range supplier, afterschool activities clubs and similar educational organizations, kids school bags and stationery store, toy gifts shop and kids fashion store. It can be used by kids health care blogger and portfolio designers. It is a totally responsive, SEO enabled, extensive typography options, grid layout multilingual, Featured Images, cross-browser compatible and retina ready theme with multiple header and footer styles and various blog layouts. VW Kids performs all the advanced functions without ever bloating the website. It has a range of social media icons to promote your services. It has smart placement of call to action (CTA) button and other components throughout the theme to make a user-friendly website. Its design is made attractive with eye-catching colours and beautiful fonts to impress visitors at the first sight. This kids theme is fully customizable and compatible with the new WordPress version. It has clean and bug-free codes making it a high quality theme.
 
 == Changelog ==
 
@@ -165,6 +165,17 @@ VW Kids is a colourful, youthful, fresh and versatile kids WordPress theme for k
 * Resolved errors of given sheet.
 * Updated language folder.
 
+= 0.5.6 =
+* Done the css of block style button.
+* Resolved errors.
+* Updated language folder.
+
+= 0.5.7 =
+* Added block pattern tag.
+* Done escaping.
+* Remove h3 from activation notice.
+* Changed anchor tag focus.
+
 == Resources ==
 
 VW Kids WordPress Theme, Copyright 2019 VWthemes
@@ -217,7 +228,7 @@ Source: https://stocksnap.io/photo/ELSGOZ3T4V
 
 Product Image, Copyright Rawpixel.com
 License: CC0 1.0 Universal (CC0 1.0)
-Source: https://stocksnap.io/photo/NCWLQ3GFOI
+Source: https://stocksnap.io/photo/crafts-hobby-0QJ7N3BY2E
 
 Product Image, Copyright Ylanite Koppens
 License: CC0 1.0 Universal (CC0 1.0)
